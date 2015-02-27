@@ -6,10 +6,7 @@ import common.Globe;
 import common.NetInfo;
 import common.Screen;
 import common.Vector;
-import elements.Effect;
-import elements.FallingFires;
-import elements.Lightning;
-import elements.PointCoco;
+import elements.*;
 import iptvNet.IptvNetException;
 import iptvNet.NetHander;
 import motion.Motion;
@@ -65,6 +62,7 @@ public class WorriesFightScreen  extends Screen {
     Effect fallingFires;
     Effect pointCocos;
     Effect lighting;
+    Effect watership;
 
     private JSONArray fighterInfo; // fighterÊý¾Ý
 
@@ -105,6 +103,7 @@ public class WorriesFightScreen  extends Screen {
         fallingFires = new FallingFires(0,200,250);
         pointCocos = new PointCoco(0,300,250);
         lighting = new Lightning();
+        watership = new WaterShip();
     }
 
     public void init() {
@@ -159,6 +158,7 @@ public class WorriesFightScreen  extends Screen {
     boolean mustExit = false;
     private int falling_fire_y = 0;
     public static int[] pos_y_array = {250, 300, 250};
+    private int watership_x = 0;
 
     public void update() {
 
@@ -193,6 +193,8 @@ public class WorriesFightScreen  extends Screen {
 
         pointCocos.update(250);
         lighting.update(250);
+
+        if(watership_x < 640) watership.update(watership_x+=20);
 
         eff_point_Coco_atk_motion.keepId(0);
         eff_point_Coco_atk_motion.update(350,300);
@@ -277,7 +279,10 @@ public class WorriesFightScreen  extends Screen {
         atomic_elec_motion.draw(g);
 
         /**lighting draw*/
-        lighting.draw(g);
+//        lighting.draw(g);
+
+        /**water ship draw*/
+        watership.draw(g);
 
 //        falling_fire_motion.draw(g);
 

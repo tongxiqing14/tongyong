@@ -169,6 +169,8 @@ public class ResourceLoader implements MSpriteImageLoader{
         //effects animation
         else if (spriteName.equals("/effect2/evocation.big/lightning/lightning.anu")) {
             baseImage = Globe.getImage("effect2/evocation.big/lightning/lightning"+(imageId+1)+".png");
+        }else if (spriteName.equals("/effect2/watership/watership.anu")) {
+            baseImage = Globe.getImage("effect2/watership/watership"+(imageId+1)+".png");
         }
 
         return baseImage;
