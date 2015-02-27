@@ -1,0 +1,1630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list readonly="true" id="a49c8262-3b0c-4123-8a51-65bba69ef5c7" name="Default" comment="fixed-1、光标不能默认在魔仙堡上。一定要默认在“开始”上。" />
+    <list default="true" id="5a58ea91-d6c6-4cdf-94e5-5222014d9898" name="Merge from src" comment="revert江苏有线测试修改">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/PNG/background1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/blackbirdface/blackbirdface0001.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/blackbirdface/blackbirdface0002.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/blackbirdface/blackbirdface0003.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/blackbirdface/blackbirdface0004.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/blackbirdface/blackbirdface0005.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/blackbirdface/blackbirdface0006.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/blackbirdface/blackbirdface0007.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/blackbirdface" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/blue/blue1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/blue/blue10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/blue/blue2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/blue/blue3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/blue/blue4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/blue/blue5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/blue/blue6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/blue/blue7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/blue/blue8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/blue/blue9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/blue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/PNG/blue_button00.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/PNG/main.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/PNG/yellow_button00.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/zhangai" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/zhangai/zhs.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/zhangai/zhx.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Winside.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/blue/fish1.anu" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.eclipseme.tmp/verified/classes/elements/Enemy.class" afterPath="$PROJECT_DIR$/.eclipseme.tmp/verified/classes/elements/Enemy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.eclipseme.tmp/verified/classes/common/GetData.class" afterPath="$PROJECT_DIR$/.eclipseme.tmp/verified/classes/common/GetData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.eclipseme.tmp/verified/classes/elements/Hero.class" afterPath="$PROJECT_DIR$/.eclipseme.tmp/verified/classes/elements/Hero.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.eclipseme.tmp/verified/classes/Entry/LWGameCanvas.class" afterPath="$PROJECT_DIR$/.eclipseme.tmp/verified/classes/Entry/LWGameCanvas.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.eclipseme.tmp/verified/classes/motion/studio/MSpriteLoader.class" afterPath="$PROJECT_DIR$/.eclipseme.tmp/verified/classes/motion/studio/MSpriteLoader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.eclipseme.tmp/verified/classes/screens/MenuScreen.class" afterPath="$PROJECT_DIR$/.eclipseme.tmp/verified/classes/screens/MenuScreen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.eclipseme.tmp/verified/classes/common/NetInfo.class" afterPath="$PROJECT_DIR$/.eclipseme.tmp/verified/classes/common/NetInfo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.eclipseme.tmp/verified/classes/elements/Pet.class" afterPath="$PROJECT_DIR$/.eclipseme.tmp/verified/classes/elements/Pet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.eclipseme.tmp/verified/classes/motion/ResourceLoader.class" afterPath="$PROJECT_DIR$/.eclipseme.tmp/verified/classes/motion/ResourceLoader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.eclipseme.tmp/verified/classes/elements/Road.class" afterPath="$PROJECT_DIR$/.eclipseme.tmp/verified/classes/elements/Road.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.eclipseme.tmp/verified/classes/iptvNet/The9InputScreen.class" afterPath="$PROJECT_DIR$/.eclipseme.tmp/verified/classes/iptvNet/The9InputScreen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.eclipseme" afterPath="$PROJECT_DIR$/.eclipseme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.log" afterPath="$PROJECT_DIR$/.metadata/.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/GetData.java" afterPath="$PROJECT_DIR$/src/common/GetData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/screens/MenuScreen.java" afterPath="$PROJECT_DIR$/src/screens/MenuScreen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/motion/ResourceLoader.java" afterPath="$PROJECT_DIR$/src/motion/ResourceLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/screens/TestDoggyScreen.java" afterPath="$PROJECT_DIR$/src/screens/TestDoggyScreen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/screens/TestTappyPlane.java" afterPath="$PROJECT_DIR$/src/screens/TestTappyPlane.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/PNG/map1.tmx" afterPath="$PROJECT_DIR$/res/PNG/map1.tmx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/workbench.xml" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/workbench.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="F:\J2ME\idea\commSc\FishFeiFei\J32_LittleWitchParkour_Promotion_ShangXiGuangDian140124.iml" afterPath="$PROJECT_DIR$/TappyPlane.iml" />
+    </list>
+    <ignored path="J30_FruitSpy.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/Dummy.txt" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1394894738644" ignored="false" />
+    <file path="/SelectingHeroScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1390701131281" ignored="false" />
+    <file path="/SelectingPetScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1389011287937" ignored="false" />
+    <file path="/*.regexp" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1390551381281" ignored="false" />
+    <file path="$PROJECT_DIR$/../J32_LittleWitchParkour/J32_LittleWitchParkour/packge/HW20.xml" changelist="a49c8262-3b0c-4123-8a51-65bba69ef5c7" time="1384513080812" ignored="false" />
+    <file path="E:/mergeTest/TrunkApp/src/First.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1384514051203" ignored="false" />
+    <file path="E:/taobaocode/tags/TrunkAppBranch/src/Second.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1384514250640" ignored="false" />
+    <file path="E:/taobaocode/tags/TrunkAppBranch/src/First.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1384514615875" ignored="false" />
+    <file path="/First.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1384514323718" ignored="false" />
+    <file path="E:/taobaocode/trunk/TrunkApp/src/First.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1384514576328" ignored="false" />
+    <file path="E:/taobaocode/branches/BranchApp1/src/Third1.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1384515992812" ignored="false" />
+    <file path="E:/taobaocode/branches/BranchApp2/src/Third2.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1384516027468" ignored="false" />
+    <file path="E:/taobaocode/branches/BranchApp2/src/a2.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1384516484703" ignored="false" />
+    <file path="E:/taobaocode/branches/BranchApp1/src/a1.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1384516513625" ignored="false" />
+    <file path="/ConfirmScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1388021209468" ignored="false" />
+    <file path="/MenuScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1394980989924" ignored="false" />
+    <file path="$PROJECT_DIR$/../../trunk/App0/.idea/workspace.xml" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1384762735453" ignored="false" />
+    <file path="$PROJECT_DIR$/../../trunk/App0/src/A.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1384762935765" ignored="false" />
+    <file path="$PROJECT_DIR$/../../trunk/App0/.idea/misc.xml" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1384762569562" ignored="false" />
+    <file path="$PROJECT_DIR$/../App1/.idea/workspace.xml" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1384762669843" ignored="false" />
+    <file path="$PROJECT_DIR$/../App1/src/B.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1384763858140" ignored="false" />
+    <file path="$PROJECT_DIR$/../../trunk/App0/src/src/C.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1384763946578" ignored="false" />
+    <file path="$PROJECT_DIR$/../J32_LittleWitchParkour_GuangDongDianXin/.idea/misc.xml" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1384771377328" ignored="false" />
+    <file path="$PROJECT_DIR$/../J32_LittleWitchParkour_GuangDongDianXin/.idea/workspace.xml" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1384773255875" ignored="false" />
+    <file path="/fragment.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1390550866437" ignored="false" />
+    <file path="$PROJECT_DIR$/../J32_LittleWitchParkour_GuangDongDianXin/.metadata/.plugins/com.genuitec.eclipse.sqlexplorer/SQLDrivers.xml" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1384772250984" ignored="false" />
+    <file path="$PROJECT_DIR$/../J32_LittleWitchParkour_GuangDongDianXin/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1384772250984" ignored="false" />
+    <file path="$PROJECT_DIR$/../J32_LittleWitchParkour_GuangDongDianXin/src/common/Globe.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1384772383796" ignored="false" />
+    <file path="$PROJECT_DIR$/../J32_LittleWitchParkour_GuangDongDianXin/src/common/MathFP.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1384772383796" ignored="false" />
+    <file path="$PROJECT_DIR$/../J32_LittleWitchParkour_GuangDongDianXin/J32_LittleWitchParkour_GuangDongDianXin.iml" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1384772496921" ignored="false" />
+    <file path="E:/temp/J32_LittleWitchParkour_GuangDongDianXin/src/util/MathFP.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1384773163968" ignored="false" />
+    <file path="E:/temp/J32_LittleWitchParkour_GuangDongDianXin/src/common/Globe.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1384773231015" ignored="false" />
+    <file path="$PROJECT_DIR$/../J32_LittleWitchParkour/J32_LittleWitchParkour/src/screens/ConfirmScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1384845108734" ignored="false" />
+    <file path="E:/temp/J32_LittleWitchParkour/src/screens/MenuScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385025725765" ignored="false" />
+    <file path="E:/temp/J32_LittleWitchParkour/src/screens/ConfirmScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385002142375" ignored="false" />
+    <file path="E:/temp/J32_LittleWitchParkour/src/screens/SelectingPetScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385002227328" ignored="false" />
+    <file path="E:/temp/J32_LittleWitchParkour_JiangSuYouXian/src/screens/MenuScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385009480296" ignored="false" />
+    <file path="E:/temp/J32_LittleWitchParkour_JiangSuYouXian/src/screens/GamingScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385009480296" ignored="false" />
+    <file path="E:/temp/J32_LittleWitchParkour_JiangSuYouXian/src/screens/TipsScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385009480296" ignored="false" />
+    <file path="E:/temp/J32_LittleWitchParkour_JiangSuYouXian/src/Entry/LWGameCanvas.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385009480296" ignored="false" />
+    <file path="E:/temp/J32_LittleWitchParkour_JiangSuYouXian/src/screens/StageScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385009480296" ignored="false" />
+    <file path="E:/temp/J32_LittleWitchParkour_JiangSuYouXian/src/Entry/LWGameMidlet.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385009480296" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/screens/MenuScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385115720343" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/Entry/LWGameMidlet.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385115644859" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/Entry/LWGameCanvas.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385115644859" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/screens/SelectingPetScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385530327437" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/screens/ReviveConfirmScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385530327437" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/screens/FailureScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385115644859" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/screens/RankingScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385115644859" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/screens/MFairyCastleScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385459114546" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/screens/PetConfirmScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385530327437" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/screens/TipsScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385115644859" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/screens/GamingScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385459114546" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/screens/SuccessScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385530327437" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/screens/SelectingHeroScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385530327437" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/screens/StageScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385530327437" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/screens/LoadingScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385115644859" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/screens/TutorialScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385115644859" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/screens/ConfirmScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385115644859" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/packge/HW20.xml" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385010417484" ignored="false" />
+    <file path="E:/temp/J32_LittleWitchParkour/src/Entry/LWGameCanvas.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385025522156" ignored="false" />
+    <file path="E:/temp2/DownloadClient/.idea/workspace.xml" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385115335875" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/motion/studio/MSpriteImageLoader.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385115644859" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/common/GameVariables.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385530327437" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/common/NetInfo.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385115644859" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/motion/ResourceLoader.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385115644859" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/motion/Motion.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385115644859" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/common/Screen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385115644859" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/common/Globe.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385115644859" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/motion/studio/MSpriteLoader.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385115644859" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/motion/studio/MPlayer.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385115644859" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/elements/Hero.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385115644859" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/elements/Enemy.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385115644859" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/elements/Pet.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385115644859" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/download/Download.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385115644859" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/motion/studio/MSpriteData.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385115644859" ignored="false" />
+    <file path="E:/temp2/J32_LittleWitchParkour_JiangSuYouXian/src/common/Warrior.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385115644859" ignored="false" />
+    <file path="/MFairyCastleScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1390701574359" ignored="false" />
+    <file path="/GamingScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1388371699328" ignored="false" />
+    <file path="$PROJECT_DIR$/../../model/IPTVClientForWebPassword_youxian/src/iptvNet/The9InputScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385691068187" ignored="false" />
+    <file path="E:/temp2/Client/Single/J32_LittleWitchParkour_GuangDongDianXin/src/Entry/LWGameMidlet.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385696667859" ignored="false" />
+    <file path="E:/temp2/Client/Single/J32_LittleWitchParkour_GuangDongDianXin/src/Entry/LWGameCanvas.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385696404656" ignored="false" />
+    <file path="E:/temp2/Client/Single/J32_LittleWitchParkour_GuangDongDianXin/src/screens/ConfirmScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385702864843" ignored="false" />
+    <file path="E:/temp2/Client/Single/J32_LittleWitchParkour_GuangDongDianXin/packge/HW20.xml" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385702140875" ignored="false" />
+    <file path="E:/temp2/Client/Single/J32_LittleWitchParkour_GuangDongDianXin/src/screens/ReviveConfirmScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1385702345359" ignored="false" />
+    <file path="/The9InputScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1388382355796" ignored="false" />
+    <file path="/HW20.xml" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1386051477812" ignored="false" />
+    <file path="$PROJECT_DIR$/../../J31_Littlewitch_HuNanDianXin/packge/HW20.xml" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1386056495656" ignored="false" />
+    <file path="$PROJECT_DIR$/../../J31_Littlewitch_fujiandianxin/packge/HW20.xml" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1386069417968" ignored="false" />
+    <file path="$PROJECT_DIR$/../J32_LittleWitchParkour_FuJianDianXin/src/screens/MFairyCastleScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1386072726484" ignored="false" />
+    <file path="$PROJECT_DIR$/../J32_LittleWitchParkour_FuJianDianXin/res/price.txt" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1386073325593" ignored="false" />
+    <file path="$PROJECT_DIR$/../J32_LittleWitchParkour_FuJianDianXin/src/screens/ConfirmScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1386138785406" ignored="false" />
+    <file path="$PROJECT_DIR$/../J32_LittleWitchParkour_AnHuiDianXin/src/screens/ConfirmScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1386153354875" ignored="false" />
+    <file path="$PROJECT_DIR$/../J32_LittleWitchParkour_AnHuiDianXin/package/HW20.xml" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1386143108984" ignored="false" />
+    <file path="$PROJECT_DIR$/../J32_LittleWitchParkour_AnHuiDianXin/src/iptvNet/The9InputScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1386760027546" ignored="false" />
+    <file path="$PROJECT_DIR$/../J32_LittleWitchParkour_AnHuiDianXin/src/screens/SelectingHeroScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1386153354875" ignored="false" />
+    <file path="$PROJECT_DIR$/../J32_LittleWitchParkour_JiangSuDianXin/src/screens/ConfirmScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1386673074093" ignored="false" />
+    <file path="$PROJECT_DIR$/../J32_LittleWitchParkour_JiangSuDianXin/src/iptvNet/The9InputScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1386674566218" ignored="false" />
+    <file path="$PROJECT_DIR$/../J32_LittleWitchParkour_JiangSuDianXin/package/HW20.xml" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1386674956125" ignored="false" />
+    <file path="$PROJECT_DIR$/../../J30_FruitSpy_JiangSuDianXin/packge/HW20.xml" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1386742628828" ignored="false" />
+    <file path="$PROJECT_DIR$/../../J30_FruitSpy_JiangSuDianXin/src/screens/LoadingScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1386746629390" ignored="false" />
+    <file path="$PROJECT_DIR$/../../J30_FruitSpy_JiangSuDianXin/src/screens/MenuScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1386746629390" ignored="false" />
+    <file path="$PROJECT_DIR$/../../J30_FruitSpy_JiangSuDianXin/src/screens/ConfirmScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1386746629390" ignored="false" />
+    <file path="$PROJECT_DIR$/../../J30_FruitSpy_JiangSuDianXin/src/screens/GamingScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1386746629390" ignored="false" />
+    <file path="$PROJECT_DIR$/../../J30_FruitSpy_JiangSuDianXin/src/screens/TipsScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1386746629390" ignored="false" />
+    <file path="$PROJECT_DIR$/../../J30_FruitSpy_JiangSuDianXin/src/screens/SelectHeroScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1386746629390" ignored="false" />
+    <file path="$PROJECT_DIR$/../../J30_FruitSpy_JiangSuDianXin/src/screens/FruitFactoryScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1386746629390" ignored="false" />
+    <file path="$PROJECT_DIR$/../../J30_FruitSpy_JiangSuDianXin/src/Entry/JVMGameCanvas.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1386746629390" ignored="false" />
+    <file path="$PROJECT_DIR$/../../J30_FruitSpy_JiangSuDianXin/src/screens/ResultScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1386746629390" ignored="false" />
+    <file path="$PROJECT_DIR$/../../J30_FruitSpy_JiangSuDianXin/src/screens/TutorialScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1386746629390" ignored="false" />
+    <file path="/TipsOneScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1388023015703" ignored="false" />
+    <file path="/FailureScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1387794694984" ignored="false" />
+    <file path="/LWGameCanvas.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1387797220531" ignored="false" />
+    <file path="/LoadingScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1388021041453" ignored="false" />
+    <file path="/Motion.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1387874726890" ignored="false" />
+    <file path="$PROJECT_DIR$/../../J32_LittleWitchParkour_JiangSuDianXin131214/src/screens/MFairyCastleScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1387862243468" ignored="false" />
+    <file path="/Enemy.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1387869475906" ignored="false" />
+    <file path="$PROJECT_DIR$/../J32_LittleWitchParkour_HuNanDianXin/src/screens/GamingScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1387874697375" ignored="false" />
+    <file path="$PROJECT_DIR$/../J32_LittleWitchParkour_HuNanDianXin/src/motion/Motion.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1387874732515" ignored="false" />
+    <file path="$PROJECT_DIR$/../J32_LittleWitchParkour_HuNanDianXin/src/screens/SelectingPetScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1387874914343" ignored="false" />
+    <file path="$PROJECT_DIR$/../J32_LittleWitchParkour_HuNanDianXin/src/screens/LoadingScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1387875030171" ignored="false" />
+    <file path="$PROJECT_DIR$/../J32_LittleWitchParkour_HuNanDianXin/src/screens/ConfirmScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1387875094671" ignored="false" />
+    <file path="$PROJECT_DIR$/../J32_LittleWitchParkour_HuNanDianXin/src/screens/MFairyCastleScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1387875413015" ignored="false" />
+    <file path="$PROJECT_DIR$/../J32_LittleWitchParkour_HuNanDianXin/src/elements/Enemy.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1387875545296" ignored="false" />
+    <file path="/NetHander.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1387886049593" ignored="false" />
+    <file path="/RankingScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1388455944593" ignored="false" />
+    <file path="/StageScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1388022703750" ignored="false" />
+    <file path="/TipsScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1388023087937" ignored="false" />
+    <file path="/Hero.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1388023626625" ignored="false" />
+    <file path="/Pet.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1388023860359" ignored="false" />
+    <file path="/SuccessScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1388041397812" ignored="false" />
+    <file path="E:/WorkSpace/guangdongdianxing/J32_LittleWitchParkour_JiangSuYouXian1223/src/iptvNet/The9InputScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1388643057843" ignored="false" />
+    <file path="E:/WorkSpace/guangdongdianxing/J32_LittleWitchParkour_JiangSuYouXian1223/src/screens/SelectingPetScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1388643057843" ignored="false" />
+    <file path="E:/WorkSpace/guangdongdianxing/J32_LittleWitchParkour_JiangSuYouXian1223/src/screens/LoadingScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1388643057843" ignored="false" />
+    <file path="E:/WorkSpace/guangdongdianxing/J32_LittleWitchParkour_JiangSuYouXian1223/src/screens/TipsOneScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1388643057843" ignored="false" />
+    <file path="E:/WorkSpace/guangdongdianxing/J32_LittleWitchParkour_JiangSuYouXian1223/src/screens/StageScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1388643057843" ignored="false" />
+    <file path="E:/WorkSpace/guangdongdianxing/J32_LittleWitchParkour_JiangSuYouXian1223/src/screens/SelectingHeroScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1388643057843" ignored="false" />
+    <file path="E:/WorkSpace/guangdongdianxing/J32_LittleWitchParkour_JiangSuYouXian1223/src/screens/ConfirmScreen.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1388643057843" ignored="false" />
+    <file path="$PROJECT_DIR$/src/download/Download.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1388641399156" ignored="false" />
+    <file path="/TestTappyPlane.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1396090730794" ignored="false" />
+    <file path="$PROJECT_DIR$/../../TrollSprites1/src/Entry/LWGameCanvas.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1394940621216" ignored="false" />
+    <file path="$PROJECT_DIR$/../../tools/PackgeData/src/main/java/test140225/JdomReadTest.java" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1394943329537" ignored="false" />
+    <file path="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/OpenTypeHistory.xml" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1396065988157" ignored="false" />
+    <file path="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" changelist="5a58ea91-d6c6-4cdf-94e5-5222014d9898" time="1396065988157" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="false" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="J30_FruitSpy" />
+    <favorites_list name="J32_LittleWitchParkour_Promotion_ShangXiGuangDian140124" />
+    <favorites_list name="TappyPlane" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="blackbirdface0001.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/blackbirdface/blackbirdface0001.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuScreen.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/screens/MenuScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="0" selection-start="1808" selection-end="1808" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Globe.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/Globe.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="75" column="46" selection-start="2667" selection-end="2667" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestDoggyScreen.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/screens/TestDoggyScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="65" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestTappyPlane.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/screens/TestTappyPlane.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="219" column="97" selection-start="7658" selection-end="7658" vertical-scroll-proportion="0.46082088">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MIntmap2.tmx" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/PNG/MIntmap2.tmx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetData.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/GetData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="51" selection-start="1907" selection-end="1907" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map2.tmx" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/PNG/map2.tmx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="35" selection-start="9241" selection-end="9241" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResourceLoader.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/motion/ResourceLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="396" column="54" selection-start="17312" selection-end="17327" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestScreen.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/screens/TestScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="129" column="84" selection-start="4354" selection-end="4354" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/screens/StageScreen.java" />
+        <option value="$PROJECT_DIR$/src/screens/TipsOneScreen.java" />
+        <option value="$PROJECT_DIR$/src/Entry/LWGameCanvas.java" />
+        <option value="$PROJECT_DIR$/src/screens/LoadingScreen.java" />
+        <option value="$PROJECT_DIR$/src/screens/ConfirmScreen.java" />
+        <option value="$PROJECT_DIR$/J32_LittleWitchParkour.jad" />
+        <option value="$PROJECT_DIR$/src/screens/SelectingHeroScreen.java" />
+        <option value="$PROJECT_DIR$/src/screens/MFairyCastleScreen.java" />
+        <option value="$PROJECT_DIR$/src/screens/SelectingPetScreen.java" />
+        <option value="$PROJECT_DIR$/res/PNG/map1.tmx" />
+        <option value="$PROJECT_DIR$/src/screens/TestDoggyScreen.java" />
+        <option value="$PROJECT_DIR$/src/screens/MenuScreen.java" />
+        <option value="$PROJECT_DIR$/src/motion/ResourceLoader.java" />
+        <option value="$PROJECT_DIR$/res/PNG/map2.tmx" />
+        <option value="$PROJECT_DIR$/src/common/GetData.java" />
+        <option value="$PROJECT_DIR$/src/screens/TestTappyPlane.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TappyPlane" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TappyPlane" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FishFeiFei" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TappyPlane" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FishFeiFei" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="screens" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TappyPlane" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FishFeiFei" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TappyPlane" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FishFeiFei" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="motion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TappyPlane" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FishFeiFei" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TappyPlane" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FishFeiFei" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TappyPlane" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FishFeiFei" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhangai" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TappyPlane" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FishFeiFei" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PNG" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TappyPlane" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FishFeiFei" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TappyPlane" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FishFeiFei" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="package" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="GoToClass.includeLibraries" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="screens" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\J2ME\idea\commSc\FishFeiFei\res\PNG" />
+      <recent name="F:\J2ME\idea\commSc\FishFeiFei\res\zhangai" />
+      <recent name="F:\J2ME\idea\commSc\FishFeiFei\res" />
+      <recent name="F:\J2ME\idea\commSc\TappyPlane\res" />
+      <recent name="F:\J2ME\idea\commSc\TappyPlane\res\PNG" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="screens" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <list size="0" />
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="true">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="false">C:\Documents and Settings\Administrator.MICROSOF-E2D484\Application Data\Subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="F:\J2ME\idea\commSc\FishFeiFei" />
+          <option name="myCopyRoot" value="F:\J2ME\idea\commSc\FishFeiFei" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="F:\J2ME\idea\commSc\FishFeiFei\.idea" />
+          <option name="myCopyRoot" value="F:\J2ME\idea\commSc\FishFeiFei\.idea" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="F:\J2ME\idea\commSc\FishFeiFei" />
+          <option name="myCopyRoot" value="F:\J2ME\idea\commSc\FishFeiFei" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a49c8262-3b0c-4123-8a51-65bba69ef5c7" name="Default" comment="" />
+      <created>1384481383093</created>
+      <updated>1384481383093</updated>
+    </task>
+    <task id="LOCAL-00001" summary="上传配置文件更新">
+      <created>1384482392109</created>
+      <updated>1384482392109</updated>
+    </task>
+    <task id="LOCAL-00002" summary="更新HW20.xml文件">
+      <created>1384483520093</created>
+      <updated>1384483520093</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fixed-1、光标不能默认在魔仙堡上。一定要默认在“开始”上。">
+      <created>1384484531093</created>
+      <updated>1384484531093</updated>
+    </task>
+    <task id="LOCAL-00004" summary="更改menuScreen里的背景图片">
+      <created>1384491658109</created>
+      <updated>1384491658109</updated>
+    </task>
+    <task id="LOCAL-00005" summary="menuScreen里的背景图片再修改">
+      <created>1384492383109</created>
+      <updated>1384492383109</updated>
+    </task>
+    <task id="LOCAL-00006" summary="分开“退出”，“开始”两个按钮以防误点&#10;">
+      <created>1384493349171</created>
+      <updated>1384493349171</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fixed-人物选择界面 3、人物售价后要加上“代币”单位。">
+      <created>1384495255093</created>
+      <updated>1384495255093</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fixed-人物选择界面1、美琪设计是免费的，那就请写免费，不要标”已购“和”12“字眼。">
+      <created>1384500712109</created>
+      <updated>1384500712109</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fixed-宠物选择界面&#10;      1、光标默认在第二个宠物身上。&#10;      2、光标移动时，会将同列的所有宠物下的”购买“按钮，变成同一颜色。">
+      <created>1384505337109</created>
+      <updated>1384505337109</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fixed-人物选择界面&#10;    2、光标默认在”美雪“身上。">
+      <created>1384511028093</created>
+      <updated>1384511028093</updated>
+    </task>
+    <task id="LOCAL-00011" summary="改小图片里的字体">
+      <created>1384741318156</created>
+      <updated>1384741318156</updated>
+    </task>
+    <task id="LOCAL-00012" summary="免费的不显示“代币”字样">
+      <created>1384742414109</created>
+      <updated>1384742414109</updated>
+    </task>
+    <task id="LOCAL-00013" summary="匹配“退出”和“排行榜”按钮的动作">
+      <created>1384742754093</created>
+      <updated>1384742754093</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fixed -- 1、帮助中的复活会扣费，同时后台有相应的消费记录；">
+      <created>1384755053156</created>
+      <updated>1384755053156</updated>
+    </task>
+    <task id="LOCAL-00015" summary="如果是教程关，则在确认界面里把hero的状态修改为复活">
+      <created>1384755544109</created>
+      <updated>1384755544109</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Merge from src">
+      <created>1384757836109</created>
+      <updated>1384757836109</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fixed - 1、进入帮助之后，完成教程；进入魔仙堡按训练无任何反应；">
+      <created>1384760422093</created>
+      <updated>1384760422093</updated>
+    </task>
+    <task id="LOCAL-00018" summary="fixed - 1、进入帮助之后，完成教程；进入魔仙堡按训练无任何反应；">
+      <created>1384761381187</created>
+      <updated>1384761381187</updated>
+    </task>
+    <task id="LOCAL-00019" summary="湖北修改重新上传">
+      <created>1384844831109</created>
+      <updated>1384844831109</updated>
+    </task>
+    <task id="LOCAL-00020" summary="1,menuScreen界面按钮循序调整；2，confirmScreen按钮循序调换；3，宠物界面“购买”选中颜色与其它按钮统一；">
+      <created>1385000917203</created>
+      <updated>1385000917203</updated>
+    </task>
+    <task id="LOCAL-00021" summary="menuBG.JPG图片扩展名修改">
+      <created>1385001087109</created>
+      <updated>1385001087109</updated>
+    </task>
+    <task id="LOCAL-00022" summary="调整menuBG默认选中按钮">
+      <created>1385001320109</created>
+      <updated>1385001320109</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Revert: 1,menuScreen界面按钮循序调整；2，confirmScreen按钮循序调换；3，宠物界面“购买”选中颜色与其它按钮统一；">
+      <created>1385001669093</created>
+      <updated>1385001669093</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Revert: Revert: 1,menuScreen界面按钮循序调整；2，confirmScreen按钮循序调换；3，宠物界面“购买”选中颜色与其它按钮统一；">
+      <created>1385002398109</created>
+      <updated>1385002398109</updated>
+    </task>
+    <task id="LOCAL-00025" summary="1，购买宠物界面增加“使用”按钮；2，调节menuscreen开始按钮位置；">
+      <created>1385019958109</created>
+      <updated>1385019958109</updated>
+    </task>
+    <task id="LOCAL-00026" summary="1、复活价格为0代币？？？？，且按确定复活不成功（有代币）；2、帮助中不正确，进去直接进入游戏了；">
+      <created>1385023967609</created>
+      <updated>1385023967609</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Revert: 1，购买宠物界面增加“使用”按钮；2，调节menuscreen开始按钮位置；">
+      <created>1385024543109</created>
+      <updated>1385024543109</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Revert: Revert: 1，购买宠物界面增加“使用”按钮；2，调节menuscreen开始按钮位置；">
+      <created>1385025467109</created>
+      <updated>1385025467109</updated>
+    </task>
+    <task id="LOCAL-00029" summary="revert江苏有线测试修改">
+      <created>1386050252109</created>
+      <updated>1386050252109</updated>
+    </task>
+    <task id="LOCAL-00030" summary="修改HW20.xml">
+      <created>1386051790109</created>
+      <updated>1386051790109</updated>
+    </task>
+    <task id="LOCAL-00031" summary="修改直充界面">
+      <created>1386058447125</created>
+      <updated>1386058447125</updated>
+    </task>
+    <task id="LOCAL-00032" summary="修改直充界面">
+      <created>1386060364093</created>
+      <updated>1386060364093</updated>
+    </task>
+    <task id="LOCAL-00033" summary="修改直充界面">
+      <created>1386061616109</created>
+      <updated>1386061616109</updated>
+    </task>
+    <task id="LOCAL-00034" summary="修改直充界面">
+      <created>1386068119109</created>
+      <updated>1386068119109</updated>
+    </task>
+    <task id="LOCAL-00035" summary="修改直充界面">
+      <created>1386068521109</created>
+      <updated>1386068521109</updated>
+    </task>
+    <task id="LOCAL-00036" summary="修改直充界面">
+      <created>1386068641109</created>
+      <updated>1386068641109</updated>
+    </task>
+    <task id="LOCAL-00037" summary="1，修改直充界面；2，修改魔仙堡issue；">
+      <created>1386073269109</created>
+      <updated>1386073269109</updated>
+    </task>
+    <task id="LOCAL-00038" summary="修改价格">
+      <created>1386073368109</created>
+      <updated>1386073368109</updated>
+    </task>
+    <task id="LOCAL-00039" summary="解决1，B700、600帮助进去，人物会死掉且提示复活（此问题只在机顶盒上出现）；">
+      <created>1386592614109</created>
+      <updated>1386592614109</updated>
+    </task>
+    <task id="LOCAL-00040" summary="解决2，下图标注处，字体调大，颜色换个鲜亮的；">
+      <created>1386593060109</created>
+      <updated>1386593060109</updated>
+    </task>
+    <task id="LOCAL-00041" summary="解决2，另：购买：购买人物：小蓝，两个购买显的怪怪的；">
+      <created>1386593382093</created>
+      <updated>1386593382093</updated>
+    </task>
+    <task id="LOCAL-00042" summary="改confirm目录下的图片从服务器下载">
+      <created>1386640437093</created>
+      <updated>1386640437093</updated>
+    </task>
+    <task id="LOCAL-00043" summary="拼写错误修改">
+      <created>1386666617109</created>
+      <updated>1386666617109</updated>
+    </task>
+    <task id="LOCAL-00044" summary="在所有clear()方法里加Runtime.getRuntime().gc();">
+      <created>1387330454156</created>
+      <updated>1387330454156</updated>
+    </task>
+    <task id="LOCAL-00045" summary="游戏界面 名字显示错误的问题">
+      <created>1387330684109</created>
+      <updated>1387330684109</updated>
+    </task>
+    <task id="LOCAL-00046" summary="把2次蓝色充值确认界面提取到了The9InputScreen类里">
+      <created>1387357228093</created>
+      <updated>1387357228093</updated>
+    </task>
+    <task id="LOCAL-00047" summary="把&quot;buyindex&quot;从ConfirmScreen传到The9InputScreen">
+      <created>1387357813093</created>
+      <updated>1387357813093</updated>
+    </task>
+    <task id="LOCAL-00048" summary="改为填充弹出框">
+      <created>1387786341093</created>
+      <updated>1387786341093</updated>
+    </task>
+    <task id="LOCAL-00049" summary="改为填充弹出框">
+      <created>1387786712109</created>
+      <updated>1387786712109</updated>
+    </task>
+    <task id="LOCAL-00050" summary="1,加载去掉绿尾巴；2，FailureScreen改为填充色弹出框；">
+      <created>1387790931109</created>
+      <updated>1387790931109</updated>
+    </task>
+    <task id="LOCAL-00051" summary="失败界面调整">
+      <created>1387794975093</created>
+      <updated>1387794975093</updated>
+    </task>
+    <task id="LOCAL-00052" summary="0键，ok键增加延时">
+      <created>1387797462093</created>
+      <updated>1387797462093</updated>
+    </task>
+    <task id="LOCAL-00053" summary="0键，ok键增加延时">
+      <created>1387799041093</created>
+      <updated>1387799041093</updated>
+    </task>
+    <task id="LOCAL-00054" summary="1，motion图片资源释放；2，the9Input界面返回；">
+      <created>1387859411093</created>
+      <updated>1387859411093</updated>
+    </task>
+    <task id="LOCAL-00055" summary="改为江苏有线的2次充值确认界面">
+      <created>1387861866109</created>
+      <updated>1387861866109</updated>
+    </task>
+    <task id="LOCAL-00056" summary="魔仙堡图片资源释放修改">
+      <created>1387862472093</created>
+      <updated>1387862472093</updated>
+    </task>
+    <task id="LOCAL-00057" summary="消除enemy重复图片实例化">
+      <created>1387865836093</created>
+      <updated>1387865836093</updated>
+    </task>
+    <task id="LOCAL-00058" summary="消除enemy重复图片实例化">
+      <created>1387871112093</created>
+      <updated>1387871112093</updated>
+    </task>
+    <task id="LOCAL-00059" summary="1,调整价格；2,去掉&quot;余额&quot;字样；">
+      <created>1387872426093</created>
+      <updated>1387872426093</updated>
+    </task>
+    <task id="LOCAL-00060" summary="1.加速道具掉下来的数值一直屏幕中显示，不消失；2.排行榜文字显示异常；">
+      <created>1387886257109</created>
+      <updated>1387886257109</updated>
+    </task>
+    <task id="LOCAL-00061" summary="解决会卡死的问题">
+      <created>1387953848125</created>
+      <updated>1387953848125</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Revert: 解决会卡死的问题">
+      <created>1387953943093</created>
+      <updated>1387953943093</updated>
+    </task>
+    <task id="LOCAL-00063" summary="去除火球提示">
+      <created>1387955580093</created>
+      <updated>1387955580093</updated>
+    </task>
+    <task id="LOCAL-00064" summary="1，宠物界面未释放图片资源释放；2，游戏界面暂停图片去除；">
+      <created>1387960758109</created>
+      <updated>1387960758109</updated>
+    </task>
+    <task id="LOCAL-00065" summary="长时间游戏卡死问题试解">
+      <created>1388023274109</created>
+      <updated>1388023274109</updated>
+    </task>
+    <task id="LOCAL-00066" summary="长时间游戏卡死问题试解">
+      <created>1388025202109</created>
+      <updated>1388025202109</updated>
+    </task>
+    <task id="LOCAL-00067" summary="去掉游戏中所以的System.out.println();">
+      <created>1388027629109</created>
+      <updated>1388027629109</updated>
+    </task>
+    <task id="LOCAL-00068" summary="长时间游戏卡死问题试解">
+      <created>1388028258093</created>
+      <updated>1388028258093</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Revert: 长时间游戏卡死问题试解">
+      <created>1388037379093</created>
+      <updated>1388037379093</updated>
+    </task>
+    <task id="LOCAL-00070" summary="火球改为在游戏界面加载时实例化">
+      <created>1388041086093</created>
+      <updated>1388041086093</updated>
+    </task>
+    <task id="LOCAL-00071" summary="卡死问题试解--胜利界面优化">
+      <created>1388041493093</created>
+      <updated>1388041493093</updated>
+    </task>
+    <task id="LOCAL-00072" summary="卡死问题试解--胜利界面优化">
+      <created>1388042092109</created>
+      <updated>1388042092109</updated>
+    </task>
+    <task id="LOCAL-00073" summary="卡死问题试解--胜利界面合并到游戏界面中">
+      <created>1388043223093</created>
+      <updated>1388043223093</updated>
+    </task>
+    <task id="LOCAL-00074" summary="卡死问题试解--胜利界面合并到游戏界面中">
+      <created>1388043524093</created>
+      <updated>1388043524093</updated>
+    </task>
+    <task id="LOCAL-00075" summary="卡死问题试解--胜利界面合并到游戏界面中">
+      <created>1388044067093</created>
+      <updated>1388044067093</updated>
+    </task>
+    <task id="LOCAL-00076" summary="卡死问题试解--消费确认界面合并到游戏界面中">
+      <created>1388050977109</created>
+      <updated>1388050977109</updated>
+    </task>
+    <task id="LOCAL-00077" summary="卡死问题试解--消费确认界面合并到游戏界面中">
+      <created>1388052558109</created>
+      <updated>1388052558109</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Revert: 解决会卡死的问题">
+      <created>1388054385093</created>
+      <updated>1388054385093</updated>
+    </task>
+    <task id="LOCAL-00079" summary="卡死问题试解--消费确认界面合并到游戏界面中">
+      <created>1388055851109</created>
+      <updated>1388055851109</updated>
+    </task>
+    <task id="LOCAL-00080" summary="1,宠物选择界面，未购买也会打勾；">
+      <created>1388057016109</created>
+      <updated>1388057016109</updated>
+    </task>
+    <task id="LOCAL-00081" summary="1,宠物选择界面，未购买也会打勾；">
+      <created>1388057146093</created>
+      <updated>1388057146093</updated>
+    </task>
+    <task id="LOCAL-00082" summary="江苏有线初步调通版本">
+      <created>1388109773109</created>
+      <updated>1388109773109</updated>
+    </task>
+    <task id="LOCAL-00083" summary="江苏有线初步调通版本">
+      <created>1388109868109</created>
+      <updated>1388109868109</updated>
+    </task>
+    <task id="LOCAL-00084" summary="江苏有线初步调通版本">
+      <created>1388113069109</created>
+      <updated>1388113069109</updated>
+    </task>
+    <task id="LOCAL-00085" summary="江苏有线初步调通版本">
+      <created>1388120821093</created>
+      <updated>1388120821093</updated>
+    </task>
+    <task id="LOCAL-00086" summary="解决宠物抵命护盾框无法出现的问题">
+      <created>1388126726093</created>
+      <updated>1388126726093</updated>
+    </task>
+    <task id="LOCAL-00087" summary="Revert: 江苏有线初步调通版本">
+      <created>1388126772093</created>
+      <updated>1388126772093</updated>
+    </task>
+    <task id="LOCAL-00088" summary="试解关卡因排关卡死难题">
+      <created>1388127576093</created>
+      <updated>1388127576093</updated>
+    </task>
+    <task id="LOCAL-00089" summary="试解胜利界面卡死问题">
+      <created>1388128634093</created>
+      <updated>1388128634093</updated>
+    </task>
+    <task id="LOCAL-00090" summary="试解关卡因排关卡死难题---改跑道路段从服务器下载为加在jar包中；">
+      <created>1388129170109</created>
+      <updated>1388129170109</updated>
+    </task>
+    <task id="LOCAL-00091" summary="试解胜利界面卡死问题">
+      <created>1388134259109</created>
+      <updated>1388134259109</updated>
+    </task>
+    <task id="LOCAL-00092" summary="去掉宠物选择界面">
+      <created>1388380839140</created>
+      <updated>1388380839140</updated>
+    </task>
+    <task id="LOCAL-00093" summary="修复--游戏中英雄复活弹出界面，按“返回”转向“游戏失败”弹出界面">
+      <created>1388382032093</created>
+      <updated>1388382032093</updated>
+    </task>
+    <task id="LOCAL-00094" summary="修复--游戏中英雄复活2次弹出界面，按“返回”转向“游戏失败”弹出界面">
+      <created>1388382481109</created>
+      <updated>1388382481109</updated>
+    </task>
+    <task id="LOCAL-00095" summary="改不必要的静态变量为非静态变量">
+      <created>1388457853156</created>
+      <updated>1388457853156</updated>
+    </task>
+    <task id="LOCAL-00096" summary="改不必要的静态变量为非静态变量">
+      <created>1388472037093</created>
+      <updated>1388472037093</updated>
+    </task>
+    <task id="LOCAL-00097" summary="充值确认界面去掉“需充值。。。”字样">
+      <created>1388627021156</created>
+      <updated>1388627021156</updated>
+    </task>
+    <task id="LOCAL-00098" summary="revert去掉宠物选择界面">
+      <created>1388641828093</created>
+      <updated>1388641828093</updated>
+    </task>
+    <task id="LOCAL-00099" summary="魔仙堡角色训练界面加入到游戏主流程">
+      <created>1388644982109</created>
+      <updated>1388644982109</updated>
+    </task>
+    <task id="LOCAL-00100" summary="宠物选择界面初步修改">
+      <created>1388654185125</created>
+      <updated>1388654185125</updated>
+    </task>
+    <task id="LOCAL-00101" summary="宠物选择界面动画初步布局">
+      <created>1388657517109</created>
+      <updated>1388657517109</updated>
+    </task>
+    <task id="LOCAL-00102" summary="增加宠物选中色块">
+      <created>1388714271203</created>
+      <updated>1388714271203</updated>
+    </task>
+    <task id="LOCAL-00103" summary="增加宠物选中色块">
+      <created>1388716401093</created>
+      <updated>1388716401093</updated>
+    </task>
+    <task id="LOCAL-00104" summary="实现: -- 1，宠物选择界面，选中移出3格时，新移入的宠物一格一格地移入；">
+      <created>1388725689109</created>
+      <updated>1388725689109</updated>
+    </task>
+    <task id="LOCAL-00105" summary="实现: -- 1，宠物选择界面，选中移出3格时，新移入的宠物一格一格地移入；">
+      <created>1388728533109</created>
+      <updated>1388728533109</updated>
+    </task>
+    <task id="LOCAL-00106" summary="实现: -- 1，宠物选择界面，选中移出3格时，新移入的宠物一格一格地移入；">
+      <created>1388729742093</created>
+      <updated>1388729742093</updated>
+    </task>
+    <task id="LOCAL-00107" summary="实现: -- 1，宠物选择界面，选中移出3格时，新移入的宠物一格一格地移入；">
+      <created>1388732194109</created>
+      <updated>1388732194109</updated>
+    </task>
+    <task id="LOCAL-00108" summary="实现 -- 2, 加上双向箭头；">
+      <created>1388736155109</created>
+      <updated>1388736155109</updated>
+    </task>
+    <task id="LOCAL-00109" summary="实现 -- 选框中宠物和演示窗中宠物联动；">
+      <created>1388737852109</created>
+      <updated>1388737852109</updated>
+    </task>
+    <task id="LOCAL-00110" summary="解决宠物上下移动混乱的问题">
+      <created>1388979044109</created>
+      <updated>1388979044109</updated>
+    </task>
+    <task id="LOCAL-00111" summary="解决选中一系宠物，转到另一系宠物，前一系宠物选中被破坏的问题">
+      <created>1388980238093</created>
+      <updated>1388980238093</updated>
+    </task>
+    <task id="LOCAL-00112" summary="为宠物取了名字">
+      <created>1388988115109</created>
+      <updated>1388988115109</updated>
+    </task>
+    <task id="LOCAL-00113" summary="删除多余代码">
+      <created>1388988476109</created>
+      <updated>1388988476109</updated>
+    </task>
+    <task id="LOCAL-00114" summary="增加宠物属性描述">
+      <created>1388990781109</created>
+      <updated>1388990781109</updated>
+    </task>
+    <task id="LOCAL-00115" summary="魔仙堡修改">
+      <created>1388996705093</created>
+      <updated>1388996705125</updated>
+    </task>
+    <task id="LOCAL-00116" summary="各个界面切换调通">
+      <created>1388997961093</created>
+      <updated>1388997961093</updated>
+    </task>
+    <task id="LOCAL-00117" summary="增加“购买”，“使用”按钮">
+      <created>1388999434093</created>
+      <updated>1388999434093</updated>
+    </task>
+    <task id="LOCAL-00118" summary="选中宠物打勾">
+      <created>1389001460109</created>
+      <updated>1389001460109</updated>
+    </task>
+    <task id="LOCAL-00119" summary="代码重构">
+      <created>1389006917093</created>
+      <updated>1389006917093</updated>
+    </task>
+    <task id="LOCAL-00120" summary="宠物选择界面“返回”按钮按下后，改为转到魔仙堡">
+      <created>1389007442140</created>
+      <updated>1389007442140</updated>
+    </task>
+    <task id="LOCAL-00121" summary="可以移动到“返回”，“进入游戏”按钮上了">
+      <created>1389009945109</created>
+      <updated>1389009945109</updated>
+    </task>
+    <task id="LOCAL-00122" summary="“返回”，“进入游戏”按钮功能实现">
+      <created>1389010724093</created>
+      <updated>1389010724093</updated>
+    </task>
+    <task id="LOCAL-00123" summary="“返回”，“进入游戏”按钮功能实现">
+      <created>1389011494109</created>
+      <updated>1389011494109</updated>
+    </task>
+    <task id="LOCAL-00124" summary="修复宠物购买功能">
+      <created>1389059330171</created>
+      <updated>1389059330171</updated>
+    </task>
+    <task id="LOCAL-00125" summary="陕西广电版修改">
+      <created>1390702767187</created>
+      <updated>1390702767187</updated>
+    </task>
+    <task id="LOCAL-00126" summary="改为“有线”账单">
+      <created>1390704353109</created>
+      <updated>1390704353109</updated>
+    </task>
+    <task id="LOCAL-00127" summary="initial core version">
+      <created>1394894717111</created>
+      <updated>1394894717111</updated>
+    </task>
+    <task id="LOCAL-00128" summary="initial core version">
+      <created>1394894817143</created>
+      <updated>1394894817143</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.53162396" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5449516" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918397" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.64444447" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918397" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21162124" sideWeight="0.35408023" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20833333" sideWeight="0.35555556" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6569848" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Analyze Dataflow to" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918397" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial core version" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="魔仙堡角色训练界面加入到游戏主流程" />
+    <MESSAGE value="宠物选择界面初步修改" />
+    <MESSAGE value="宠物选择界面动画初步布局" />
+    <MESSAGE value="增加宠物选中色块" />
+    <MESSAGE value="实现: -- 1，宠物选择界面，选中移出3格时，新移入的宠物一格一格地移入；" />
+    <MESSAGE value="实现 -- 2, 加上双向箭头；" />
+    <MESSAGE value="实现 -- 选框中宠物和演示窗中宠物联动；" />
+    <MESSAGE value="解决宠物上下移动混乱的问题" />
+    <MESSAGE value="解决选中一系宠物，转到另一系宠物，前一系宠物选中被破坏的问题" />
+    <MESSAGE value="为宠物取了名字" />
+    <MESSAGE value="删除多余代码" />
+    <MESSAGE value="增加宠物属性描述" />
+    <MESSAGE value="魔仙堡修改" />
+    <MESSAGE value="各个界面切换调通" />
+    <MESSAGE value="增加“购买”，“使用”按钮" />
+    <MESSAGE value="选中宠物打勾" />
+    <MESSAGE value="代码重构" />
+    <MESSAGE value="宠物选择界面“返回”按钮按下后，改为转到魔仙堡" />
+    <MESSAGE value="可以移动到“返回”，“进入游戏”按钮上了" />
+    <MESSAGE value="“返回”，“进入游戏”按钮功能实现" />
+    <MESSAGE value="修复宠物购买功能" />
+    <MESSAGE value="陕西广电版修改" />
+    <MESSAGE value="改为“有线”账单" />
+    <MESSAGE value="revert江苏有线测试修改" />
+    <MESSAGE value="initial core version" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/res/PNG/UI/UIbg.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/PNG/UI/medalBronze.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/PNG/UI/buttonSmall.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/PNG/UI/buttonLarge.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/blackbirdface/blackbirdface0001.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screens/TestScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="129" column="84" selection-start="4354" selection-end="4354" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/PNG/blue_button00.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/PNG/background.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Globe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="46" selection-start="2667" selection-end="2667" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screens/MenuScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="0" selection-start="1808" selection-end="1808" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/motion/ResourceLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="396" column="54" selection-start="17312" selection-end="17327" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/PNG/map2.tmx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="35" selection-start="9241" selection-end="9241" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/GetData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="51" selection-start="1907" selection-end="1907" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/PNG/MIntmap2.tmx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screens/TestDoggyScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="65" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screens/TestTappyPlane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="219" column="97" selection-start="7658" selection-end="7658" vertical-scroll-proportion="0.46082088">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>TappyPlane</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Winside</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+

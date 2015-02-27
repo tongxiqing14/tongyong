@@ -1,0 +1,46 @@
+package screens;
+
+import Entry.LWGameCanvas;
+import common.Globe;
+import common.Screen;
+
+import javax.microedition.lcdui.Graphics;
+import javax.microedition.lcdui.Image;
+
+/**
+ * Created by tongxiqing on 2015/2/2.
+ */
+public class SuccessScreen extends Screen {
+
+    Image successfailure_img;
+    Image success_img;
+
+    public SuccessScreen(int screenId) {
+        super(screenId);
+    }
+
+    //    @java.lang.Override
+    public void init() {
+        successfailure_img = Globe.getImage("menu/successfailure.png");
+        success_img = Globe.getImage("menu/success.png");
+    }
+
+    //    @java.lang.Override
+    public void update() {
+
+    }
+
+    //    @java.lang.Override
+    public void draw(Graphics g) {
+
+        g.drawImage(successfailure_img, 100, 100, Globe.ANCHOR_T_L);
+        g.drawImage(success_img, 150, 100, Globe.ANCHOR_T_L);
+    }
+
+    //    @java.lang.Override
+    public void clear() {
+        successfailure_img = null;
+        success_img = null;
+        Runtime.getRuntime().gc();
+    }
+}

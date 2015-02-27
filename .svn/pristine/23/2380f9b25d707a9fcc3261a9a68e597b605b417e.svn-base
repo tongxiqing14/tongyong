@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
+  <component name="IdProvider" IDEtalkID="DC5CDFA5025E40C582E68B3BA617512F" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="Sun Java(TM) Wireless Toolkit 2.5.2_01 for CLDC" project-jdk-type="MobileSDK">
+    <output url="file://$PROJECT_DIR$/classes" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="myConfigurationMap">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="branchUrls">
+                <list>
+                  <option value="http://192.168.241.103/svn/JavaGame/Client/Single/J32_LittleWitchParkour/J32_LittleWitchParkour" />
+                </list>
+              </option>
+              <option name="trunkUrl" value="http://192.168.241.103/svn/JavaGame/Client/Single/J32_LittleWitchParkour_HuBeiDianXin" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="mySupportsUserInfoFilter" value="true" />
+  </component>
+</project>
+

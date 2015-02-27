@@ -1,0 +1,98 @@
+package screens;
+
+//import Entry.LWGameCanvas;
+import Entry.LWGameCanvas;
+import common.Globe;
+import common.NetInfo;
+import common.Screen;
+import iptvNet.IptvNetException;
+import motion.Motion;
+import org.json.me.JSONException;
+
+import javax.microedition.io.ConnectionNotFoundException;
+import javax.microedition.lcdui.Graphics;
+import javax.microedition.lcdui.Image;
+
+/**
+ * Created by tongxiqing on 2015/2/2.
+ */
+public class SuccessScreen extends Screen {
+
+    Image successfailure_img;
+    Image success_img;
+    Image que_img;
+    Image mouse_img;
+
+    Motion mouse_motion;
+
+    public SuccessScreen(int screenId) {
+        super(screenId);
+        mouse_motion = new Motion("/menu/mouse.anu",250,290);
+        mouse_motion.keepId(0);
+    }
+
+    //    @java.lang.Override
+    public void init() {
+        successfailure_img = Globe.getImage("menu/successfailure.png");
+        success_img = Globe.getImage("menu/success.png");
+        que_img = Globe.getImage("menu/que.png");
+        mouse_img = Globe.getImage("menu/mouse.png");
+    }
+
+    boolean mustExit = false;
+
+    //    @java.lang.Override
+    public void update() {
+        mouse_motion.keepId(0);
+        mouse_motion.update(250,290);
+
+        if(LWGameCanvas.iskeyPressed(Globe.M_KEY_OK)){
+
+            try {
+                NetInfo.netHander.screenToPageAction("teamscreen.jsp");
+            } catch (JSONException e) {
+                e.printStackTrace();
+            } catch (IptvNetException e) {
+                e.printStackTrace();
+            }
+
+//            try {
+//
+//                mustExit = LWGameCanvas.rmidlet.platformRequest(LWGameCanvas.rmidlet.getAppProperty("return_url")+"/teamscreen.jsp");
+//            } catch (ConnectionNotFoundException e) {
+//                e.printStackTrace();
+//            }
+//
+//            if(mustExit){
+//                LWGameCanvas.rmidlet.notifyDestroyed();
+//                LWGameCanvas.rmidlet.exit();
+//            }
+            LWGameCanvas.isExit = true;
+        }
+    }
+
+    //    @java.lang.Override
+    public void draw(Graphics g) {
+
+        g.setColor(0xffffff);
+
+        g.drawImage(successfailure_img, 100, 100, Globe.ANCHOR_T_L);
+        g.drawImage(success_img, 190, 40, Globe.ANCHOR_T_L);
+
+        g.drawImage(que_img, 210, 300, Globe.ANCHOR_T_L);
+
+        mouse_motion.draw(g);
+
+//        g.setColor(0x000000);
+    }
+
+    //    @java.lang.Override
+    public void clear() {
+        successfailure_img = null;
+        success_img = null;
+        que_img = null;
+        mouse_img = null;
+        Motion.clear();
+        Runtime.getRuntime().gc();
+    }
+}

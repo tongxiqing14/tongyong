@@ -1,0 +1,26 @@
+package elements;
+
+import motion.Motion;
+
+import javax.microedition.lcdui.Graphics;
+
+/**
+ * Created by tongxiqing on 2015/2/25.
+ */
+public class PointCoco implements Effect{
+
+    private Motion Point_fire_motion;
+
+    public PointCoco(int id, int falling_fire_x, int falling_fire_y) {
+        Point_fire_motion = new Motion("/effect2/point_Coco/eff_point_Coco_atk.anu",falling_fire_x,falling_fire_y);
+        Point_fire_motion.keepId(0);
+    }
+
+    public void update(int falling_fire_y) {
+        Point_fire_motion.keepId(0);
+    }
+
+    public void draw(Graphics g) {
+        Point_fire_motion.draw(g);
+    }
+}

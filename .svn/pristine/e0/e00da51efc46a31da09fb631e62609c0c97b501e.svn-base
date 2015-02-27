@@ -1,0 +1,98 @@
+/*
+ * COPYRIGHT - MOTIONWELDER
+ */
+package motion;
+
+import javax.microedition.lcdui.Image;
+import javax.microedition.lcdui.game.Sprite;
+
+import motion.studio.MSpriteImageLoader;
+
+import common.Globe;
+
+
+
+/**
+ * Resource Loader: Class to load Images
+ * @author Nitin Pokar (pokar.nitin@gmail.com)
+ *
+ */
+public class ResourceLoader implements MSpriteImageLoader{
+
+    /** Making Class Singleton */
+    static private ResourceLoader resourceLoader;
+    private ResourceLoader(){}
+
+    static public ResourceLoader getInstance(){
+        if(resourceLoader==null){
+            resourceLoader = new ResourceLoader();
+        }
+        return resourceLoader;
+    }
+
+    /**
+     *  Function : LoadImage will be called while loading .anu.
+     *  This version of Load Image will be called when .anu is loaded without chopping images
+     *  In this example we have not loaded any .anu where we have passed false to MSpriteLoader, hence this function will never be called
+     */
+    public Image loadImage(String spriteName,int imageId){
+        // determine whether i need flipped version in my game
+        Image baseImage=null;
+
+        if (spriteName.equals("/hero/red/red.anu")) {
+            baseImage = Globe.getImage("hero/red/action"+(imageId+1)+"_06.png");
+        }else if (spriteName.equals("/hero/red/red_h.anu")) {
+            baseImage = Globe.getImage("hero/red/action"+(imageId+1)+"_06.png");
+        }else if (spriteName.equals("/follow/left/2/left_atack_2.anu")) {
+            baseImage = Globe.getImage("follow/left/2/2atack"+imageId+".png");
+        }else if (spriteName.equals("/follow/left/2/left_atack_2_h.anu")) {
+            baseImage = Globe.getImage("follow/left/2/2atack"+imageId+".png");
+        }else if (spriteName.equals("/follow/left/1/renwu_huonv.anu")) {
+            baseImage = Globe.getImage("follow/left/1/renwu"+(imageId+1)+"_03.png");
+        }else if (spriteName.equals("/follow/left/1/renwu_huonv_h.anu")) {
+            baseImage = Globe.getImage("follow/left/1/renwu"+(imageId+1)+"_03.png");
+        }else if (spriteName.equals("/dead/dead.anu")) {
+            baseImage = Globe.getImage("dead/siwangyan"+(imageId+1)+".png");
+        }else if (spriteName.equals("/effect2/atomic.elect/atomic.elec.anu")) {
+            baseImage = Globe.getImage("effect2/atomic.elect/atomic_elect"+imageId+".png");
+        }else if (spriteName.equals("/effect2/lava.serie/falling.fire/falling_fire.anu")) {
+            baseImage = Globe.getImage("effect2/lava.serie/falling.fire/falling.fire"+imageId+".png");
+        }else if (spriteName.equals("/effect2/point_Coco/eff_point_Coco_atk.anu")) {
+            baseImage = Globe.getImage("effect2/point_Coco/eff_point_Coco_atk"+(imageId+1)+".png");
+        }else if (spriteName.equals("/effect2/gripper/gripper.anu")) {
+            baseImage = Globe.getImage("effect2/gripper/gripper"+(imageId+1)+".png");
+        }else if (spriteName.equals("/menu/mouse.anu")) {
+            baseImage = Globe.getImage("menu/mouse.png");
+        }
+
+        return baseImage;
+    }
+
+    /**
+     *  If you are using Nokia DirectGraphics, please don't load flipped image, Instead modify MPlayer to flip it at runtime
+     *
+     *  Function : LoadImageClip will be called while loading .anu.
+     *  This version of Load Image will be called when .anu is loaded with chopped images
+     *  In this example we have loaded .anu with passing true in MSpriteLoader, hence this function will be called
+     */
+//	public Vector tempVector=new Vector();
+    public Image loadImageClip(String spriteName,Image img,int x,int y,int w,int h,int orientationUsedInStudio){
+        Image image = Image.createImage(img,x,y,w,h,Sprite.TRANS_NONE);
+        return image;
+    }
+
+    public static Image loadImage(String str){
+        try{
+            return Image.createImage(str);
+        }catch (Exception e) {
+            //System.out.println("Error loading Image " + str);
+        }
+        return null;
+    }
+
+    public static Image downloadImage(String str){
+        Image img = null;
+        img = Globe.download.creatImage(str);
+        return img;
+    }
+}

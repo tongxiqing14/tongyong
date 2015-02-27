@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager" forced_jdk="true">
+    <libelement value="file://C:/KEmulator1.00/KEmulator.jar" />
+    <libelement value="file://C:/KEmulator1.00/Winside.jar" />
+    <conelement value="J2MELIB" />
+    <src_description expected_position="3">
+      <src_folder value="file://$MODULE_DIR$/src" expected_position="2" />
+      <src_folder value="file://$MODULE_DIR$/res" expected_position="3" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/res" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="module-library">
+      <library name="KEmulator.jar">
+        <CLASSES>
+          <root url="file://C:/KEmulator1.00/KEmulator.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Winside.jar">
+        <CLASSES>
+          <root url="file://C:/KEmulator1.00/Winside.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="J2MELIB" level="application" />
+  </component>
+</module>
+

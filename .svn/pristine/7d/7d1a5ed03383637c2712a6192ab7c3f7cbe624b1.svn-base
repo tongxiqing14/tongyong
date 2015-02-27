@@ -1,0 +1,16 @@
+ADAccount: youqianren
+Account: 45f3814b8fed6b6
+GameID: 100530
+ImageURL: http://192.168.241.102/Images/JVMImages/J30_FruitSpy/
+IsActiveOnOK: true
+IsAutoTopUp: true
+MIDlet-1: New Midlet,,Entry.JVMGameMidlet
+MIDlet-Jar-Size: 40462
+MIDlet-Jar-URL: J30_FruitSpy.jar
+MIDlet-Name: J30_FruitSpy Midlet Suite
+MIDlet-Vendor: Midlet Suite Vendor
+MIDlet-Version: 1.0.0
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0
+ServerURL: http://192.168.241.102/Platform3CPHttpService/HttpService/
+UserToken: 232

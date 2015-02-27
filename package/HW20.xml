@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="build" name="FishFeiFei">
+    <!--Define MIDlet Suite Attributes-->
+    <property name="define.home" value="..\"/>
+
+    <property name="DeviceName" value="FishFeiFei"/>
+    <property name="GameName" value="FishFeiFei"/>
+    <property name="GameNameEn" value="FishFeiFei"/>
+    <property name="BaseVersion" value="1"/>
+    <property name="RunVersion" value="0"/>
+
+    <!--property name="MIDletSuite"
+    value="${GameNameEn}_${DeviceName}_${BaseVersion}_${RunVersion}"/-->
+    <property name="MIDletSuite" value="FishFeiFei"/>
+    <property name="MIDlet_1_name" value="${GameName}"/>
+    <property name="MIDlet_1_class" value="Entry.LWGameMidlet"/>
+    <property name="MIDlet_1_icon" value="icon.png"/>
+    <property name="MicroEdition-Profile_version" value="MIDP-2.0"/>
+    <property name="MicroEdition-Configuration_version" value="CLDC-1.1"/>
+    <property name="MIDlet-Description" value="game for ${DeviceName}."/>
+    <property name="JADversion" value="${BaseVersion}.${RunVersion}"/>
+    <property name="Vendor" value="the9"/>
+    <property name="D-URL" value=""/>
+    <property name="IPTV-Device" value="IPTV 2.0"/>
+
+
+
+
+    <!-- Define the Wireless Toolkit home directory. Needed by the tasks. -->
+    <property name="wtk.home" value="D:\WTK2.5.2_01"/>
+    <!-- Also define the MIDP API (just for testing purposes, not really needed) -->
+    <!--property name="wtk.bootclasspath" value="${wtk.home}/wtklib/emptyapi.zip"/-->
+    <!-- Define some additional properties for this project. Not required. -->
+    <property name="midlet.home" value="."/>
+    <property name="wtk.midp.version" value="2.0"/>
+    <property name="wtk.cldc.version" value="1.1"/>
+    <!-- Define the tasks. -->
+    <taskdef resource="antenna.properties"/>
+
+
+    <target name="clean">
+        <delete dir="${define.home}/classes" failonerror="false"/>
+        <!--delete dir="${define.home}/07_Delivery/${DeviceName}" failonerror="false"/-->
+    </target>
+
+    <target name="build">
+        <delete dir="${define.home}/classes" failonerror="false"/>
+        <!--delete dir="${define.home}/07_Delivery/${DeviceName}" failonerror="false"/-->
+        <mkdir dir="${define.home}/package/${DeviceName}"/>
+        <!-- define deploy directory -->
+        <property name="deploy.home" value="${define.home}/package/${DeviceName}"/>
+        <!-- copy imgs&icon to classes folder -->
+        <mkdir dir="${define.home}/classes"/>
+        <!--mkdir dir="classes/res"/.-->
+        <!--mkdir dir="classes/res/Mologo"/.-->
+        <copy todir="${define.home}/classes/">
+            <fileset dir="${define.home}/res">
+                <exclude name=".MySCMServerInfo"/>
+                <!--don't included the system's thumb snap file-->
+                <exclude name="Thumbs.db"/>
+                <exclude name="*.java"/>
+            </fileset>
+        </copy>
+
+        <!-- Define the3Party sdk Attributes.-->
+        <!--property name="wtk.midpapi" value="D:\JAVAsetup\KEmulator1.00\WebForIPTV_JSYX_TEST.jar"/-->
+        <!-- Compile everything, but don't preverify (yet). -->
+        <wtkbuild destdir="${define.home}/classes" preverify="false" srcdir="${define.home}/src"/>
+        <!-- Package everything. Most of the necessary information is
+             contained in the JAD file. Also preverify the result this
+             time. To obfuscate everything, set the corresponding
+             parameter to "true" (requires RetroGuard or ProGuard). The
+             version parameter increments the MIDlet-Version by one. -->
+        <!-- Create JAD file -->
+        <wtkjad encoding="GB2312" jadfile="${deploy.home}/${MIDletSuite}.jad" jarfile="${deploy.home}/${MIDletSuite}.jar" name="${MIDlet_1_name}" vendor="${Vendor}">
+            <!-- Add user-defined attributes to the JAD -->
+            <attribute name="MIDlet-Version" value="${JADversion}"/>
+            <attribute name="MIDlet-Jar-URL" value="${MIDletSuite}.jar"/>
+            <attribute name="MicroEdition-Configuration" value="${MicroEdition-Configuration_version}"/>
+            <attribute name="MicroEdition-Profile" value="${MicroEdition-Profile_version}"/>
+            <attribute name="MIDlet-Description" value="${MIDlet-Description}"/>
+            <attribute name="MIDlet-Icon" value="${MIDlet_1_icon}"/>
+            <attribute name="Device" value="${IPTV-Device}"/>
+
+            <!-- Add additional MIDlets to the suite, if necessary -->
+            <midlet class="${MIDlet_1_class}" icon="${MIDlet_1_icon}" name="${MIDlet_1_name}"/>
+        </wtkjad>
+        <wtkpackage autoversion="false" compress="true" jadfile="${deploy.home}/${MIDletSuite}.jad" jarfile="${deploy.home}/${MIDletSuite}.jar" obfuscate="false" preverify="false">
+            <!-- Package our newly compiled classes and the
+                  resources from the WTK's demo application. -->
+            <fileset dir="${define.home}/classes"/>
+
+        </wtkpackage>
+
+        <wtkobfuscate jadfile="${deploy.home}/${MIDletSuite}.jad" jarfile="${deploy.home}/${MIDletSuite}.jar">
+            <argument value="-keep 'public class * extends javax.microedition.midlet.MIDlet'"/>
+            <argument value="-overloadaggressively"/>
+            <argument value="-defaultpackage ''"/>
+        </wtkobfuscate>
+
+        <wtkpreverify jadfile="${deploy.home}/${MIDletSuite}.jad" jarfile="${deploy.home}/${MIDletSuite}.jar" />
+
+        <java fork="true" jar="D:/Program Files (x86)/apache-ant-1.7.1/bin/convert.jar">
+            <arg value="-g8"/>
+            <arg value="${deploy.home}/${MIDletSuite}.jad"/>
+            <arg value="${deploy.home}/a.jad"/>
+        </java>
+        <delete file="${deploy.home}/${MIDletSuite}.jad"/>
+        <move file="${deploy.home}/a.jad" tofile="${deploy.home}/${MIDletSuite}.jad"/>
+        <delete file="./MANIFEST"/>
+    </target>
+
+
+
+    <target depends="build" name="Run">
+        <!-- Start the MIDlet suite -->
+        <!--wtkrun device="Nokia_7210_MIDP_SDK_v1_0" jadfile="${midlet.home}/deploy/${MIDletSuite}.jad" wait="true"/-->
+        <exec dir="${midlet.home}/deploy/" executable="${wtk.home}\bin\emulator">
+            <arg line="-classpath ${MIDletSuite}.jar"/>
+            <arg line="-Xverbose:exceptions"/>
+            <arg line="-Xdevice:Nokia_7210_MIDP_SDK_v1_0"/>
+            <arg line="-Xdescriptor:${MIDletSuite}.jad"/>
+            <arg line="-Xheapsize:215040"/>
+        </exec>
+    </target>
+</project>

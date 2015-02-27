@@ -1,0 +1,8 @@
+MIDlet-Version: 1.0.0
+MIDlet-Vendor: Midlet Suite Vendor
+game_info_url: http://localhost:8080/1/HttpService/GameInfoServlet.ashx
+MIDlet-Jar-URL: FishFeiFei.jar
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0
+sessionId: CD08070F385C30FA151214BE03CA264D
+MIDlet-Name: FishFeiFei Midlet Suite
