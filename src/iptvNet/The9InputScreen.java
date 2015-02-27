@@ -23,7 +23,7 @@ public class The9InputScreen extends Screen{
 
     private static int KEY_UP = -1;
     private static int KEY_DOWN = -2;
-    private static int KEY_LEFT = -3;
+    private static int KEY_LEFT = -3;    /***/
     private static int KEY_RIGHT = -4;
 
     private static int KEY_0 = 48;

@@ -7,7 +7,7 @@ import javax.microedition.lcdui.Graphics;
  */
 public interface Effect {
 
-    public void update(int falling_fire_y);
+    public void update(int falling_fire_y);       //
 
     public void draw(Graphics g);
 
