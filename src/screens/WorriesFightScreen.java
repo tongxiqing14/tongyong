@@ -63,6 +63,7 @@ public class WorriesFightScreen  extends Screen {
     Effect pointCocos;
     Effect lighting;
     Effect watership;
+    Effect fireball;
 
     private JSONArray fighterInfo; // fighterÊý¾Ý
 
@@ -104,6 +105,7 @@ public class WorriesFightScreen  extends Screen {
         pointCocos = new PointCoco(0,300,250);
         lighting = new Lightning();
         watership = new WaterShip();
+        fireball = new FireBall();
     }
 
     public void init() {
@@ -159,6 +161,7 @@ public class WorriesFightScreen  extends Screen {
     private int falling_fire_y = 0;
     public static int[] pos_y_array = {250, 300, 250};
     private int watership_x = 0;
+    private int fireball_x = 0;
 
     public void update() {
 
@@ -194,7 +197,8 @@ public class WorriesFightScreen  extends Screen {
         pointCocos.update(250);
         lighting.update(250);
 
-        if(watership_x < 640) watership.update(watership_x+=20);
+        if(watership_x < 700) watership.update(watership_x+=20);
+        if(fireball_x < 700) fireball.update(fireball_x+=20);
 
         eff_point_Coco_atk_motion.keepId(0);
         eff_point_Coco_atk_motion.update(350,300);
@@ -282,7 +286,10 @@ public class WorriesFightScreen  extends Screen {
 //        lighting.draw(g);
 
         /**water ship draw*/
-        watership.draw(g);
+//        watership.draw(g);
+
+        /**fire ball draw*/
+        fireball.draw(g);
 
 //        falling_fire_motion.draw(g);
 

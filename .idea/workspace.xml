@@ -6,6 +6,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/effect2/evocation.big/lightning/lightning.anu" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/effect2/evocation.big/lightning/lightning.asd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/elements/FireBall.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/J30_FruitSpy.iml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/elements/Lightning.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/elements/WaterShip.java" />
@@ -252,11 +253,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="WorriesFightScreen.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WorriesFightScreen.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/screens/WorriesFightScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="381" max-vertical-offset="9812">
-              <caret line="183" column="79" selection-start-line="183" selection-start-column="38" selection-end-line="183" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.55407405" vertical-offset="5610" max-vertical-offset="9966">
+              <caret line="288" column="35" selection-start-line="288" selection-start-column="28" selection-end-line="288" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -286,7 +287,7 @@
         <entry file="file://$PROJECT_DIR$/src/elements/Lightning.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="682">
-              <caret line="26" column="39" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+              <caret line="10" column="45" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="e#534#535#0" expanded="true" />
                 <element signature="e#573#574#0" expanded="true" />
@@ -295,11 +296,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WaterShip.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WaterShip.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/elements/WaterShip.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29333332" vertical-offset="0" max-vertical-offset="748">
-              <caret line="9" column="22" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+              <caret line="20" column="60" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#542#543#0" expanded="true" />
@@ -313,7 +314,7 @@
         <entry file="file://$PROJECT_DIR$/src/elements/Effect.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
-              <caret line="10" column="50" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -332,10 +333,24 @@
       <file leaf-file-name="ResourceLoader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/motion/ResourceLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3373" max-vertical-offset="4620">
-              <caret line="174" column="69" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="3417" max-vertical-offset="4664">
+              <caret line="177" column="69" selection-start-line="177" selection-start-column="25" selection-end-line="177" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FireBall.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/elements/FireBall.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+              <caret line="21" column="36" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#532#533#0" expanded="true" />
+                <element signature="e#572#573#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -346,11 +361,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1716">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#533#534#0" expanded="false" />
-                <element signature="e#564#565#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -367,8 +378,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/elements/Effect.java" />
         <option value="$PROJECT_DIR$/src/iptvNet/The9InputScreen.java" />
-        <option value="$PROJECT_DIR$/src/motion/ResourceLoader.java" />
         <option value="$PROJECT_DIR$/src/elements/WaterShip.java" />
+        <option value="$PROJECT_DIR$/src/motion/ResourceLoader.java" />
+        <option value="$PROJECT_DIR$/src/elements/FireBall.java" />
         <option value="$PROJECT_DIR$/src/screens/WorriesFightScreen.java" />
       </list>
     </option>
@@ -755,10 +767,6 @@
               <option name="myItemId" value="effect2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="watership" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -778,95 +786,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="point_Coco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="J30_FruitSpy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NawaWorries_Fight_jar3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="effect2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="falling.fire" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="J30_FruitSpy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NawaWorries_Fight_jar3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="effect2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gripper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="J30_FruitSpy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NawaWorries_Fight_jar3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="effect2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lightning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="J30_FruitSpy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NawaWorries_Fight_jar3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="effect2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atomic.elect" />
+              <option name="myItemId" value="fireball" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1257,7 +1177,7 @@
       <workItem from="1424829833521" duration="6677000" />
       <workItem from="1424841687243" duration="22159000" />
       <workItem from="1424911461281" duration="20459000" />
-      <workItem from="1425010155891" duration="4222000" />
+      <workItem from="1425010155891" duration="10577000" />
     </task>
     <task id="LOCAL-00141" summary="1, wf screen modify;">
       <created>1419325805102</created>
@@ -1557,7 +1477,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213881000" />
+    <option name="totallyTimeSpent" value="220236000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1700,31 +1620,31 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/screens/WorriesFightScreen.java</url>
-          <line>88</line>
+          <line>89</line>
           <properties />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/screens/WorriesFightScreen.java</url>
-          <line>85</line>
+          <line>86</line>
           <properties />
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/screens/WorriesFightScreen.java</url>
-          <line>174</line>
+          <line>177</line>
           <properties />
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/screens/WorriesFightScreen.java</url>
-          <line>193</line>
+          <line>196</line>
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/screens/WorriesFightScreen.java</url>
-          <line>287</line>
+          <line>294</line>
           <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
@@ -1861,11 +1781,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1716">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#533#534#0" expanded="false" />
-            <element signature="e#564#565#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1979,18 +1895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/screens/FailureScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#533#534#0" expanded="false" />
-            <element signature="e#564#565#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/iptvNet/The9InputScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="20328">
@@ -2015,20 +1919,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/motion/ResourceLoader.java">
+    <entry file="file://$PROJECT_DIR$/src/elements/Effect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3373" max-vertical-offset="4620">
-          <caret line="174" column="69" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/elements/Lightning.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="682">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#534#535#0" expanded="true" />
             <element signature="e#573#574#0" expanded="true" />
@@ -2036,31 +1938,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/elements/Effect.java">
+    <entry file="file://$PROJECT_DIR$/src/screens/FailureScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
-          <caret line="10" column="50" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/screens/WorriesFightScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="381" max-vertical-offset="9812">
-          <caret line="183" column="79" selection-start-line="183" selection-start-column="38" selection-end-line="183" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/elements/WaterShip.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29333332" vertical-offset="0" max-vertical-offset="748">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+          <caret line="20" column="60" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#542#543#0" expanded="true" />
             <element signature="e#583#584#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/motion/ResourceLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3417" max-vertical-offset="4664">
+          <caret line="177" column="69" selection-start-line="177" selection-start-column="25" selection-end-line="177" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/elements/FireBall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screens/WorriesFightScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55407405" vertical-offset="5610" max-vertical-offset="9966">
+          <caret line="288" column="35" selection-start-line="288" selection-start-column="28" selection-end-line="288" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
