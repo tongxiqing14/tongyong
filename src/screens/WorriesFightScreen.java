@@ -51,9 +51,9 @@ public class WorriesFightScreen  extends Screen {
     Image chest_2_07_img;
     Image jewelry_2_05_img;
     Image hourglass_img;
-    Image shadow_hero_2;
-    Image shadow_monster_2;
-    Image shadow_monster_l;
+    Image[] shadow_hero_2;
+    Image[] shadow_monster_2;
+    Image[] shadow_monster_l;
     Image hp_img;
     Image anger_img;
     Image successfailure_img;
@@ -125,13 +125,36 @@ public class WorriesFightScreen  extends Screen {
         chest_2_07_img = Globe.getImage("nw_game_screen/chest-2_07.png");
         jewelry_2_05_img = Globe.getImage("nw_game_screen/jewelry-2_05.png");
         hourglass_img = Globe.getImage("nw_game_screen/hourglass.png");
-        shadow_hero_2 = Globe.getImage("titles/shadow_hero/2.png");
+
         hp_img = Globe.getImage("nw_game_screen/hp.png");
         anger_img = Globe.getImage("nw_game_screen/anger.png");
-        shadow_monster_2 = Globe.getImage("titles/shadow_monster/c.png");
-        shadow_monster_l = Globe.getImage("titles/shadow_monster/l.png");
+
         successfailure_img = Globe.getImage("menu/successfailure.png");
         success_img = Globe.getImage("menu/success.png");
+
+        shadow_hero_2 = new Image[2];
+        for(int i=0; i<shadow_hero_2.length; i++){
+           if(i==0)
+               shadow_hero_2[i] = Globe.getImage("titles/shadow_hero/2.png");
+            else
+               shadow_hero_2[i] = Globe.getImage("titles/hero/2.png");
+        }
+
+        shadow_monster_2 = new Image[2];
+        for (int i=0; i<shadow_monster_2.length; i++){
+            if(i == 0)
+                shadow_monster_2[i] = Globe.getImage("titles/shadow_monster/c.png");
+            else
+                shadow_monster_2[i] = Globe.getImage("titles/monster/c.png");
+        }
+
+        shadow_monster_l = new Image[2];
+        for (int i=0; i<shadow_monster_l.length; i++){
+            if(i == 0)
+                shadow_monster_l[i] = Globe.getImage("titles/shadow_monster/l.png");
+            else
+                shadow_monster_l[i] = Globe.getImage("titles/monster/l.png");
+        }
 
         hp_img_width = hp_img.getWidth();
         anger_img_width = 0;
@@ -331,9 +354,9 @@ public class WorriesFightScreen  extends Screen {
         g.drawImage(anger_unfull_img, 250, 350, Globe.ANCHOR_T_L);
         g.drawImage(anger_unfull_img, 400, 350, Globe.ANCHOR_T_L);
 
-        g.drawImage(shadow_hero_2, 110, 360, Globe.ANCHOR_T_L);
-        g.drawImage(shadow_monster_2, 260, 360, Globe.ANCHOR_T_L);
-        g.drawImage(shadow_monster_l, 410, 360, Globe.ANCHOR_T_L);
+        g.drawImage(shadow_hero_2[hp_img_width<=0?0:1], 110, 360, Globe.ANCHOR_T_L);
+        g.drawImage(shadow_monster_2[hp_img_width<=0?0:1], 260, 360, Globe.ANCHOR_T_L);
+        g.drawImage(shadow_monster_l[hp_img_width<=0?0:1], 410, 360, Globe.ANCHOR_T_L);
 
 //        g.drawImage(hp_img, 100, 440, Globe.ANCHOR_T_L);
         //»æÖÆhpÌõ
