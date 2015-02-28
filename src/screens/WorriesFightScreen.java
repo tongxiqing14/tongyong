@@ -65,6 +65,7 @@ public class WorriesFightScreen  extends Screen {
     Effect watership;
     Effect fireball;
     Effect storm;
+    Effect hurricane;
 
     private JSONArray fighterInfo; // fighterÊý¾Ý
 
@@ -108,6 +109,7 @@ public class WorriesFightScreen  extends Screen {
         watership = new WaterShip();
         fireball = new FireBall();
         storm = new Storm();
+        hurricane = new Hurricane();
     }
 
     public void init() {
@@ -202,6 +204,7 @@ public class WorriesFightScreen  extends Screen {
         if(watership_x < 700) watership.update(watership_x+=20);
         if(fireball_x < 700) fireball.update(fireball_x+=20);
         storm.update(300);
+        hurricane.update(300);
 
         eff_point_Coco_atk_motion.keepId(0);
         eff_point_Coco_atk_motion.update(350,300);
@@ -295,7 +298,10 @@ public class WorriesFightScreen  extends Screen {
 //        fireball.draw(g);
 
         /**storm draw*/
-        storm.draw(g);
+//        storm.draw(g);
+
+        /**hurricane draw*/
+        hurricane.draw(g);
 
 //        falling_fire_motion.draw(g);
 
