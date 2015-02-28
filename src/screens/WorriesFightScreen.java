@@ -200,14 +200,14 @@ public class WorriesFightScreen  extends Screen {
 //        falling_fire_motion.update(200,falling_fire_y);
         fallingFires.update(falling_fire_y);
 
-        pointCocos.update(250);
+//        pointCocos.update(250);
         lighting.update(250);
 
         if(watership_x < 700) watership.update(watership_x+=20);
         if(fireball_x < 700) fireball.update(fireball_x+=20);
         storm.update(300);
         hurricane.update(300);
-        icesmall.update(300);
+        icesmall.update(400);
 
         eff_point_Coco_atk_motion.keepId(0);
         eff_point_Coco_atk_motion.update(350,300);
@@ -289,7 +289,7 @@ public class WorriesFightScreen  extends Screen {
         renwu_huonv_h_motion.draw(g);
         dead_motion.draw(g);
         dead_motion_1.draw(g);
-        atomic_elec_motion.draw(g);
+//        atomic_elec_motion.draw(g);
 
         /**lighting draw*/
 //        lighting.draw(g);
@@ -304,7 +304,7 @@ public class WorriesFightScreen  extends Screen {
 //        storm.draw(g);
 
         /**hurricane draw*/
-        hurricane.draw(g);
+//        hurricane.draw(g);
 
         /**ice small draw*/
         icesmall.draw(g);
