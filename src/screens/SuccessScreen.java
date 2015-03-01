@@ -44,7 +44,7 @@ public class SuccessScreen extends Screen {
     //    @java.lang.Override
     public void update() {
         mouse_motion.keepId(0);
-        mouse_motion.update(250,290);
+        mouse_motion.update(340,330);
 
         if(LWGameCanvas.iskeyPressed(Globe.M_KEY_OK)){
 
@@ -79,7 +79,11 @@ public class SuccessScreen extends Screen {
         g.drawImage(successfailure_img, 100, 100, Globe.ANCHOR_T_L);
         g.drawImage(success_img, 190, 40, Globe.ANCHOR_T_L);
 
-        g.drawImage(que_img, 210, 300, Globe.ANCHOR_T_L);
+        g.drawImage(que_img, 270, 310, Globe.ANCHOR_T_L);
+
+        g.setFont(Globe.BigBoldFont);
+        g.drawString("恭喜获胜，获得了50个钻石和2个宝箱", 300, 150, Globe.ANCHOR_T_H);
+        g.drawString("与以下的装备奖励", 300, 180, Globe.ANCHOR_T_H);
 
         mouse_motion.draw(g);
 
