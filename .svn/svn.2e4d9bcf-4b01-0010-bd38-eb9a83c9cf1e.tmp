@@ -387,9 +387,7 @@ public class WorriesFightScreen  extends Screen {
 //        g.drawImage(anger_img, 400, 450, Globe.ANCHOR_T_L);
 
         g.drawImage(bottom_02_img, 0, 500, Globe.ANCHOR_T_L);
-
-        g.setFont(Globe.BigBoldFont);
-        g.drawString("µπº∆ ±:3∑÷30√Î", 100, 20, Globe.ANCHOR_T_H);
+        g.drawString("123", 100, 20, Globe.ANCHOR_T_H);
 
 
 //        g.drawString(LWGameCanvas.rmidlet.getAppProperty("sessionId"), Globe.SW/2, Globe.SH/2, Globe.ANCHOR_T_H);
