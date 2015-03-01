@@ -389,7 +389,7 @@ public class WorriesFightScreen  extends Screen {
         g.drawImage(bottom_02_img, 0, 500, Globe.ANCHOR_T_L);
 
         g.setFont(Globe.BigBoldFont);
-        g.drawString("倒计时:3分30秒", 100, 20, Globe.ANCHOR_T_H);
+        g.drawString("倒计时:3分30秒", 150, 30, Globe.ANCHOR_T_H);
 
 
 //        g.drawString(LWGameCanvas.rmidlet.getAppProperty("sessionId"), Globe.SW/2, Globe.SH/2, Globe.ANCHOR_T_H);
