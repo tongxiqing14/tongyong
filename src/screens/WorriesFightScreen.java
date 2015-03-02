@@ -1,22 +1,17 @@
 package screens;
 
 import Entry.LWGameCanvas;
-//import com.sun.perseus.model.Font;
 import common.Globe;
 import common.NetInfo;
 import common.Screen;
-import common.Vector;
 import elements.*;
 import iptvNet.IptvNetException;
-import iptvNet.NetHander;
 import motion.Motion;
 import org.json.me.JSONArray;
 import org.json.me.JSONException;
 
-import javax.microedition.io.ConnectionNotFoundException;
 import javax.microedition.lcdui.Graphics;
 import javax.microedition.lcdui.Image;
-import javax.microedition.lcdui.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -37,7 +32,6 @@ public class WorriesFightScreen  extends Screen {
     Motion dead_motion;
     Motion dead_motion_1;
     Motion atomic_elec_motion;
-//    Motion falling_fire_motion;
 
     Motion eff_point_Coco_atk_motion;
     Motion eff_point_Coco_atk_motion1;
@@ -70,7 +64,15 @@ public class WorriesFightScreen  extends Screen {
     Effect hurricane;
     Effect icesmall;
 
+    private int falling_fire_y = 0;
+    public static int[] pos_y_array = {250, 300, 250};
+    private int watership_x = 0;
+    private int fireball_x = 0;
+
     private JSONArray fighterInfo; // fighter数据
+
+    private int hp_img_width;
+    private int anger_img_width;
 
     public WorriesFightScreen(int screenId) {
         super(screenId);
@@ -81,8 +83,6 @@ public class WorriesFightScreen  extends Screen {
 
         left_atack_2_motion_h = new Motion("/follow/left/2/left_atack_2_h.anu",480,250);
         left_atack_2_motion_h.keepId(0);
-//        renwu_huonv_motion = new Motion("/follow/left/1/renwu_huonv.anu",180,250);
-//        renwu_huonv_motion.keepId(0);
         renwu_huonv_h_motion = new Motion("/follow/left/1/renwu_huonv_h.anu",480,250);
         renwu_huonv_h_motion.keepId(0);
         dead_motion = new Motion("/dead/dead.anu",240,250);
@@ -91,8 +91,6 @@ public class WorriesFightScreen  extends Screen {
         dead_motion_1.keepId(0);
         atomic_elec_motion = new Motion("/effect2/atomic.elect/atomic.elec.anu",480,250);
         atomic_elec_motion.keepId(0);
-//        falling_fire_motion = new Motion("/effect2/lava.serie/falling.fire/falling_fire.anu",200,250);
-//        falling_fire_motion.keepId(0);
 
         eff_point_Coco_atk_motion = new Motion("/effect2/point_Coco/eff_point_Coco_atk.anu",350,300);
         eff_point_Coco_atk_motion.keepId(0);
@@ -117,9 +115,6 @@ public class WorriesFightScreen  extends Screen {
     }
 
     public void init() {
-//        List list = new List("",0);  list.get
-//        List<String> dfda =
-//        list.a
         mainBG = Globe.getImage("menu/bg8.jpg");
 
         anger_unfull_img = new Image[2];
@@ -176,10 +171,8 @@ public class WorriesFightScreen  extends Screen {
         try {
 
             for(int i=0; i<fighterInfo.length(); i++){
-
                 motionImpl(Integer.valueOf((String)fighterInfo.getJSONObject(i).get("type")).intValue(),
                         Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")).intValue());
-
             }
 
             motion.keepId(0);
@@ -192,11 +185,6 @@ public class WorriesFightScreen  extends Screen {
 
     }
 
-    boolean mustExit = false;
-    private int falling_fire_y = 0;
-    public static int[] pos_y_array = {250, 300, 250};
-    private int watership_x = 0;
-    private int fireball_x = 0;
 
     public void update() {
 
@@ -285,8 +273,8 @@ public class WorriesFightScreen  extends Screen {
         }
     }
 
-    private int hp_img_width;
-    private int anger_img_width;
+    private int secondCount = 30;
+    private int minuteCount = 3;
 
     public void draw(Graphics g) {
 
@@ -395,8 +383,15 @@ public class WorriesFightScreen  extends Screen {
         g.drawImage(bottom_02_img, 0, 500, Globe.ANCHOR_T_L);
 
         g.setFont(Globe.BigBoldFont);
-        g.drawString("倒计时:3分30秒", 150, 30, Globe.ANCHOR_T_H);
 
+        if(minuteCount >= 0) secondCount--;
+
+        g.drawString("倒计时:"+minuteCount+"分"+secondCount+"秒", 150, 30, Globe.ANCHOR_T_H);
+
+        if(secondCount == 0){
+            secondCount = 60;
+            minuteCount -= 1;
+        }
 
 //        g.drawString(LWGameCanvas.rmidlet.getAppProperty("sessionId"), Globe.SW/2, Globe.SH/2, Globe.ANCHOR_T_H);
 
