@@ -21,7 +21,7 @@ import javax.microedition.lcdui.Image;
  * Time: 下午1:27
  * To change this template use File | Settings | File Templates.
  */
-public class WorriesFightScreen  extends Screen {
+public class WorriesFightScreen extends Screen {
 
     private Image mainBG;
     Motion motion;
@@ -242,6 +242,11 @@ public class WorriesFightScreen  extends Screen {
         gripper_motion.keepId(0);
         gripper_motion.update(420,250);
 
+        if(minuteCount == 0){
+            this.setActive(false);
+            LWGameCanvas.addScreen(new FailureScreen(0));
+        }
+
         if(LWGameCanvas.iskeyPressed(Globe.M_KEY_1)){
             this.setActive(false);
             LWGameCanvas.addScreen(new SuccessScreen(0));
@@ -375,15 +380,14 @@ public class WorriesFightScreen  extends Screen {
 
         g.setFont(Globe.BigBoldFont);
 
-        if(minuteCount >= 0) secondCount--;
+        if(minuteCount >= 0) secondCount--;      /**倒计时*/
 
         g.drawString("倒计时:"+minuteCount+"分"+secondCount+"秒", 150, 30, Globe.ANCHOR_T_H);
 
-        if(secondCount == 0){
+        if(secondCount == 0 && minuteCount > 0){
             secondCount = 60;
             minuteCount -= 1;
         }
-
 
         g.drawString(LWGameCanvas.ret+"", 460, 20, Globe.ANCHOR_T_H);
         g.drawString(LWGameCanvas.chest_num+"", 560, 20, Globe.ANCHOR_T_H);
