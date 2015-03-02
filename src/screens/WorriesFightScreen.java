@@ -4,6 +4,7 @@ import Entry.LWGameCanvas;
 import common.Globe;
 import common.NetInfo;
 import common.Screen;
+import common.Utility;
 import elements.*;
 import iptvNet.IptvNetException;
 import motion.Motion;
@@ -73,6 +74,9 @@ public class WorriesFightScreen  extends Screen {
 
     private int hp_img_width;
     private int anger_img_width;
+
+    private int secondCount = 30;
+    private int minuteCount = 3;
 
     public WorriesFightScreen(int screenId) {
         super(screenId);
@@ -259,22 +263,9 @@ public class WorriesFightScreen  extends Screen {
                 e.printStackTrace();
             }
 
-//            try {
-//                mustExit = LWGameCanvas.rmidlet.platformRequest(LWGameCanvas.rmidlet.getAppProperty("return_url") + "/teamscreen.jsp");
-//            } catch (ConnectionNotFoundException e) {
-//                e.printStackTrace();
-//            }
-//
-//            if(mustExit){
-//                LWGameCanvas.rmidlet.notifyDestroyed();
-//                LWGameCanvas.rmidlet.exit();
-//            }
             LWGameCanvas.isExit = true;
         }
     }
-
-    private int secondCount = 30;
-    private int minuteCount = 3;
 
     public void draw(Graphics g) {
 
@@ -393,8 +384,6 @@ public class WorriesFightScreen  extends Screen {
             minuteCount -= 1;
         }
 
-//        g.drawString(LWGameCanvas.rmidlet.getAppProperty("sessionId"), Globe.SW/2, Globe.SH/2, Globe.ANCHOR_T_H);
-
 
         g.drawString(LWGameCanvas.ret+"", 460, 20, Globe.ANCHOR_T_H);
         g.drawString(LWGameCanvas.chest_num+"", 560, 20, Globe.ANCHOR_T_H);
@@ -404,11 +393,6 @@ public class WorriesFightScreen  extends Screen {
 
         g.drawString("length: "+fighterInfo.length()+"", 50, 300, Globe.ANCHOR_T_H);
 
-//        g.drawString(LWGameCanvas.rmidlet.getAppProperty("return_url")+"", 50, 300, Globe.ANCHOR_T_H);
-//        g.drawImage(successfailure_img, 100, 100, Globe.ANCHOR_T_L);
-//        g.drawImage(success_img, 190, 30, Globe.ANCHOR_T_L);
-
-//        g.setColor(0x000000);
     }
 
     public void clear() {
@@ -431,75 +415,12 @@ public class WorriesFightScreen  extends Screen {
 
     public void motionImpl(int type, int fighter_id){
 
-        //hero animation
-        if(type == 0){
-            if(fighter_id == 1){
-                motion = new Motion("/hero/blue/blue.anu",250,250);
-            }else if(fighter_id == 2){
-                motion = new Motion("/hero/blue1/blue1.anu",250,250);
-            }else if(fighter_id == 3){
-                motion = new Motion("/hero/purple/purple.anu",250,250);
-            }else if(fighter_id == 4){
-                motion = new Motion("/hero/red/red.anu",250,250);
-            }else if(fighter_id == 5){
-                motion = new Motion("/hero/red1/red1.anu",250,250);
-            }else if(fighter_id == 6){
-                motion = new Motion("/hero/yellow/yellow.anu",250,250);
-            }else if(fighter_id == 7){
-                motion = new Motion("/hero/yellow1/yellow1.anu",250,250);
-            }
-        }
-
-        //follow animation
-        else if(type == 1){
-            if(fighter_id == 8){
-                left_atack_2_motion = new Motion("/follow/left/3/follow_left_3.anu",250,250);
-            }else if(fighter_id == 9){
-                left_atack_2_motion = new Motion("/follow/left/4/follow_left_4.anu",250,250);
-            }else if(fighter_id == 10){
-                left_atack_2_motion = new Motion("/follow/left/5/follow_left_5.anu",250,250);
-            }else if(fighter_id == 11){
-                left_atack_2_motion = new Motion("/follow/left/6/follow_left_6.anu",250,250);
-            }else if(fighter_id == 12){
-                left_atack_2_motion = new Motion("/follow/left/7/follow_left_7.anu",250,250);
-            }else if(fighter_id == 13){
-                left_atack_2_motion = new Motion("/follow/left/8/follow_left_8.anu",250,250);
-            }else if(fighter_id == 14){
-                left_atack_2_motion = new Motion("/follow/left/9/follow_left_9.anu",250,250);
-            }else if(fighter_id == 15){
-                left_atack_2_motion = new Motion("/follow/left/10/follow_left_10.anu",250,250);
-            }else if(fighter_id == 16){
-                left_atack_2_motion = new Motion("/follow/left/3/follow_left_3.anu",250,250);
-            }else if(fighter_id == 17){
-                left_atack_2_motion = new Motion("/follow/left/3/follow_left_3.anu",250,250);
-            }else if(fighter_id == 18){
-                left_atack_2_motion = new Motion("/follow/left/3/follow_left_3.anu",250,250);
-            }else if(fighter_id == 19){
-                left_atack_2_motion = new Motion("/follow/left/3/follow_left_3.anu",250,250);
-            }
-        }
-
-        //pets animation
-        else if(type == 2){
-            if(fighter_id == 20){
-                renwu_huonv_motion = new Motion("/pets1/left/bat-5.anu",250,250);
-            }else if(fighter_id == 21){
-                renwu_huonv_motion = new Motion("/pets1/left/bird-7.anu",250,250);
-            }else if(fighter_id == 22){
-                renwu_huonv_motion = new Motion("/pets1/left/clown-3.anu",250,250);
-            }else if(fighter_id == 23){
-                renwu_huonv_motion = new Motion("/pets1/left/frogfish-2.anu",250,250);
-            }else if(fighter_id == 24){
-                renwu_huonv_motion = new Motion("/pets1/left/horse-1.anu",250,250);
-            }else if(fighter_id == 25){
-                renwu_huonv_motion = new Motion("/pets1/left/mouse-8.anu",250,250);
-            }else if(fighter_id == 26){
-                renwu_huonv_motion = new Motion("/pets1/left/rabbit-4.anu",250,250);
-            }else if(fighter_id == 27){
-                renwu_huonv_motion = new Motion("/pets1/left/tiger-6.anu",250,250);
-            }else if(fighter_id == 28){
-                renwu_huonv_motion = new Motion("/pets1/left/tortoise-9.anu",250,250);
-            }
+        if(type == 0){     //hero animation
+            motion = Utility.motionImpl(type, fighter_id);
+        }else if(type == 1){    //follow animation
+            left_atack_2_motion = Utility.motionImpl(type, fighter_id);
+        }else if(type == 2){   //pets animation
+            renwu_huonv_motion = Utility.motionImpl(type, fighter_id);
         }
 
     }
