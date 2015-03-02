@@ -45,15 +45,17 @@ public class WorriesFightScreen  extends Screen {
     Motion eff_point_Coco_atk_motion3;
 
     Motion gripper_motion;
-    Image anger_unfull_img;
     Image bottom_02_img;
     Image title_2_13_img;
     Image chest_2_07_img;
     Image jewelry_2_05_img;
     Image hourglass_img;
+
+    Image[] anger_unfull_img;
     Image[] shadow_hero_2;
     Image[] shadow_monster_2;
     Image[] shadow_monster_l;
+
     Image hp_img;
     Image anger_img;
     Image successfailure_img;
@@ -119,7 +121,11 @@ public class WorriesFightScreen  extends Screen {
 //        List<String> dfda =
 //        list.a
         mainBG = Globe.getImage("menu/bg8.jpg");
-        anger_unfull_img = Globe.getImage("nw_game_screen/anger_unfull.png");
+
+        anger_unfull_img = new Image[2];
+        anger_unfull_img[0] = Globe.getImage("nw_game_screen/anger_unfull.png");
+        anger_unfull_img[1] = Globe.getImage("nw_game_screen/anger_full.png");
+
         bottom_02_img = Globe.getImage("nw_game_screen/bottom_02.png");
         title_2_13_img = Globe.getImage("nw_game_screen/title-2_13.png");
         chest_2_07_img = Globe.getImage("nw_game_screen/chest-2_07.png");
@@ -350,9 +356,9 @@ public class WorriesFightScreen  extends Screen {
         g.drawImage(title_2_13_img, 500, 20, Globe.ANCHOR_T_L);
         g.drawImage(jewelry_2_05_img, 520, 20, Globe.ANCHOR_T_L);
 
-        g.drawImage(anger_unfull_img, 100, 350, Globe.ANCHOR_T_L);
-        g.drawImage(anger_unfull_img, 250, 350, Globe.ANCHOR_T_L);
-        g.drawImage(anger_unfull_img, 400, 350, Globe.ANCHOR_T_L);
+        g.drawImage(anger_unfull_img[anger_img_width < anger_img.getWidth()?0:1], 100, 350, Globe.ANCHOR_T_L);
+        g.drawImage(anger_unfull_img[anger_img_width < anger_img.getWidth()?0:1], 250, 350, Globe.ANCHOR_T_L);
+        g.drawImage(anger_unfull_img[anger_img_width < anger_img.getWidth()?0:1], 400, 350, Globe.ANCHOR_T_L);
 
         g.drawImage(shadow_hero_2[hp_img_width<=0?0:1], 110, 360, Globe.ANCHOR_T_L);
         g.drawImage(shadow_monster_2[hp_img_width<=0?0:1], 260, 360, Globe.ANCHOR_T_L);
