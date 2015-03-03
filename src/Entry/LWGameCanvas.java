@@ -31,6 +31,7 @@ public class LWGameCanvas extends Canvas implements Runnable {
     public static int chest_num = 0;
     public static double sum_enemy_hp_num = 0;
     public static double sum_hero_hp_num = 0;
+    public static double sum_fight_num = 0;
 
     public LWGameCanvas(LWGameMidlet mid) {
         rmidlet = mid;
