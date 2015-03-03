@@ -242,6 +242,21 @@ public class WorriesFightScreen extends Screen {
         gripper_motion.keepId(0);
         gripper_motion.update(420,250);
 
+        if((secondCount+3)%3==0){
+            LWGameCanvas.sum_enemy_hp_num -= LWGameCanvas.sum_fight_num;
+            LWGameCanvas.sum_hero_hp_num -= LWGameCanvas.sum_enemy_fight_num;
+        }
+
+        if(LWGameCanvas.sum_enemy_hp_num < 0){
+            this.setActive(false);
+            LWGameCanvas.addScreen(new SuccessScreen(0));
+        }
+
+        if(LWGameCanvas.sum_hero_hp_num < 0){
+            this.setActive(false);
+            LWGameCanvas.addScreen(new FailureScreen(0));
+        }
+
         if(minuteCount == 0){
             this.setActive(false);
             LWGameCanvas.addScreen(new FailureScreen(0));
