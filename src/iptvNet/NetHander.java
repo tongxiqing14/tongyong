@@ -448,6 +448,7 @@ public class NetHander {
             LWGameCanvas.sum_enemy_hp_num = jo.getDouble("enemyhp");
             LWGameCanvas.sum_hero_hp_num = jo.getDouble("herohp");
             LWGameCanvas.sum_fight_num = jo.getDouble("fightnum");
+            LWGameCanvas.sum_enemy_fight_num = jo.getDouble("enemyfightnum");
         } else if (jo.getInt("Result") == 1) {
             ret = 1;
         } else {
