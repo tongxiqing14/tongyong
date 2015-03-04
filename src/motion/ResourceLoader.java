@@ -81,7 +81,11 @@ public class ResourceLoader implements MSpriteImageLoader{
         }else
 
         //follow animation
-        if (spriteName.equals("/follow/left/3/follow_left_3.anu")) {
+        if (spriteName.equals("/follow/left/1/renwu_huonv.anu")) {
+            baseImage = Globe.getImage("follow/left/1/renwu"+(imageId+1)+"_03.png");
+        }else if (spriteName.equals("/follow/left/2/left_atack_2.anu")) {
+            baseImage = Globe.getImage("follow/left/2/2atack"+(imageId)+".png");
+        }else if (spriteName.equals("/follow/left/3/follow_left_3.anu")) {
             baseImage = Globe.getImage("follow/left/3/3"+(imageId+1)+".png");
         }else if (spriteName.equals("/follow/left/4/follow_left_4.anu")) {
             baseImage = Globe.getImage("follow/left/4/4"+(imageId+1)+".png");
