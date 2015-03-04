@@ -30,29 +30,29 @@ public class Utility {
         //follow animation
         else if(type == 1){
             if(fighter_id == 8){
-                return new Motion("/follow/left/1/renwu_huonv.anu",250,250);
-            }else if(fighter_id == 9){
-                return new Motion("/follow/left/2/left_atack_2.anu",250,250);
-            }else if(fighter_id == 10){
-                return new Motion("/follow/left/3/follow_left_3.anu",250,250);
-            }else if(fighter_id == 11){
                 return new Motion("/follow/left/4/follow_left_4.anu",250,250);
+            }else if(fighter_id == 9){
+                return new Motion("/follow/left/3/follow_left_3.anu",250,250);
+            }else if(fighter_id == 10){
+                return new Motion("/follow/left/2/left_atack_2.anu",250,250);
+            }else if(fighter_id == 11){
+                return new Motion("/follow/left/12/follow_left_12.anu",250,250);
             }else if(fighter_id == 12){
-                return new Motion("/follow/left/5/follow_left_5.anu",250,250);
+                return new Motion("/follow/left/11/follow_left_11.anu",250,250);
             }else if(fighter_id == 13){
-                return new Motion("/follow/left/6/follow_left_6.anu",250,250);
+                return new Motion("/follow/left/10/follow_left_10.anu",250,250);
             }else if(fighter_id == 14){
-                return new Motion("/follow/left/7/follow_left_7.anu",250,250);
+                return new Motion("/follow/left/9/follow_left_9.anu",250,250);
             }else if(fighter_id == 15){
                 return new Motion("/follow/left/8/follow_left_8.anu",250,250);
             }else if(fighter_id == 16){
-                return new Motion("/follow/left/9/follow_left_9.anu",250,250);
+                return new Motion("/follow/left/7/follow_left_7.anu",250,250);
             }else if(fighter_id == 17){
-                return new Motion("/follow/left/10/follow_left_10.anu",250,250);
+                return new Motion("/follow/left/6/follow_left_6.anu",250,250);
             }else if(fighter_id == 18){
-                return new Motion("/follow/left/11/follow_left_11.anu",250,250);
+                return new Motion("/follow/left/5/follow_left_5.anu",250,250);
             }else if(fighter_id == 19){
-                return new Motion("/follow/left/12/follow_left_12.anu",250,250);
+                return new Motion("/follow/left/1/renwu_huonv.anu",250,250);
             }
         }
 
