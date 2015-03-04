@@ -59,21 +59,21 @@ public class Utility {
         //pets animation
         else if(type == 2){
             if(fighter_id == 20){
-                return new Motion("/pets1/left/bat-5.anu",250,250);
+                return new Motion("/pets1/left/horse-1.anu",250,250);
             }else if(fighter_id == 21){
-                return new Motion("/pets1/left/bird-7.anu",250,250);
+                return new Motion("/pets1/left/frogfish-2.anu",250,250);
             }else if(fighter_id == 22){
                 return new Motion("/pets1/left/clown-3.anu",250,250);
             }else if(fighter_id == 23){
-                return new Motion("/pets1/left/frogfish-2.anu",250,250);
-            }else if(fighter_id == 24){
-                return new Motion("/pets1/left/horse-1.anu",250,250);
-            }else if(fighter_id == 25){
-                return new Motion("/pets1/left/mouse-8.anu",250,250);
-            }else if(fighter_id == 26){
                 return new Motion("/pets1/left/rabbit-4.anu",250,250);
-            }else if(fighter_id == 27){
+            }else if(fighter_id == 24){
+                return new Motion("/pets1/left/bat-5.anu",250,250);
+            }else if(fighter_id == 25){
                 return new Motion("/pets1/left/tiger-6.anu",250,250);
+            }else if(fighter_id == 26){
+                return new Motion("/pets1/left/bird-7.anu",250,250);
+            }else if(fighter_id == 27){
+                return new Motion("/pets1/left/mouse-8.anu",250,250);
             }else if(fighter_id == 28){
                 return new Motion("/pets1/left/tortoise-9.anu",250,250);
             }
