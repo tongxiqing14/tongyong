@@ -516,6 +516,32 @@ public class NetHander {
         return ret;
     }
 
+    /**
+     *
+     * @throws JSONException
+     * @throws IptvNetException
+     */
+    public int stageInfoAction()
+            throws JSONException, IptvNetException {
+        int ret = 2;
+        String str = "";
+        String url = LWGameCanvas.rmidlet.getAppProperty("return_url")+"/HttpService/StageInfoServlet.ashx";
+        url = put(url, "sessionId", LWGameCanvas.rmidlet.getAppProperty("sessionId"), false);
+        str = doSend(url);
+        receiveString = str;
+        JSONObject jo;
+        jo = new JSONObject(str);
+        if (jo.getInt("Result") == 0) {
+            ret = jo.getInt("id");
+        } else if (jo.getInt("Result") == 1) {
+            ret = 1;
+        } else {
+            ret = 2;
+            throw new IptvNetException("the 9 http Exception");
+        }
+        return ret;
+    }
+
 	private String answer = "";
 	private String question = "";
 

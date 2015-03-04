@@ -49,6 +49,7 @@ public class SuccessScreen extends Screen {
         if(LWGameCanvas.iskeyPressed(Globe.M_KEY_OK)){
 
             try {
+                NetInfo.netHander.stageInfoAction();
                 NetInfo.netHander.screenToPageAction("stageMapScreen.jsp");
             } catch (JSONException e) {
                 e.printStackTrace();
