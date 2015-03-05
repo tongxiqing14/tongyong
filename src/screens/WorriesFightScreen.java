@@ -47,9 +47,9 @@ public class WorriesFightScreen extends Screen {
     Image hourglass_img;
 
     Image[] anger_unfull_img;
-    Image[] shadow_hero_2;
-    Image[] shadow_monster_2;
-    Image[] shadow_monster_l;
+    Image[][] shadow_hero_2;
+    Image[][] shadow_monster_2;
+    Image[][] shadow_monster_l;
 
     Image hp_img;
     Image anger_img;
@@ -137,28 +137,39 @@ public class WorriesFightScreen extends Screen {
         successfailure_img = Globe.getImage("menu/successfailure.png");
         success_img = Globe.getImage("menu/success.png");
 
-        shadow_hero_2 = new Image[2];
-        for(int i=0; i<shadow_hero_2.length; i++){
-           if(i==0)
-               shadow_hero_2[i] = Globe.getImage("titles/shadow_hero/2.png");
-            else
-               shadow_hero_2[i] = Globe.getImage("titles/hero/2.png");
+        shadow_hero_2 = new Image[7][];
+
+        for(int j=0; j<shadow_hero_2.length; j++){
+            shadow_hero_2[j] = new Image[2];
+            for(int i=0; i<shadow_hero_2[j].length; i++){
+                if(i==0)
+                    shadow_hero_2[j][i] = Globe.getImage("titles/shadow_hero/"+(j+1)+".png");
+                else
+                    shadow_hero_2[j][i] = Globe.getImage("titles/hero/"+(j+1)+".png");
+            }
         }
 
-        shadow_monster_2 = new Image[2];
-        for (int i=0; i<shadow_monster_2.length; i++){
-            if(i == 0)
-                shadow_monster_2[i] = Globe.getImage("titles/shadow_monster/c.png");
-            else
-                shadow_monster_2[i] = Globe.getImage("titles/monster/c.png");
+        shadow_monster_2 = new Image[7][];
+
+        for(int j=0; j<shadow_monster_2.length; j++){
+            shadow_monster_2[j] = new Image[2];
+            for (int i=0; i<shadow_monster_2.length; i++){
+                if(i == 0)
+                    shadow_monster_2[j][i] = Globe.getImage("titles/shadow_monster/"+((char)('a'+1))+".png");
+                else
+                    shadow_monster_2[j][i] = Globe.getImage("titles/monster/"+((char)('a'+1))+".png");
+            }
         }
 
-        shadow_monster_l = new Image[2];
-        for (int i=0; i<shadow_monster_l.length; i++){
-            if(i == 0)
-                shadow_monster_l[i] = Globe.getImage("titles/shadow_monster/l.png");
-            else
-                shadow_monster_l[i] = Globe.getImage("titles/monster/l.png");
+        shadow_monster_l = new Image[7][];
+        for(int j=0; j<shadow_monster_l.length; j++){
+            shadow_monster_l[j] = new Image[2];
+            for (int i=0; i<shadow_monster_l.length; i++){
+                if(i == 0)
+                    shadow_monster_l[j][i] = Globe.getImage("titles/shadow_monster/"+((char)('A'+1))+".png");
+                else
+                    shadow_monster_l[j][i] = Globe.getImage("titles/monster/"+((char)('A'+1))+".png");
+            }
         }
 
         hp_img_width = hp_img.getWidth();
@@ -359,9 +370,9 @@ public class WorriesFightScreen extends Screen {
         g.drawImage(anger_unfull_img[anger_img_width < anger_img.getWidth()?0:1], 250, 350, Globe.ANCHOR_T_L);
         g.drawImage(anger_unfull_img[anger_img_width < anger_img.getWidth()?0:1], 400, 350, Globe.ANCHOR_T_L);
 
-        g.drawImage(shadow_hero_2[hp_img_width<=0?0:1], 110, 360, Globe.ANCHOR_T_L);
-        g.drawImage(shadow_monster_2[hp_img_width<=0?0:1], 260, 360, Globe.ANCHOR_T_L);
-        g.drawImage(shadow_monster_l[hp_img_width<=0?0:1], 410, 360, Globe.ANCHOR_T_L);
+        g.drawImage(shadow_hero_2[1][hp_img_width<=0?0:1], 110, 360, Globe.ANCHOR_T_L);
+        g.drawImage(shadow_monster_2[1][hp_img_width<=0?0:1], 260, 360, Globe.ANCHOR_T_L);
+        g.drawImage(shadow_monster_l[1][hp_img_width<=0?0:1], 410, 360, Globe.ANCHOR_T_L);
 
 //        g.drawImage(hp_img, 100, 440, Globe.ANCHOR_T_L);
         //»æÖÆhpÌõ
