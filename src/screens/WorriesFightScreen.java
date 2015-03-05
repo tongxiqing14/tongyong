@@ -153,7 +153,7 @@ public class WorriesFightScreen extends Screen {
 
         for(int j=0; j<shadow_monster_2.length; j++){
             shadow_monster_2[j] = new Image[2];
-            for (int i=0; i<shadow_monster_2.length; i++){
+            for (int i=0; i<shadow_monster_2[j].length; i++){
                 if(i == 0)
                     shadow_monster_2[j][i] = Globe.getImage("titles/shadow_monster/"+((char)('a'+j))+".png");
                 else
@@ -164,7 +164,7 @@ public class WorriesFightScreen extends Screen {
         shadow_monster_l = new Image[7][];
         for(int j=0; j<shadow_monster_l.length; j++){
             shadow_monster_l[j] = new Image[2];
-            for (int i=0; i<shadow_monster_l.length; i++){
+            for (int i=0; i<shadow_monster_l[j].length; i++){
                 if(i == 0)
                     shadow_monster_l[j][i] = Globe.getImage("titles/shadow_pets/"+((char)('A'+j))+".png");
                 else
