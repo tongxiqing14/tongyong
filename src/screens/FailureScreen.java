@@ -69,8 +69,8 @@ public class FailureScreen extends Screen {
         g.drawImage(que_img, 270, 310, Globe.ANCHOR_T_L);
 
         g.setFont(Globe.BigBoldFont);
-        g.drawString("纳尼？没有过关！快去训练等级吧", 300, 150, Globe.ANCHOR_T_H);
-        g.drawString("加血量，加攻击力助你轻松过关！", 300, 180, Globe.ANCHOR_T_H);
+        g.drawString("纳尼？没有过关！快去训练等级吧", 300, 165, Globe.ANCHOR_T_H);
+        g.drawString("加血量，加攻击力助你轻松过关！", 300, 195, Globe.ANCHOR_T_H);
 
         mouse_motion.draw(g);
     }
