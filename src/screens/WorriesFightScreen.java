@@ -446,12 +446,12 @@ public class WorriesFightScreen extends Screen {
         g.drawString(LWGameCanvas.ret+"", 460, 20, Globe.ANCHOR_T_H);
         g.drawString(LWGameCanvas.chest_num+"", 560, 20, Globe.ANCHOR_T_H);
 
-        g.drawString(LWGameCanvas.sum_enemy_hp_num+"", 460, 100, Globe.ANCHOR_T_H);
-        g.drawString(LWGameCanvas.sum_hero_hp_num+"", 560, 100, Globe.ANCHOR_T_H);
-        g.drawString(LWGameCanvas.sum_enemy_fight_num+"'", 460, 150, Globe.ANCHOR_T_H);
-        g.drawString(LWGameCanvas.sum_fight_num+"", 560, 150, Globe.ANCHOR_T_H);
+//        g.drawString(LWGameCanvas.sum_enemy_hp_num+"", 460, 100, Globe.ANCHOR_T_H);
+//        g.drawString(LWGameCanvas.sum_hero_hp_num+"", 560, 100, Globe.ANCHOR_T_H);
+//        g.drawString(LWGameCanvas.sum_enemy_fight_num+"'", 460, 150, Globe.ANCHOR_T_H);
+//        g.drawString(LWGameCanvas.sum_fight_num+"", 560, 150, Globe.ANCHOR_T_H);
 
-        g.drawString("length: "+fighterInfo.length()+"", 50, 300, Globe.ANCHOR_T_H);
+//        g.drawString("length: "+fighterInfo.length()+"", 50, 300, Globe.ANCHOR_T_H);
 
     }
 

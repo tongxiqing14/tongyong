@@ -10,6 +10,7 @@ import org.json.me.JSONException;
 
 import javax.microedition.lcdui.Graphics;
 import javax.microedition.lcdui.Image;
+import java.util.Random;
 
 /**
  * Created by tongxiqing on 2015/2/6.
@@ -47,7 +48,13 @@ public class FailureScreen extends Screen {
         if(LWGameCanvas.iskeyPressed(Globe.M_KEY_OK)){
 
             try {
-                NetInfo.netHander.screenToPageAction("armorbasescreen.jsp?preScreen=mainscreen");
+                Random r = new Random();
+                int n2 = r.nextInt(2);    //ÑµÁ·follow »ò ÑµÁ· pet
+                if(n2==0){
+                    NetInfo.netHander.screenToPageAction("armorbasescreen.jsp?preScreen=mainscreen");
+                }else {
+                    NetInfo.netHander.screenToPageAction("backpackscreen.jsp?preScreen=mainscreen");
+                }
             } catch (JSONException e) {
                 e.printStackTrace();
             } catch (IptvNetException e) {
