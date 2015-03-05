@@ -149,15 +149,15 @@ public class WorriesFightScreen extends Screen {
             }
         }
 
-        shadow_monster_2 = new Image[7][];
+        shadow_monster_2 = new Image[12][];
 
         for(int j=0; j<shadow_monster_2.length; j++){
             shadow_monster_2[j] = new Image[2];
             for (int i=0; i<shadow_monster_2.length; i++){
                 if(i == 0)
-                    shadow_monster_2[j][i] = Globe.getImage("titles/shadow_monster/"+((char)('a'+1))+".png");
+                    shadow_monster_2[j][i] = Globe.getImage("titles/shadow_monster/"+((char)('a'+j))+".png");
                 else
-                    shadow_monster_2[j][i] = Globe.getImage("titles/monster/"+((char)('a'+1))+".png");
+                    shadow_monster_2[j][i] = Globe.getImage("titles/monster/"+((char)('a'+j))+".png");
             }
         }
 
@@ -166,9 +166,9 @@ public class WorriesFightScreen extends Screen {
             shadow_monster_l[j] = new Image[2];
             for (int i=0; i<shadow_monster_l.length; i++){
                 if(i == 0)
-                    shadow_monster_l[j][i] = Globe.getImage("titles/shadow_monster/"+((char)('A'+1))+".png");
+                    shadow_monster_l[j][i] = Globe.getImage("titles/shadow_pets/"+((char)('A'+j))+".png");
                 else
-                    shadow_monster_l[j][i] = Globe.getImage("titles/monster/"+((char)('A'+1))+".png");
+                    shadow_monster_l[j][i] = Globe.getImage("titles/pets/"+((char)('A'+j))+".png");
             }
         }
 
