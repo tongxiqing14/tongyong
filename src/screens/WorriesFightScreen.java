@@ -385,7 +385,7 @@ public class WorriesFightScreen extends Screen {
 
                 }else if(Integer.valueOf((String)fighterInfo.getJSONObject(i).get("type")).intValue() == 2){   //pets animation
                     g.drawImage(anger_unfull_img[anger_img_width < anger_img.getWidth()?0:1], 400, 350, Globe.ANCHOR_T_L);
-                    g.drawImage(shadow_monster_l[Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-14][hp_img_width<=0?0:1], 410, 360, Globe.ANCHOR_T_L);
+                    g.drawImage(shadow_monster_l[Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-20][hp_img_width<=0?0:1], 410, 360, Globe.ANCHOR_T_L);
                 }
             }
 
