@@ -138,7 +138,6 @@ public class WorriesFightScreen extends Screen {
         success_img = Globe.getImage("menu/success.png");
 
         shadow_hero_2 = new Image[7][];
-
         for(int j=0; j<shadow_hero_2.length; j++){
             shadow_hero_2[j] = new Image[2];
             for(int i=0; i<shadow_hero_2[j].length; i++){
@@ -150,7 +149,6 @@ public class WorriesFightScreen extends Screen {
         }
 
         shadow_monster_2 = new Image[12][];
-
         for(int j=0; j<shadow_monster_2.length; j++){
             shadow_monster_2[j] = new Image[2];
             for (int i=0; i<shadow_monster_2[j].length; i++){
@@ -370,9 +368,21 @@ public class WorriesFightScreen extends Screen {
         g.drawImage(anger_unfull_img[anger_img_width < anger_img.getWidth()?0:1], 250, 350, Globe.ANCHOR_T_L);
         g.drawImage(anger_unfull_img[anger_img_width < anger_img.getWidth()?0:1], 400, 350, Globe.ANCHOR_T_L);
 
-        g.drawImage(shadow_hero_2[1][hp_img_width<=0?0:1], 110, 360, Globe.ANCHOR_T_L);
-        g.drawImage(shadow_monster_2[1][hp_img_width<=0?0:1], 260, 360, Globe.ANCHOR_T_L);
-        g.drawImage(shadow_monster_l[1][hp_img_width<=0?0:1], 410, 360, Globe.ANCHOR_T_L);
+        try {
+
+            for(int i=0; i<fighterInfo.length(); i++){
+                if(Integer.valueOf((String)fighterInfo.getJSONObject(i).get("type")).intValue() == 0){     //hero animation
+                    g.drawImage(shadow_hero_2[Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-1][hp_img_width<=0?0:1], 110, 360, Globe.ANCHOR_T_L);
+                }else if(Integer.valueOf((String)fighterInfo.getJSONObject(i).get("type")).intValue() == 1){    //follow animation
+                    g.drawImage(shadow_monster_2[Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-7][hp_img_width<=0?0:1], 260, 360, Globe.ANCHOR_T_L);
+                }else if(Integer.valueOf((String)fighterInfo.getJSONObject(i).get("type")).intValue() == 2){   //pets animation
+                    g.drawImage(shadow_monster_l[Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-13][hp_img_width<=0?0:1], 410, 360, Globe.ANCHOR_T_L);
+                }
+            }
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
 
 //        g.drawImage(hp_img, 100, 440, Globe.ANCHOR_T_L);
         //»æÖÆhpÌõ
