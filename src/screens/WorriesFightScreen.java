@@ -364,18 +364,17 @@ public class WorriesFightScreen extends Screen {
         g.drawImage(title_2_13_img, 500, 20, Globe.ANCHOR_T_L);
         g.drawImage(jewelry_2_05_img, 520, 20, Globe.ANCHOR_T_L);
 
-        g.drawImage(anger_unfull_img[anger_img_width < anger_img.getWidth()?0:1], 100, 350, Globe.ANCHOR_T_L);
-        g.drawImage(anger_unfull_img[anger_img_width < anger_img.getWidth()?0:1], 250, 350, Globe.ANCHOR_T_L);
-        g.drawImage(anger_unfull_img[anger_img_width < anger_img.getWidth()?0:1], 400, 350, Globe.ANCHOR_T_L);
-
         try {
 
             for(int i=0; i<fighterInfo.length(); i++){
                 if(Integer.valueOf((String)fighterInfo.getJSONObject(i).get("type")).intValue() == 0){     //hero animation
+                    g.drawImage(anger_unfull_img[anger_img_width < anger_img.getWidth()?0:1], 100, 350, Globe.ANCHOR_T_L);
                     g.drawImage(shadow_hero_2[Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-1][hp_img_width<=0?0:1], 110, 360, Globe.ANCHOR_T_L);
                 }else if(Integer.valueOf((String)fighterInfo.getJSONObject(i).get("type")).intValue() == 1){    //follow animation
+                    g.drawImage(anger_unfull_img[anger_img_width < anger_img.getWidth()?0:1], 250, 350, Globe.ANCHOR_T_L);
                     g.drawImage(shadow_monster_2[Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-7][hp_img_width<=0?0:1], 260, 360, Globe.ANCHOR_T_L);
                 }else if(Integer.valueOf((String)fighterInfo.getJSONObject(i).get("type")).intValue() == 2){   //pets animation
+                    g.drawImage(anger_unfull_img[anger_img_width < anger_img.getWidth()?0:1], 400, 350, Globe.ANCHOR_T_L);
                     g.drawImage(shadow_monster_l[Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-13][hp_img_width<=0?0:1], 410, 360, Globe.ANCHOR_T_L);
                 }
             }
