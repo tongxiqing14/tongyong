@@ -83,8 +83,8 @@ public class SuccessScreen extends Screen {
         g.drawImage(que_img, 270, 310, Globe.ANCHOR_T_L);
 
         g.setFont(Globe.BigBoldFont);
-        g.drawString("恭喜获胜，获得了50个钻石和2个宝箱", 300, 165, Globe.ANCHOR_T_H);
-        g.drawString("与以下的装备奖励", 300, 195, Globe.ANCHOR_T_H);
+        g.drawString("恭喜获胜，获得了50个钻石和2个", 310, 165, Globe.ANCHOR_T_H);
+        g.drawString("宝箱与以下的装备奖励", 300, 195, Globe.ANCHOR_T_H);
 
         mouse_motion.draw(g);
 

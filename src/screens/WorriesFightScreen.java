@@ -372,7 +372,6 @@ public class WorriesFightScreen extends Screen {
 
             for(int i=0; i<fighterInfo.length(); i++){
                 if(Integer.valueOf((String)fighterInfo.getJSONObject(i).get("type")).intValue() == 0){     //hero animation
-                    allCount ++;
                     g.drawImage(anger_unfull_img[anger_img_width < anger_img.getWidth()?0:1], 100, 350, Globe.ANCHOR_T_L);
                     g.drawImage(shadow_hero_2[Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-1][hp_img_width<=0?0:1], 110, 360, Globe.ANCHOR_T_L);
 
@@ -386,11 +385,13 @@ public class WorriesFightScreen extends Screen {
                     g.drawImage(anger_img,  100, 450, 20);
                     g.setClip(0, 0, Globe.SW, Globe.SH);
 
+                    allCount ++;
+
                 }else if(Integer.valueOf((String)fighterInfo.getJSONObject(i).get("type")).intValue() == 1){    //follow animation
 
                     if(followCount == 0){
                         followCount ++;
-                        allCount ++;
+
                         g.drawImage(anger_unfull_img[anger_img_width < anger_img.getWidth()?0:1], 100+allCount*90, 350, Globe.ANCHOR_T_L);
                         g.drawImage(shadow_monster_2[Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-8][hp_img_width<=0?0:1], 110+allCount*90, 360, Globe.ANCHOR_T_L);
 
@@ -404,8 +405,9 @@ public class WorriesFightScreen extends Screen {
                         g.drawImage(anger_img,  100, 450, 20);
                         g.setClip(0, 0, Globe.SW, Globe.SH);
 
-                    }else {
                         allCount ++;
+
+                    }else {
                         g.drawImage(anger_unfull_img[anger_img_width < anger_img.getWidth()?0:1], 100+allCount*90, 350, Globe.ANCHOR_T_L);
                         g.drawImage(shadow_monster_2[Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-8][hp_img_width<=0?0:1], 110+allCount*90, 360, Globe.ANCHOR_T_L);
 
@@ -418,12 +420,12 @@ public class WorriesFightScreen extends Screen {
                         g.setClip(100+allCount*90, 450, anger_img_width, anger_img.getHeight());
                         g.drawImage(anger_img,  100+allCount*90, 450, 20);
                         g.setClip(0, 0, Globe.SW, Globe.SH);
+                        allCount ++;
                     }
 
                 }else if(Integer.valueOf((String)fighterInfo.getJSONObject(i).get("type")).intValue() == 2){   //pets animation
                     if(petCount == 0){
                         petCount ++;
-                        allCount ++;
                         g.drawImage(anger_unfull_img[anger_img_width < anger_img.getWidth()?0:1], 100+allCount*90, 350, Globe.ANCHOR_T_L);
                         g.drawImage(shadow_monster_l[Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-20][hp_img_width<=0?0:1], 110+allCount*90, 360, Globe.ANCHOR_T_L);
 
@@ -436,9 +438,8 @@ public class WorriesFightScreen extends Screen {
                         g.setClip(100+allCount*90, 450, anger_img_width, anger_img.getHeight());
                         g.drawImage(anger_img,  100+allCount*90, 450, 20);
                         g.setClip(0, 0, Globe.SW, Globe.SH);
-
+                        allCount ++;
                     }else {
-                        allCount ++;
                         g.drawImage(anger_unfull_img[anger_img_width < anger_img.getWidth()?0:1], 100+allCount*90, 350, Globe.ANCHOR_T_L);
                         g.drawImage(shadow_monster_l[Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-20][hp_img_width<=0?0:1], 110+allCount*90, 360, Globe.ANCHOR_T_L);
 
@@ -451,7 +452,7 @@ public class WorriesFightScreen extends Screen {
                         g.setClip(100+allCount*90, 450, anger_img_width, anger_img.getHeight());
                         g.drawImage(anger_img,  100+allCount*90, 450, 20);
                         g.setClip(0, 0, Globe.SW, Globe.SH);
-
+                        allCount ++;
                     }
                 }
             }
