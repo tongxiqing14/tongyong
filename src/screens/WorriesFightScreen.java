@@ -396,13 +396,13 @@ public class WorriesFightScreen extends Screen {
                         g.drawImage(shadow_monster_2[Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-8][hp_img_width<=0?0:1], 110+allCount*90, 360, Globe.ANCHOR_T_L);
 
                         //绘制hp条
-                        g.setClip(100, 440, hp_img_width, hp_img.getHeight());
-                        g.drawImage(hp_img,  100, 440, 20);
+                        g.setClip(100+allCount*90, 440, hp_img_width, hp_img.getHeight());
+                        g.drawImage(hp_img,  100+allCount*90, 440, 20);
                         g.setClip(0, 0, Globe.SW, Globe.SH);
 
                         //绘制anger条
-                        g.setClip(100, 450, anger_img_width, anger_img.getHeight());
-                        g.drawImage(anger_img,  100, 450, 20);
+                        g.setClip(100+allCount*90, 450, anger_img_width, anger_img.getHeight());
+                        g.drawImage(anger_img,  100+allCount*90, 450, 20);
                         g.setClip(0, 0, Globe.SW, Globe.SH);
 
                         allCount ++;
