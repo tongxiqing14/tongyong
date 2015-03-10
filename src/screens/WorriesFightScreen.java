@@ -80,8 +80,8 @@ public class WorriesFightScreen extends Screen {
 
     public WorriesFightScreen(int screenId) {
         super(screenId);
-        motion = new Motion("/hero/red/red.anu",210,250);
-        motion.keepId(0);
+//        motion = new Motion("/hero/red/red.anu",210,250);
+//        motion.keepId(0);
         red_h_motion = new Motion("/hero/red/red_h.anu",390,250);
         red_h_motion.keepId(0);
 
@@ -346,17 +346,6 @@ public class WorriesFightScreen extends Screen {
         /**ice small draw*/
         icesmall.draw(g);
 
-//        falling_fire_motion.draw(g);
-
-//        eff_point_Coco_atk_motion.draw(g);
-//        eff_point_Coco_atk_motion1.draw(g);
-//        eff_point_Coco_atk_motion2.draw(g);
-//        eff_point_Coco_atk_motion3.draw(g);
-
-//        gripper_motion.draw(g);
-
-//        g.setFont();
-
         g.drawImage(hourglass_img, 50, 20, Globe.ANCHOR_T_L);
 
         g.drawImage(title_2_13_img, 400, 20, Globe.ANCHOR_T_L);
@@ -461,29 +450,6 @@ public class WorriesFightScreen extends Screen {
             e.printStackTrace();
         }
 
-//        g.drawImage(hp_img, 100, 440, Globe.ANCHOR_T_L);
-
-
-//        g.setClip(250, 440, hp_img_width, hp_img.getHeight());
-//        g.drawImage(hp_img,  250, 440, 20);
-//        g.setClip(0, 0, Globe.SW, Globe.SH);
-//        g.setClip(400, 440, hp_img_width, hp_img.getHeight());
-//        g.drawImage(hp_img,  400, 440, 20);
-//        g.setClip(0, 0, Globe.SW, Globe.SH);
-//        g.drawImage(hp_img, 250, 440, Globe.ANCHOR_T_L);
-//        g.drawImage(hp_img, 400, 440, Globe.ANCHOR_T_L);
-
-
-//        g.drawImage(anger_img, 100, 450, Globe.ANCHOR_T_L);
-//        g.setClip(250, 450, anger_img_width, anger_img.getHeight());
-//        g.drawImage(anger_img,  250, 450, 20);
-//        g.setClip(0, 0, Globe.SW, Globe.SH);
-//        g.drawImage(anger_img, 250, 450, Globe.ANCHOR_T_L);
-//        g.setClip(400, 450, anger_img_width, anger_img.getHeight());
-//        g.drawImage(anger_img,  400, 450, 20);
-//        g.setClip(0, 0, Globe.SW, Globe.SH);
-//        g.drawImage(anger_img, 400, 450, Globe.ANCHOR_T_L);
-
         g.drawImage(bottom_02_img, 0, 500, Globe.ANCHOR_T_L);
 
         g.setFont(Globe.BigBoldFont);
@@ -499,13 +465,6 @@ public class WorriesFightScreen extends Screen {
 
         g.drawString(LWGameCanvas.ret+"", 460, 20, Globe.ANCHOR_T_H);
         g.drawString(LWGameCanvas.chest_num+"", 560, 20, Globe.ANCHOR_T_H);
-
-//        g.drawString(LWGameCanvas.sum_enemy_hp_num+"", 460, 100, Globe.ANCHOR_T_H);
-//        g.drawString(LWGameCanvas.sum_hero_hp_num+"", 560, 100, Globe.ANCHOR_T_H);
-//        g.drawString(LWGameCanvas.sum_enemy_fight_num+"'", 460, 150, Globe.ANCHOR_T_H);
-//        g.drawString(LWGameCanvas.sum_fight_num+"", 560, 150, Globe.ANCHOR_T_H);
-
-//        g.drawString("length: "+fighterInfo.length()+"", 50, 300, Globe.ANCHOR_T_H);
 
     }
 
