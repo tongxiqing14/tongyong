@@ -26,9 +26,9 @@ public class WorriesFightScreen extends Screen {
     private Image mainBG;
     Motion motion;
     Motion red_h_motion;
-    Motion left_atack_2_motion;
+    Motion[] left_atack_2_motion;
     Motion left_atack_2_motion_h;
-    Motion renwu_huonv_motion;
+    Motion[] renwu_huonv_motion;
     Motion renwu_huonv_h_motion;
     Motion dead_motion;
     Motion dead_motion_1;
@@ -84,6 +84,9 @@ public class WorriesFightScreen extends Screen {
 //        motion.keepId(0);
         red_h_motion = new Motion("/hero/red/red_h.anu",390,250);
         red_h_motion.keepId(0);
+
+        left_atack_2_motion = new Motion[2];
+        renwu_huonv_motion = new Motion[2];
 
         left_atack_2_motion_h = new Motion("/follow/left/2/left_atack_2_h.anu",480,250);
         left_atack_2_motion_h.keepId(0);
@@ -189,8 +192,10 @@ public class WorriesFightScreen extends Screen {
             }
 
             motion.keepId(0);
-            left_atack_2_motion.keepId(0);
-            renwu_huonv_motion.keepId(0);
+            left_atack_2_motion[0].keepId(0);
+            left_atack_2_motion[1].keepId(0);
+            renwu_huonv_motion[0].keepId(0);
+            renwu_huonv_motion[1].keepId(0);
 
         } catch (JSONException e) {
             e.printStackTrace();
@@ -207,14 +212,21 @@ public class WorriesFightScreen extends Screen {
         red_h_motion.keepId(0);
         red_h_motion.update(390,pos_y_array[0]);
 
-        left_atack_2_motion.keepId(0);
-        left_atack_2_motion.update(120,300);
+        left_atack_2_motion[0].keepId(0);
+        left_atack_2_motion[0].update(120, 250);
+//
+        left_atack_2_motion[1].keepId(0);
+        left_atack_2_motion[1].update(120,300);
 
         left_atack_2_motion_h.keepId(0);
         left_atack_2_motion_h.update(450,pos_y_array[1]);
 
-        renwu_huonv_motion.keepId(0);
-        renwu_huonv_motion.update(180,250);
+        renwu_huonv_motion[0].keepId(0);
+        renwu_huonv_motion[0].update(180, 250);
+//
+        renwu_huonv_motion[1].keepId(0);
+        renwu_huonv_motion[1].update(180,300);
+
         renwu_huonv_h_motion.keepId(0);
         renwu_huonv_h_motion.update(480,pos_y_array[2]);  //pos_y control by PointCoco class
         dead_motion.keepId(0);
@@ -319,10 +331,14 @@ public class WorriesFightScreen extends Screen {
 //            left_atack_2_motion.draw(g);
 //        }
 
-        left_atack_2_motion.draw(g);
+        left_atack_2_motion[0].draw(g);
+        left_atack_2_motion[1].draw(g);
 
         left_atack_2_motion_h.draw(g);
-        renwu_huonv_motion.draw(g);
+
+        renwu_huonv_motion[0].draw(g);
+        renwu_huonv_motion[1].draw(g);
+
         renwu_huonv_h_motion.draw(g);
         dead_motion.draw(g);
         dead_motion_1.draw(g);
@@ -486,14 +502,17 @@ public class WorriesFightScreen extends Screen {
         Runtime.getRuntime().gc();
     }
 
+    private int followCount = 0;
+    private int petCount = 0;
+
     public void motionImpl(int type, int fighter_id){
 
         if(type == 0){     //hero animation
             motion = Utility.motionImpl(type, fighter_id);
         }else if(type == 1){    //follow animation
-            left_atack_2_motion = Utility.motionImpl(type, fighter_id);
+            left_atack_2_motion[followCount++] = Utility.motionImpl(type, fighter_id);
         }else if(type == 2){   //pets animation
-            renwu_huonv_motion = Utility.motionImpl(type, fighter_id);
+            renwu_huonv_motion[petCount++] = Utility.motionImpl(type, fighter_id);
         }
 
     }
