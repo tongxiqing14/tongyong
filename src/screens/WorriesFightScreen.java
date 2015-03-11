@@ -196,10 +196,16 @@ public class WorriesFightScreen extends Screen {
             }
 
             motion.keepId(0);
+
             left_atack_2_motion[0].keepId(0);
-            left_atack_2_motion[1].keepId(0);
+
+            if(followCount>1)
+                left_atack_2_motion[1].keepId(0);
+
             renwu_huonv_motion[0].keepId(0);
-            renwu_huonv_motion[1].keepId(0);
+
+            if(petCount>1)
+                renwu_huonv_motion[1].keepId(0);
 
         } catch (JSONException e) {
             e.printStackTrace();
@@ -225,14 +231,19 @@ public class WorriesFightScreen extends Screen {
         left_atack_2_motion[0].keepId(0);
         left_atack_2_motion[0].update(120, 250);
 //
-        left_atack_2_motion[1].keepId(0);
-        left_atack_2_motion[1].update(120,300);
+        if(followCount>1){
+            left_atack_2_motion[1].keepId(0);
+            left_atack_2_motion[1].update(120,300);
+        }
+
 
         renwu_huonv_motion[0].keepId(0);
         renwu_huonv_motion[0].update(180, 250);
 //
-        renwu_huonv_motion[1].keepId(0);
-        renwu_huonv_motion[1].update(180,300);
+        if(petCount>1){
+            renwu_huonv_motion[1].keepId(0);
+            renwu_huonv_motion[1].update(180,300);
+        }
 
         dead_motion.keepId(0);
         dead_motion.update(240,250);
@@ -337,12 +348,14 @@ public class WorriesFightScreen extends Screen {
 //        }
 
         left_atack_2_motion[0].draw(g);
-        left_atack_2_motion[1].draw(g);
+        if(followCount>1)
+            left_atack_2_motion[1].draw(g);
 
         left_atack_2_motion_h.draw(g);
 
         renwu_huonv_motion[0].draw(g);
-        renwu_huonv_motion[1].draw(g);
+        if(petCount>1)
+            renwu_huonv_motion[1].draw(g);
 
         renwu_huonv_h_motion.draw(g);
         dead_motion.draw(g);
