@@ -93,14 +93,15 @@ public class WorriesFightScreen extends Screen {
 
         red_h_motion = new Motion("/hero/red/red_h.anu",390,250);
         red_h_motion.keepId(0);
+
         left_atack_2_motion_h[0] = new Motion("/follow/left/2/left_atack_2_h.anu",480,250);
         left_atack_2_motion_h[0].keepId(0);
-
         left_atack_2_motion_h[1] = new Motion("/hero/blue/blue_h.anu",480,250);
         left_atack_2_motion_h[1].keepId(0);
-
         renwu_huonv_h_motion[0] = new Motion("/follow/left/1/renwu_huonv_h.anu",480,250);
         renwu_huonv_h_motion[0].keepId(0);
+        renwu_huonv_h_motion[1] = new Motion("/hero/blue1/blue1_h.anu",480,250);
+        renwu_huonv_h_motion[1].keepId(0);
 
         dead_motion = new Motion("/dead/dead.anu",240,250);
         dead_motion.keepId(0);
@@ -236,6 +237,9 @@ public class WorriesFightScreen extends Screen {
 
         renwu_huonv_h_motion[0].keepId(0);
         renwu_huonv_h_motion[0].update(480, pos_y_array[2]);  //pos_y control by PointCoco class
+
+        renwu_huonv_h_motion[1].keepId(0);
+        renwu_huonv_h_motion[1].update(550, pos_y_array[2]);  //pos_y control by PointCoco class
 
         left_atack_2_motion[0].keepId(0);
         left_atack_2_motion[0].update(120, 250);
