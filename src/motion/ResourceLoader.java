@@ -185,6 +185,11 @@ public class ResourceLoader implements MSpriteImageLoader{
             baseImage = Globe.getImage("effect2/ice/icesmall"+(imageId+1)+".png");
         }
 
+        //enemy animation
+        else if (spriteName.equals("/hero/blue/blue_h.anu")) {
+            baseImage = Globe.getImage("hero/blue/action"+(imageId+1)+"_03.png");
+        }
+
         return baseImage;
     }
 
