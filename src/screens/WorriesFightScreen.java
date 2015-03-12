@@ -232,7 +232,7 @@ public class WorriesFightScreen extends Screen {
         left_atack_2_motion_h[0].update(450, pos_y_array[1]);
 
         left_atack_2_motion_h[1].keepId(0);
-        left_atack_2_motion_h[1].update(450, pos_y_array[1]);
+        left_atack_2_motion_h[1].update(550, pos_y_array[1]+100);
 
         renwu_huonv_h_motion[0].keepId(0);
         renwu_huonv_h_motion[0].update(480, pos_y_array[2]);  //pos_y control by PointCoco class
@@ -360,7 +360,7 @@ public class WorriesFightScreen extends Screen {
         if(followCount>1)
             left_atack_2_motion[1].draw(g);
 
-        left_atack_2_motion_h[0].draw(g);
+        left_atack_2_motion_h[0].draw(g);  /**enemy motion*/
         left_atack_2_motion_h[1].draw(g);
 
         renwu_huonv_motion[0].draw(g);
