@@ -133,7 +133,7 @@ public class WorriesFightScreen extends Screen {
     }
 
     public void init() {
-        mainBG = Globe.getImage("menu/bg9.jpg");
+        mainBG = Globe.getImage("menu/bg11.jpg");
 
         anger_unfull_img = new Image[2];
         anger_unfull_img[0] = Globe.getImage("nw_game_screen/anger_unfull.png");
