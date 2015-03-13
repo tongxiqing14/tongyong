@@ -199,6 +199,21 @@ public class ResourceLoader implements MSpriteImageLoader{
             baseImage = Globe.getImage("follow/left/5/5"+(imageId+1)+".png");
         }
 
+        //pet enemy animation
+        else if (spriteName.equals("/pets1/left/bat-5-h.anu")) {
+            if(imageId==0){
+                baseImage = Globe.getImage("pets1/left/bat-5.png");
+            }else {
+                baseImage = Globe.getImage("pets1/left/bat-5a.png");
+            }
+        }else if (spriteName.equals("/pets1/left/bird-7-h.anu")) {
+            if(imageId==0){
+                baseImage = Globe.getImage("pets1/left/bird-7.png");
+            }else {
+                baseImage = Globe.getImage("pets1/left/bird-7a.png");
+            }
+        }
+
         return baseImage;
     }
 
