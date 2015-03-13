@@ -100,7 +100,7 @@ public class WorriesFightScreen extends Screen {
         left_atack_2_motion_h[1].keepId(0);
         renwu_huonv_h_motion[0] = new Motion("/follow/left/1/renwu_huonv_h.anu",480,250);
         renwu_huonv_h_motion[0].keepId(0);
-        renwu_huonv_h_motion[1] = new Motion("/pets1/left/bird-7-h.anu",480,250);
+        renwu_huonv_h_motion[1] = new Motion("/pets1/left/clown-3-h.anu",480,250);
         renwu_huonv_h_motion[1].keepId(0);
 
         dead_motion = new Motion("/dead/dead.anu",240,250);
@@ -133,7 +133,7 @@ public class WorriesFightScreen extends Screen {
     }
 
     public void init() {
-        mainBG = Globe.getImage("menu/bg14.jpg");
+        mainBG = Globe.getImage("menu/bg15.jpg");
 
         anger_unfull_img = new Image[2];
         anger_unfull_img[0] = Globe.getImage("nw_game_screen/anger_unfull.png");

@@ -212,6 +212,12 @@ public class ResourceLoader implements MSpriteImageLoader{
             }else {
                 baseImage = Globe.getImage("pets1/left/bird-7a.png");
             }
+        }else if (spriteName.equals("/pets1/left/clown-3-h.anu")) {
+            if(imageId==0){
+                baseImage = Globe.getImage("pets1/left/clown-3.png");
+            }else {
+                baseImage = Globe.getImage("pets1/left/clown-3a.png");
+            }
         }
 
         return baseImage;
