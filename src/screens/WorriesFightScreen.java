@@ -7,6 +7,7 @@ import common.Screen;
 import common.Utility;
 import elements.*;
 import iptvNet.IptvNetException;
+import iptvNet.NetHander;
 import motion.Motion;
 import org.json.me.JSONArray;
 import org.json.me.JSONException;
@@ -67,6 +68,12 @@ public class WorriesFightScreen extends Screen {
     Effect storm;
     Effect hurricane;
     Effect icesmall;
+
+    String[][] bgImgPaths = {{"menu/bg1.jpg","menu/bg2.jpg","menu/bg3.jpg","menu/bg4.jpg","menu/bg5.jpg","menu/bg6.jpg","menu/bg7.jpg","menu/bg8.jpg","menu/bg9.jpg"},
+                            {"menu/bg10.jpg","menu/bg11.jpg","menu/bg12.jpg","menu/bg13.jpg","menu/bg14.jpg","menu/bg15.jpg","menu/bg16.jpg","menu/bg17.jpg","menu/bg18.jpg"},
+                            {"menu/bg19.jpg","menu/bg20.jpg","menu/bg21.jpg","menu/bg22.jpg","menu/bg23.jpg","menu/bg24.jpg","menu/bg25.jpg","menu/bg26.jpg","menu/bg27.jpg"},
+                            {"menu/bg28.jpg","menu/bg29.jpg","menu/bg30.jpg","menu/bg31.jpg","menu/bg32.jpg","menu/bg33.jpg","menu/bg34.jpg","menu/bg35.jpg","menu/bg36.jpg"},
+                            {"menu/bg37.jpg","menu/bg38.jpg","menu/bg39.jpg","menu/bg40.jpg","menu/bg41.jpg"}};
 
     private int falling_fire_y = 0;
     public static int[] pos_y_array = {250, 300, 250};
@@ -133,7 +140,7 @@ public class WorriesFightScreen extends Screen {
     }
 
     public void init() {
-        mainBG = Globe.getImage("menu/bg15.jpg");
+        mainBG = Globe.getImage(bgImgPaths[Integer.valueOf(NetHander.selected_stage).intValue()/9][Integer.valueOf(NetHander.selected_stage).intValue()-9*(Integer.valueOf(NetHander.selected_stage).intValue()/9)]);
 
         anger_unfull_img = new Image[2];
         anger_unfull_img[0] = Globe.getImage("nw_game_screen/anger_unfull.png");

@@ -21,6 +21,7 @@ public class NetHander {
 	public static String adAccount = "";
 	public static String gameId = "";
 	public static String userToken = "";
+    public static String selected_stage = "";
 	public static boolean isAutoTopup = false;// ×Ô¶¯³äÖµ
 
 	public NetHander(MIDlet midlet) {
@@ -32,6 +33,7 @@ public class NetHander {
 			adAccount = midlet.getAppProperty("ADAccount");
 			userToken = midlet.getAppProperty("UserToken");
 			gameId = midlet.getAppProperty("GameID");
+            selected_stage = midlet.getAppProperty("selected_stage");
 		} catch (Exception e) {
 			System.out
 					.println("NetHander's structure Exception,please check the JAD");
