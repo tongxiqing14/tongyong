@@ -76,7 +76,7 @@ public class WorriesFightScreen extends Screen {
                             {"menu/bg37.jpg","menu/bg38.jpg","menu/bg39.jpg","menu/bg40.jpg","menu/bg41.jpg"}};
 
     String[][] enemyMotionPaths = {{"/hero/red/red_h.anu","/follow/left/2/left_atack_2_h.anu","/hero/blue/blue_h.anu","/follow/left/1/renwu_huonv_h.anu","/pets1/left/bird-7-h.anu"},
-                                   {},
+                                   {"/hero/red/red_h.anu","/follow/left/2/left_atack_2_h.anu","/hero/blue/blue_h.anu","/follow/left/1/renwu_huonv_h.anu","/pets1/left/bird-7-h.anu"},
                                    {},
                                    {}};
 
