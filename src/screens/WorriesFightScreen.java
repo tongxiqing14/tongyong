@@ -75,17 +75,13 @@ public class WorriesFightScreen extends Screen {
                             {"menu/bg28.jpg","menu/bg29.jpg","menu/bg30.jpg","menu/bg31.jpg","menu/bg32.jpg","menu/bg33.jpg","menu/bg34.jpg","menu/bg35.jpg","menu/bg36.jpg"},
                             {"menu/bg37.jpg","menu/bg38.jpg","menu/bg39.jpg","menu/bg40.jpg","menu/bg41.jpg"}};
 
-    String[][] enemyMotionPaths = {{"/hero/red/red_h.anu","/follow/left/2/left_atack_2_h.anu","/hero/blue/blue_h.anu","/follow/left/1/renwu_huonv_h.anu","/pets1/left/bird-7-h.anu"},
-                                   {"/hero/red/red_h.anu","/follow/left/2/left_atack_2_h.anu","/hero/blue/blue_h.anu","/follow/left/1/renwu_huonv_h.anu","/pets1/left/bird-7-h.anu"},
-                                   {},
-                                   {}};
-
     private int falling_fire_y = 0;
     public static int[] pos_y_array = {250, 300, 250};
     private int watership_x = 0;
     private int fireball_x = 0;
 
     private JSONArray fighterInfo; // fighter数据
+    private JSONArray enemyInfo; // enemy数据
 
     private int hp_img_width;
     private int anger_img_width;
@@ -102,17 +98,6 @@ public class WorriesFightScreen extends Screen {
         renwu_huonv_motion = new Motion[2];
         enemy_motion_2 = new Motion[2];
         enemy_motion_3 = new Motion[2];
-
-        enemy_motion_1 = new Motion(enemyMotionPaths[Integer.valueOf(NetHander.selected_stage).intValue()][0],390,250);
-        enemy_motion_1.keepId(0);
-        enemy_motion_2[0] = new Motion(enemyMotionPaths[Integer.valueOf(NetHander.selected_stage).intValue()][1],480,250);
-        enemy_motion_2[0].keepId(0);
-        enemy_motion_2[1] = new Motion(enemyMotionPaths[Integer.valueOf(NetHander.selected_stage).intValue()][2],480,250);
-        enemy_motion_2[1].keepId(0);
-        enemy_motion_3[0] = new Motion(enemyMotionPaths[Integer.valueOf(NetHander.selected_stage).intValue()][3],480,250);
-        enemy_motion_3[0].keepId(0);
-        enemy_motion_3[1] = new Motion(enemyMotionPaths[Integer.valueOf(NetHander.selected_stage).intValue()][4],480,250);
-        enemy_motion_3[1].keepId(0);
 
         dead_motion = new Motion("/dead/dead.anu",240,250);
         dead_motion.keepId(0);
@@ -199,7 +184,21 @@ public class WorriesFightScreen extends Screen {
         anger_img_width = 0;
 
         try {
+
             fighterInfo = NetInfo.netHander.getFighterInfo();
+            enemyInfo = NetInfo.netHander.getEnemyInfo();
+
+            enemy_motion_1 = new Motion((String) enemyInfo.getJSONObject(0).getJSONArray("ken").get(0),390,250);
+            enemy_motion_1.keepId(0);
+            enemy_motion_2[0] = new Motion((String) enemyInfo.getJSONObject(0).getJSONArray("ken").get(1),480,250);
+            enemy_motion_2[0].keepId(0);
+            enemy_motion_2[1] = new Motion((String) enemyInfo.getJSONObject(0).getJSONArray("ken").get(2),480,250);
+            enemy_motion_2[1].keepId(0);
+            enemy_motion_3[0] = new Motion((String) enemyInfo.getJSONObject(0).getJSONArray("ken").get(3),480,250);
+            enemy_motion_3[0].keepId(0);
+            enemy_motion_3[1] = new Motion((String) enemyInfo.getJSONObject(0).getJSONArray("ken").get(4),480,250);
+            enemy_motion_3[1].keepId(0);
+
         } catch (JSONException e) {
             e.printStackTrace();
         } catch (IptvNetException e) {

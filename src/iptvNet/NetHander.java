@@ -465,6 +465,21 @@ public class NetHander {
      * @throws JSONException
      * @throws IptvNetException
      */
+    public JSONArray getEnemyInfo()
+            throws JSONException, IptvNetException {
+        String str = "";
+        String url = LWGameCanvas.rmidlet.getAppProperty("return_url")+"/HttpService/StageEnemyServlet.ashx";
+        url = put(url, "sessionId", LWGameCanvas.rmidlet.getAppProperty("sessionId"), false);
+        str = doSend(url);
+        JSONArray jsonArray = new JSONArray(str);
+        return jsonArray;
+    }
+
+    /**
+     *
+     * @throws JSONException
+     * @throws IptvNetException
+     */
     public JSONArray getFighterInfo()
             throws JSONException, IptvNetException {
         int ret = 2;
@@ -472,22 +487,8 @@ public class NetHander {
         String url = LWGameCanvas.rmidlet.getAppProperty("return_url")+"/HttpService/FighterInfoServlet.ashx";
         url = put(url, "sessionId", LWGameCanvas.rmidlet.getAppProperty("sessionId"), false);
         str = doSend(url);
-//        receiveString = str;
         JSONArray jsonArray = new JSONArray(str);
-//        jsonArray.getJSONObject(0).get("name");
-//        JSONObject jo;
-//        jo = new JSONObject(str);
-//        if (jo.getInt("Result") == 0) {
-//            ret = jo.getInt("id");
-//            LWGameCanvas.chest_num = jo.getInt("chestnum");
-//            LWGameCanvas.sum_enemy_hp_num = jo.getDouble("enemyhp");
-//            LWGameCanvas.sum_hero_hp_num = jo.getDouble("herohp");
-//        } else if (jo.getInt("Result") == 1) {
-//            ret = 1;
-//        } else {
-//            ret = 2;
-//            throw new IptvNetException("the 9 http Exception");
-//        }
+
         return jsonArray;
     }
 
