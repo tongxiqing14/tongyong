@@ -249,7 +249,7 @@ public class WorriesFightScreen extends Screen {
         enemy_motion_3[0].update(480, pos_y_array[2]);  //pos_y control by PointCoco class
 
         enemy_motion_3[1].keepId(0);
-        enemy_motion_3[1].update(550, pos_y_array[2]);  //pos_y control by PointCoco class
+        enemy_motion_3[1].update(550, pos_y_array[2]-100);  //pos_y control by PointCoco class
 
         left_atack_2_motion[0].keepId(0);
         left_atack_2_motion[0].update(120, 250);

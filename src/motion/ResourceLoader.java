@@ -218,6 +218,42 @@ public class ResourceLoader implements MSpriteImageLoader{
             }else {
                 baseImage = Globe.getImage("pets1/left/clown-3a.png");
             }
+        }else if (spriteName.equals("/pets1/left/frogfish-2-h.anu")) {
+            if(imageId==0){
+                baseImage = Globe.getImage("pets1/left/frogfish-2.png");
+            }else {
+                baseImage = Globe.getImage("pets1/left/frogfish-2a.png");
+            }
+        }else if (spriteName.equals("/pets1/left/horse-1-h.anu")) {
+            if(imageId==0){
+                baseImage = Globe.getImage("pets1/left/horse-1.png");
+            }else {
+                baseImage = Globe.getImage("pets1/left/horse-1a.png");
+            }
+        }else if (spriteName.equals("/pets1/left/mouse-8-h.anu")) {
+            if(imageId==0){
+                baseImage = Globe.getImage("pets1/left/mouse-8.png");
+            }else {
+                baseImage = Globe.getImage("pets1/left/mouse-8a.png");
+            }
+        }else if (spriteName.equals("/pets1/left/rabbit-4-h.anu")) {
+            if(imageId==0){
+                baseImage = Globe.getImage("pets1/left/rabbit-4.png");
+            }else {
+                baseImage = Globe.getImage("pets1/left/rabbit-4a.png");
+            }
+        }else if (spriteName.equals("/pets1/left/tiger-6-h.anu")) {
+            if(imageId==0){
+                baseImage = Globe.getImage("pets1/left/tiger-6.png");
+            }else {
+                baseImage = Globe.getImage("pets1/left/tiger-6a.png");
+            }
+        }else if (spriteName.equals("/pets1/left/tortoise-9-h.anu")) {
+            if(imageId==0){
+                baseImage = Globe.getImage("pets1/left/tortoise-9.png");
+            }else {
+                baseImage = Globe.getImage("pets1/left/tortoise-9a.png");
+            }
         }
 
         return baseImage;
