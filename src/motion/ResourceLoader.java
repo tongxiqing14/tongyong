@@ -198,7 +198,7 @@ public class ResourceLoader implements MSpriteImageLoader{
             baseImage = Globe.getImage("hero/red1/"+(imageId+1)+".png");
         }else if (spriteName.equals("/hero/yellow/yellow_h.anu")) {
             baseImage = Globe.getImage("hero/yellow/action"+(imageId+1)+"_03.png");
-        }else if (spriteName.equals("/hero/yellow/yellow_h.anu")) {
+        }else if (spriteName.equals("/hero/yellow1/yellow1_h.anu")) {
             baseImage = Globe.getImage("hero/yellow1/"+(imageId+1)+".png");
         }
 
