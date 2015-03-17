@@ -12,7 +12,7 @@ import java.io.DataInputStream;
  * Time: 下午4:06
  * To change this template use File | Settings | File Templates.
  */
-public class TestMain {     //在J2ME里操作session
+public class TestMain {     //在J2ME里操作session //
 
     public void run()
     {
