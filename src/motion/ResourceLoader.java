@@ -195,8 +195,36 @@ public class ResourceLoader implements MSpriteImageLoader{
         }
 
         //follow enemy animation
-        else if (spriteName.equals("/follow/left/5/follow_left_5_h.anu")) {
+        else if (spriteName.equals("/follow/left/1/renwu_huonv_h.anu")) {
+            baseImage = Globe.getImage("follow/left/1/renwu"+(imageId+1)+"_03.png");
+        }else if (spriteName.equals("/follow/left/2/left_atack_2_h.anu")) {
+            baseImage = Globe.getImage("follow/left/2/2atack"+(imageId)+".png");
+        }else if (spriteName.equals("/follow/left/3/follow_left_3_h.anu")) {
+            baseImage = Globe.getImage("follow/left/3/3"+(imageId+1)+".png");
+        }else if (spriteName.equals("/follow/left/4/follow_left_4_h.anu")) {
+            baseImage = Globe.getImage("follow/left/4/4"+(imageId+1)+".png");
+        }else if (spriteName.equals("/follow/left/5/follow_left_5_h.anu")) {
             baseImage = Globe.getImage("follow/left/5/5"+(imageId+1)+".png");
+        }else if (spriteName.equals("/follow/left/6/follow_left_6_h.anu")) {
+            baseImage = Globe.getImage("follow/left/6/6"+(imageId+1)+".png");
+        }else if (spriteName.equals("/follow/left/7/follow_left_7_h.anu")) {
+            baseImage = Globe.getImage("follow/left/7/7"+(imageId+1)+".png");
+        }else if (spriteName.equals("/follow/left/8/follow_left_8_h.anu")) {
+            baseImage = Globe.getImage("follow/left/8/8"+(imageId+1)+".png");
+        }else if (spriteName.equals("/follow/left/9/follow_left_9_h.anu")) {
+            if(imageId == 0){
+                baseImage = Globe.getImage("follow/left/9/3.png");
+            }else if(imageId == 1){
+                baseImage = Globe.getImage("follow/left/9/11.png");
+            }else if(imageId == 2){
+                baseImage = Globe.getImage("follow/left/9/111.png");
+            }
+        }else if (spriteName.equals("/follow/left/10/follow_left_10_h.anu")) {
+            baseImage = Globe.getImage("follow/left/10/"+(imageId+1)+".png");
+        }else if (spriteName.equals("/follow/left/11/follow_left_11_h.anu")) {
+            baseImage = Globe.getImage("follow/left/11/11"+(imageId+1)+".png");
+        }else if (spriteName.equals("/follow/left/12/follow_left_12_h.anu")) {
+            baseImage = Globe.getImage("follow/left/12/bluemonster"+(imageId+1)+".png");
         }
 
         //pet enemy animation
