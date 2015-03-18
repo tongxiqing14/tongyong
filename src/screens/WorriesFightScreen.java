@@ -32,7 +32,7 @@ public class WorriesFightScreen extends Screen {
     /**enmey¶¯»­*/
     Motion enemy_motion_1;
     Motion[] enemy_motion_2;
-//    Motion[] enemy_motion_3;
+    Motion[] enemy_motion_3;
 
     Motion dead_motion;
     Motion dead_motion_1;
@@ -97,7 +97,7 @@ public class WorriesFightScreen extends Screen {
         left_atack_2_motion = new Motion[2];
         renwu_huonv_motion = new Motion[2];
         enemy_motion_2 = new Motion[2];
-//        enemy_motion_3 = new Motion[2];
+        enemy_motion_3 = new Motion[2];
 
         dead_motion = new Motion("/dead/dead.anu",240,250);
         dead_motion.keepId(0);
@@ -192,12 +192,12 @@ public class WorriesFightScreen extends Screen {
             enemy_motion_1.keepId(0);
             enemy_motion_2[0] = new Motion((String) enemyInfo.getJSONObject(0).getJSONArray("ken").get(1),480,250);
             enemy_motion_2[0].keepId(0);
-//            enemy_motion_2[1] = new Motion((String) enemyInfo.getJSONObject(0).getJSONArray("ken").get(2),480,250);
-//            enemy_motion_2[1].keepId(0);
-//            enemy_motion_3[0] = new Motion((String) enemyInfo.getJSONObject(0).getJSONArray("ken").get(3),480,250);
-//            enemy_motion_3[0].keepId(0);
-//            enemy_motion_3[1] = new Motion((String) enemyInfo.getJSONObject(0).getJSONArray("ken").get(4),480,250);
-//            enemy_motion_3[1].keepId(0);
+            enemy_motion_2[1] = new Motion((String) enemyInfo.getJSONObject(0).getJSONArray("ken").get(3),480,250);
+            enemy_motion_2[1].keepId(0);
+            enemy_motion_3[0] = new Motion((String) enemyInfo.getJSONObject(0).getJSONArray("ken").get(2),480,250);
+            enemy_motion_3[0].keepId(0);
+            enemy_motion_3[1] = new Motion((String) enemyInfo.getJSONObject(0).getJSONArray("ken").get(4),480,250);
+            enemy_motion_3[1].keepId(0);
 
         } catch (JSONException e) {
             e.printStackTrace();
@@ -240,16 +240,16 @@ public class WorriesFightScreen extends Screen {
         enemy_motion_1.update(390,pos_y_array[0]);
 
         enemy_motion_2[0].keepId(0);
-        enemy_motion_2[0].update(450, pos_y_array[1]);
-//
-//        enemy_motion_2[1].keepId(0);
-//        enemy_motion_2[1].update(550, pos_y_array[1]+100);
+        enemy_motion_2[0].update(450, pos_y_array[1]-50);
 
-//        enemy_motion_3[0].keepId(0);
-//        enemy_motion_3[0].update(480, pos_y_array[2]);  //pos_y control by PointCoco class
+        enemy_motion_2[1].keepId(0);
+        enemy_motion_2[1].update(450, pos_y_array[1]+50);
 
-//        enemy_motion_3[1].keepId(0);
-//        enemy_motion_3[1].update(550, pos_y_array[2]-100);  //pos_y control by PointCoco class
+        enemy_motion_3[0].keepId(0);
+        enemy_motion_3[0].update(550, pos_y_array[2]-50);  //pos_y control by PointCoco class
+
+        enemy_motion_3[1].keepId(0);
+        enemy_motion_3[1].update(550, pos_y_array[2]+50);  //pos_y control by PointCoco class
 
         left_atack_2_motion[0].keepId(0);
         left_atack_2_motion[0].update(120, 250);
@@ -375,14 +375,14 @@ public class WorriesFightScreen extends Screen {
             left_atack_2_motion[1].draw(g);
 
         enemy_motion_2[0].draw(g);  /**enemy motion*/
-//        enemy_motion_2[1].draw(g);
+        enemy_motion_2[1].draw(g);
 
         renwu_huonv_motion[0].draw(g);
         if(petCount>1)
             renwu_huonv_motion[1].draw(g);
 
-//        enemy_motion_3[0].draw(g);
-//        enemy_motion_3[1].draw(g);
+        enemy_motion_3[0].draw(g);
+        enemy_motion_3[1].draw(g);
         dead_motion.draw(g);
         dead_motion_1.draw(g);
 //        atomic_elec_motion.draw(g);
