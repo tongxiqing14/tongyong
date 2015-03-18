@@ -352,6 +352,7 @@ public class WorriesFightScreen extends Screen {
             int followCount = 0;   //follow 框个数
             int petCount = 0;    //pet 框个数
             int allCount = 0;     //all 框个数
+            int[] figureGap = {130,110,90};      //按个数确定头像间隔
 
             for(int i=0; i<fighterInfo.length(); i++){
                 if(Integer.valueOf((String)fighterInfo.getJSONObject(i).get("type")).intValue() == 0){     //hero animation
@@ -379,12 +380,12 @@ public class WorriesFightScreen extends Screen {
                         g.drawImage(shadow_monster_2[Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-8][hp_img_width<=0?0:1], 110+allCount*90, 360, Globe.ANCHOR_T_L);
 
                         //绘制hp条
-                        g.setClip(100+allCount*90, 440, hp_img_width, hp_img.getHeight());
+                        g.setClip(100+allCount*figureGap[5-fighterInfo.length()], 440, hp_img_width, hp_img.getHeight());
                         g.drawImage(hp_img,  100+allCount*90, 440, 20);
                         g.setClip(0, 0, Globe.SW, Globe.SH);
 
                         //绘制anger条
-                        g.setClip(100+allCount*90, 450, anger_img_width, anger_img.getHeight());
+                        g.setClip(100+allCount*figureGap[5-fighterInfo.length()], 450, anger_img_width, anger_img.getHeight());
                         g.drawImage(anger_img,  100+allCount*90, 450, 20);
                         g.setClip(0, 0, Globe.SW, Globe.SH);
 
@@ -395,12 +396,12 @@ public class WorriesFightScreen extends Screen {
                         g.drawImage(shadow_monster_2[Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-8][hp_img_width<=0?0:1], 110+allCount*90, 360, Globe.ANCHOR_T_L);
 
                         //绘制hp条
-                        g.setClip(100+allCount*90, 440, hp_img_width, hp_img.getHeight());
+                        g.setClip(100+allCount*figureGap[5-fighterInfo.length()], 440, hp_img_width, hp_img.getHeight());
                         g.drawImage(hp_img,  100+allCount*90, 440, 20);
                         g.setClip(0, 0, Globe.SW, Globe.SH);
 
                         //绘制anger条
-                        g.setClip(100+allCount*90, 450, anger_img_width, anger_img.getHeight());
+                        g.setClip(100+allCount*figureGap[5-fighterInfo.length()], 450, anger_img_width, anger_img.getHeight());
                         g.drawImage(anger_img,  100+allCount*90, 450, 20);
                         g.setClip(0, 0, Globe.SW, Globe.SH);
                         allCount ++;
@@ -413,12 +414,12 @@ public class WorriesFightScreen extends Screen {
                         g.drawImage(shadow_monster_l[Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-20][hp_img_width<=0?0:1], 110+allCount*90, 360, Globe.ANCHOR_T_L);
 
                         //绘制hp条
-                        g.setClip(100+allCount*90, 440, hp_img_width, hp_img.getHeight());
+                        g.setClip(100+allCount*figureGap[5-fighterInfo.length()], 440, hp_img_width, hp_img.getHeight());
                         g.drawImage(hp_img,  100+allCount*90, 440, 20);
                         g.setClip(0, 0, Globe.SW, Globe.SH);
 
                         //绘制anger条
-                        g.setClip(100+allCount*90, 450, anger_img_width, anger_img.getHeight());
+                        g.setClip(100+allCount*figureGap[5-fighterInfo.length()], 450, anger_img_width, anger_img.getHeight());
                         g.drawImage(anger_img,  100+allCount*90, 450, 20);
                         g.setClip(0, 0, Globe.SW, Globe.SH);
                         allCount ++;
@@ -427,12 +428,12 @@ public class WorriesFightScreen extends Screen {
                         g.drawImage(shadow_monster_l[Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-20][hp_img_width<=0?0:1], 110+allCount*90, 360, Globe.ANCHOR_T_L);
 
                         //绘制hp条
-                        g.setClip(100+allCount*90, 440, hp_img_width, hp_img.getHeight());
+                        g.setClip(100+allCount*figureGap[5-fighterInfo.length()], 440, hp_img_width, hp_img.getHeight());
                         g.drawImage(hp_img,  100+allCount*90, 440, 20);
                         g.setClip(0, 0, Globe.SW, Globe.SH);
 
                         //绘制anger条
-                        g.setClip(100+allCount*90, 450, anger_img_width, anger_img.getHeight());
+                        g.setClip(100+allCount*figureGap[5-fighterInfo.length()], 450, anger_img_width, anger_img.getHeight());
                         g.drawImage(anger_img,  100+allCount*90, 450, 20);
                         g.setClip(0, 0, Globe.SW, Globe.SH);
                         allCount ++;
@@ -461,15 +462,15 @@ public class WorriesFightScreen extends Screen {
         g.drawString(LWGameCanvas.chest_num+"", 560, 20, Globe.ANCHOR_T_H);
 
 
-        try {
-            g.drawString(enemyInfo.getJSONObject(0).getJSONArray("ken").get(0)+"", 300, 20, Globe.ANCHOR_T_H);
-            g.drawString(enemyInfo.getJSONObject(0).getJSONArray("ken").get(1)+"", 300, 80, Globe.ANCHOR_T_H);
-            g.drawString(enemyInfo.getJSONObject(0).getJSONArray("ken").get(2)+"", 300, 140, Globe.ANCHOR_T_H);
-            g.drawString(enemyInfo.getJSONObject(0).getJSONArray("ken").get(3)+"", 300, 200, Globe.ANCHOR_T_H);
-            g.drawString(enemyInfo.getJSONObject(0).getJSONArray("ken").get(4)+"", 300, 260, Globe.ANCHOR_T_H);
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            g.drawString(enemyInfo.getJSONObject(0).getJSONArray("ken").get(0)+"", 300, 20, Globe.ANCHOR_T_H);
+//            g.drawString(enemyInfo.getJSONObject(0).getJSONArray("ken").get(1)+"", 300, 80, Globe.ANCHOR_T_H);
+//            g.drawString(enemyInfo.getJSONObject(0).getJSONArray("ken").get(2)+"", 300, 140, Globe.ANCHOR_T_H);
+//            g.drawString(enemyInfo.getJSONObject(0).getJSONArray("ken").get(3)+"", 300, 200, Globe.ANCHOR_T_H);
+//            g.drawString(enemyInfo.getJSONObject(0).getJSONArray("ken").get(4)+"", 300, 260, Globe.ANCHOR_T_H);
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        }
 
     }
 
