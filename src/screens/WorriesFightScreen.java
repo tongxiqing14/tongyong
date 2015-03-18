@@ -24,71 +24,6 @@ import javax.microedition.lcdui.Image;
  */
 public class WorriesFightScreen extends Screen {
 
-    private Image mainBG;
-    Motion motion;
-    Motion[] left_atack_2_motion;
-    Motion[] renwu_huonv_motion;
-
-    /**enmey动画*/
-    Motion enemy_motion_1;
-    Motion[] enemy_motion_2;
-    Motion[] enemy_motion_3;
-
-    Motion dead_motion;
-    Motion dead_motion_1;
-    Motion atomic_elec_motion;
-
-    Motion eff_point_Coco_atk_motion;
-    Motion eff_point_Coco_atk_motion1;
-    Motion eff_point_Coco_atk_motion2;
-    Motion eff_point_Coco_atk_motion3;
-
-    Motion gripper_motion;
-    Image bottom_02_img;
-    Image title_2_13_img;
-    Image chest_2_07_img;
-    Image jewelry_2_05_img;
-    Image hourglass_img;
-
-    Image[] anger_unfull_img;
-    Image[][] shadow_hero_2;
-    Image[][] shadow_monster_2;
-    Image[][] shadow_monster_l;
-
-    Image hp_img;
-    Image anger_img;
-    Image successfailure_img;
-    Image success_img;
-
-    Effect fallingFires;
-    Effect pointCocos;
-    Effect lighting;
-    Effect watership;
-    Effect fireball;
-    Effect storm;
-    Effect hurricane;
-    Effect icesmall;
-
-    String[][] bgImgPaths = {{"menu/bg1.jpg","menu/bg2.jpg","menu/bg3.jpg","menu/bg4.jpg","menu/bg5.jpg","menu/bg6.jpg","menu/bg7.jpg","menu/bg8.jpg","menu/bg9.jpg"},
-                            {"menu/bg10.jpg","menu/bg11.jpg","menu/bg12.jpg","menu/bg13.jpg","menu/bg14.jpg","menu/bg15.jpg","menu/bg16.jpg","menu/bg17.jpg","menu/bg18.jpg"},
-                            {"menu/bg19.jpg","menu/bg20.jpg","menu/bg21.jpg","menu/bg22.jpg","menu/bg23.jpg","menu/bg24.jpg","menu/bg25.jpg","menu/bg26.jpg","menu/bg27.jpg"},
-                            {"menu/bg28.jpg","menu/bg29.jpg","menu/bg30.jpg","menu/bg31.jpg","menu/bg32.jpg","menu/bg33.jpg","menu/bg34.jpg","menu/bg35.jpg","menu/bg36.jpg"},
-                            {"menu/bg37.jpg","menu/bg38.jpg","menu/bg39.jpg","menu/bg40.jpg","menu/bg41.jpg"}};
-
-    private int falling_fire_y = 0;
-    public static int[] pos_y_array = {250, 300, 250};
-    private int watership_x = 0;
-    private int fireball_x = 0;
-
-    private JSONArray fighterInfo; // fighter数据
-    private JSONArray enemyInfo; // enemy数据
-
-    private int hp_img_width;
-    private int anger_img_width;
-
-    private int secondCount = 30;
-    private int minuteCount = 3;
-
     public WorriesFightScreen(int screenId) {
         super(screenId);
 //        motion = new Motion("/hero/red/red.anu",210,250);
@@ -556,9 +491,6 @@ public class WorriesFightScreen extends Screen {
         Runtime.getRuntime().gc();
     }
 
-    private int followCount = 0;
-    private int petCount = 0;
-
     public void motionImpl(int type, int fighter_id){
 
         if(type == 0){     //hero animation
@@ -570,5 +502,73 @@ public class WorriesFightScreen extends Screen {
         }
 
     }
+
+    private int followCount = 0;
+    private int petCount = 0;
+
+    private Image mainBG;
+    Motion motion;
+    Motion[] left_atack_2_motion;
+    Motion[] renwu_huonv_motion;
+
+    /**enmey动画*/
+    Motion enemy_motion_1;
+    Motion[] enemy_motion_2;
+    Motion[] enemy_motion_3;
+
+    Motion dead_motion;
+    Motion dead_motion_1;
+    Motion atomic_elec_motion;
+
+    Motion eff_point_Coco_atk_motion;
+    Motion eff_point_Coco_atk_motion1;
+    Motion eff_point_Coco_atk_motion2;
+    Motion eff_point_Coco_atk_motion3;
+
+    Motion gripper_motion;
+    Image bottom_02_img;
+    Image title_2_13_img;
+    Image chest_2_07_img;
+    Image jewelry_2_05_img;
+    Image hourglass_img;
+
+    Image[] anger_unfull_img;
+    Image[][] shadow_hero_2;
+    Image[][] shadow_monster_2;
+    Image[][] shadow_monster_l;
+
+    Image hp_img;
+    Image anger_img;
+    Image successfailure_img;
+    Image success_img;
+
+    Effect fallingFires;
+    Effect pointCocos;
+    Effect lighting;
+    Effect watership;
+    Effect fireball;
+    Effect storm;
+    Effect hurricane;
+    Effect icesmall;
+
+    String[][] bgImgPaths = {{"menu/bg1.jpg","menu/bg2.jpg","menu/bg3.jpg","menu/bg4.jpg","menu/bg5.jpg","menu/bg6.jpg","menu/bg7.jpg","menu/bg8.jpg","menu/bg9.jpg"},
+            {"menu/bg10.jpg","menu/bg11.jpg","menu/bg12.jpg","menu/bg13.jpg","menu/bg14.jpg","menu/bg15.jpg","menu/bg16.jpg","menu/bg17.jpg","menu/bg18.jpg"},
+            {"menu/bg19.jpg","menu/bg20.jpg","menu/bg21.jpg","menu/bg22.jpg","menu/bg23.jpg","menu/bg24.jpg","menu/bg25.jpg","menu/bg26.jpg","menu/bg27.jpg"},
+            {"menu/bg28.jpg","menu/bg29.jpg","menu/bg30.jpg","menu/bg31.jpg","menu/bg32.jpg","menu/bg33.jpg","menu/bg34.jpg","menu/bg35.jpg","menu/bg36.jpg"},
+            {"menu/bg37.jpg","menu/bg38.jpg","menu/bg39.jpg","menu/bg40.jpg","menu/bg41.jpg"}};
+
+    private int falling_fire_y = 0;
+    public static int[] pos_y_array = {250, 300, 250};
+    private int watership_x = 0;
+    private int fireball_x = 0;
+
+    private JSONArray fighterInfo; // fighter数据
+    private JSONArray enemyInfo; // enemy数据
+
+    private int hp_img_width;
+    private int anger_img_width;
+
+    private int secondCount = 30;
+    private int minuteCount = 3;
 
 }
