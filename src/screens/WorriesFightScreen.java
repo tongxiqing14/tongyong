@@ -172,19 +172,19 @@ public class WorriesFightScreen extends Screen {
         motion.update(250,250);
 
         enemy_motion_1.keepId(0);
-        enemy_motion_1.update(390,pos_y_array[0]);
+        enemy_motion_1.update(350,pos_y_array[0]);
 
         enemy_motion_2[0].keepId(0);
-        enemy_motion_2[0].update(450, pos_y_array[1]-50);
+        enemy_motion_2[0].update(450, pos_y_array[1]-70);
 
         enemy_motion_2[1].keepId(0);
         enemy_motion_2[1].update(450, pos_y_array[1]+50);
 
         enemy_motion_3[0].keepId(0);
-        enemy_motion_3[0].update(550, pos_y_array[2]-50);  //pos_y control by PointCoco class
+        enemy_motion_3[0].update(550, pos_y_array[2]-30);  //pos_y control by PointCoco class
 
         enemy_motion_3[1].keepId(0);
-        enemy_motion_3[1].update(550, pos_y_array[2]+50);  //pos_y control by PointCoco class
+        enemy_motion_3[1].update(550, pos_y_array[2]+70);  //pos_y control by PointCoco class
 
         left_atack_2_motion[0].keepId(0);
         left_atack_2_motion[0].update(120, 250);
@@ -237,7 +237,7 @@ public class WorriesFightScreen extends Screen {
         gripper_motion.keepId(0);
         gripper_motion.update(420,250);
 
-        if((secondCount+3)%3==0){
+        if((secondCount+25)%25 == 0){      //游戏时长控制
             LWGameCanvas.sum_enemy_hp_num -= LWGameCanvas.sum_fight_num;
             LWGameCanvas.sum_hero_hp_num -= LWGameCanvas.sum_enemy_fight_num;
         }
@@ -338,7 +338,7 @@ public class WorriesFightScreen extends Screen {
 //        hurricane.draw(g);
 
         /**ice small draw*/
-        icesmall.draw(g);
+        if(anger_img_width >= anger_img.getWidth()) icesmall.draw(g);
 
         g.drawImage(hourglass_img, 50, 20, Globe.ANCHOR_T_L);
 
@@ -462,16 +462,7 @@ public class WorriesFightScreen extends Screen {
         g.drawString(LWGameCanvas.chest_num+"", 560, 20, Globe.ANCHOR_T_H);
 
 
-//        try {
-//            g.drawString(enemyInfo.getJSONObject(0).getJSONArray("ken").get(0)+"", 300, 20, Globe.ANCHOR_T_H);
-//            g.drawString(enemyInfo.getJSONObject(0).getJSONArray("ken").get(1)+"", 300, 80, Globe.ANCHOR_T_H);
-//            g.drawString(enemyInfo.getJSONObject(0).getJSONArray("ken").get(2)+"", 300, 140, Globe.ANCHOR_T_H);
-//            g.drawString(enemyInfo.getJSONObject(0).getJSONArray("ken").get(3)+"", 300, 200, Globe.ANCHOR_T_H);
-//            g.drawString(enemyInfo.getJSONObject(0).getJSONArray("ken").get(4)+"", 300, 260, Globe.ANCHOR_T_H);
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//        }
-
+        g.drawString(Integer.valueOf(NetHander.selected_stage).intValue()+"", 560, 120, Globe.ANCHOR_T_H);
     }
 
     public void clear() {
