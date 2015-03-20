@@ -54,7 +54,7 @@ public class WorriesFightScreen extends Screen {
         fighterEffects = new Effect[4];
         fighterEffects[0] = new FallingFires(0,200,250);
         fighterEffects[1] = new PointCoco(0,300,250);
-        fighterEffects[2] = new Lightning();
+        fighterEffects[2] = new FireBall();
         fighterEffects[3] = new WaterShip();
     }
 
@@ -206,7 +206,7 @@ public class WorriesFightScreen extends Screen {
         atomic_elec_motion.update(240,250);
 
         if(anger_img_width >= anger_img.getWidth()){
-            fighterEffects[0].update(0);      //0无效
+            fighterEffects[2].update(0);      //0无效
         }
 
         eff_point_Coco_atk_motion.keepId(0);
@@ -325,7 +325,7 @@ public class WorriesFightScreen extends Screen {
 //        hurricane.draw(g);
 
         /**ice small draw*/
-        if(anger_img_width >= anger_img.getWidth()) fighterEffects[0].draw(g);
+        if(anger_img_width >= anger_img.getWidth()) fighterEffects[2].draw(g);
 
         g.drawImage(hourglass_img, 50, 20, Globe.ANCHOR_T_L);
 
