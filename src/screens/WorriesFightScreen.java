@@ -206,9 +206,7 @@ public class WorriesFightScreen extends Screen {
         atomic_elec_motion.update(240,250);
 
         if(anger_img_width >= anger_img.getWidth()){
-            /**falling fire path*/
-            if(falling_fire_y < 250) falling_fire_y += 10;
-            fighterEffects[0].update(falling_fire_y);
+            fighterEffects[0].update(0);      //0ÎÞÐ§
         }
 
         eff_point_Coco_atk_motion.keepId(0);
@@ -531,7 +529,7 @@ public class WorriesFightScreen extends Screen {
     private int followCount = 0;
     private int petCount = 0;
     private Image mainBG;
-    private int falling_fire_y = 0;
+//    private int falling_fire_y = 0;
     public static int[] pos_y_array = {250, 300, 250};
     private int watership_x = 0;
     private int fireball_x = 0;

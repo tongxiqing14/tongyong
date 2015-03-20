@@ -10,16 +10,11 @@ import javax.microedition.lcdui.Graphics;
 public class FallingFires implements Effect{
 
     private int animid;
-//    private int falling_fire_x;
-//    private int falling_fire_y;
-
+    private int falling_fire_y;
     private Motion[] falling_fire_motion;
 
     public FallingFires(int id, int falling_fire_x, int falling_fire_y) {
         this.animid = id;
-//        this.falling_fire_x = falling_fire_x;
-//        this.falling_fire_y = falling_fire_y;
-
         falling_fire_motion = new Motion[4];
 
         for (int i=0; i<falling_fire_motion.length; i++){
@@ -29,7 +24,10 @@ public class FallingFires implements Effect{
 
     }
 
-    public void update(int falling_fire_y){
+    public void update(int falling_fire_y__){
+
+        /**falling fire path*/
+        if(falling_fire_y < 250) falling_fire_y += 10;
 
         for (int i=0; i<falling_fire_motion.length; i++){
             falling_fire_motion[i].keepId(animid);
