@@ -26,8 +26,6 @@ public class WorriesFightScreen extends Screen {
 
     public WorriesFightScreen(int screenId) {
         super(screenId);
-//        motion = new Motion("/hero/red/red.anu",210,250);
-//        motion.keepId(0);
 
         left_atack_2_motion = new Motion[2];
         renwu_huonv_motion = new Motion[2];
@@ -58,10 +56,6 @@ public class WorriesFightScreen extends Screen {
         fighterEffects[1] = new PointCoco(0,300,250);
         fighterEffects[2] = new Lightning();
         fighterEffects[3] = new WaterShip();
-//        fireball = new FireBall();
-//        storm = new Storm();
-//        hurricane = new Hurricane();
-//        icesmall = new IceSmall();
     }
 
     public void init() {
@@ -189,7 +183,7 @@ public class WorriesFightScreen extends Screen {
 
         left_atack_2_motion[0].keepId(0);
         left_atack_2_motion[0].update(120, 250);
-//
+
         if(followCount>1){
             left_atack_2_motion[1].keepId(0);
             left_atack_2_motion[1].update(120,300);
@@ -198,7 +192,7 @@ public class WorriesFightScreen extends Screen {
 
         renwu_huonv_motion[0].keepId(0);
         renwu_huonv_motion[0].update(180, 250);
-//
+
         if(petCount>1){
             renwu_huonv_motion[1].keepId(0);
             renwu_huonv_motion[1].update(180,300);
@@ -214,19 +208,8 @@ public class WorriesFightScreen extends Screen {
         if(anger_img_width >= anger_img.getWidth()){
             /**falling fire path*/
             if(falling_fire_y < 250) falling_fire_y += 10;
-//        falling_fire_motion.keepId(0);
-//        falling_fire_motion.update(200,falling_fire_y);
             fighterEffects[0].update(falling_fire_y);
         }
-
-//        pointCocos.update(250);
-//        fighterEffects[0].update(250);
-//
-//        if(watership_x < 700) fighterEffects[0].update(watership_x += 20);
-//        if(fireball_x < 700) fighterEffects[0].update(fireball_x += 20);
-//        fighterEffects[0].update(300);
-//        fighterEffects[0].update(300);
-//        fighterEffects[0].update(400);
 
         eff_point_Coco_atk_motion.keepId(0);
         eff_point_Coco_atk_motion.update(350,300);
@@ -501,10 +484,7 @@ public class WorriesFightScreen extends Screen {
 
     }
 
-    private int followCount = 0;
-    private int petCount = 0;
 
-    private Image mainBG;
     Motion motion;
     Motion[] left_atack_2_motion;
     Motion[] renwu_huonv_motion;
@@ -548,6 +528,9 @@ public class WorriesFightScreen extends Screen {
             {"menu/bg28.jpg","menu/bg29.jpg","menu/bg30.jpg","menu/bg31.jpg","menu/bg32.jpg","menu/bg33.jpg","menu/bg34.jpg","menu/bg35.jpg","menu/bg36.jpg"},
             {"menu/bg37.jpg","menu/bg38.jpg","menu/bg39.jpg","menu/bg40.jpg","menu/bg41.jpg"}};
 
+    private int followCount = 0;
+    private int petCount = 0;
+    private Image mainBG;
     private int falling_fire_y = 0;
     public static int[] pos_y_array = {250, 300, 250};
     private int watership_x = 0;
