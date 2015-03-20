@@ -529,10 +529,7 @@ public class WorriesFightScreen extends Screen {
     private int followCount = 0;
     private int petCount = 0;
     private Image mainBG;
-//    private int falling_fire_y = 0;
     public static int[] pos_y_array = {250, 300, 250};
-    private int watership_x = 0;
-    private int fireball_x = 0;
 
     private JSONArray fighterInfo; // fighter数据
     private JSONArray enemyInfo; // enemy数据

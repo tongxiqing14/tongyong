@@ -27,7 +27,7 @@ public class FallingFires implements Effect{
     public void update(int falling_fire_y__){
 
         /**falling fire path*/
-        if(falling_fire_y < 250) falling_fire_y += 10;
+        if(falling_fire_y < 300) falling_fire_y += 20;
 
         for (int i=0; i<falling_fire_motion.length; i++){
             falling_fire_motion[i].keepId(animid);
@@ -38,8 +38,10 @@ public class FallingFires implements Effect{
 
     public void draw(Graphics g){
 
-        for (int i=0; i<falling_fire_motion.length; i++){
-            falling_fire_motion[i].draw(g);
+        if(falling_fire_y < 300){
+            for (int i=0; i<falling_fire_motion.length; i++){
+                falling_fire_motion[i].draw(g);
+            }
         }
 
     }
