@@ -53,14 +53,15 @@ public class WorriesFightScreen extends Screen {
         gripper_motion = new Motion("/effect2/gripper/gripper.anu",420,250);
         gripper_motion.keepId(0);
 
-        fallingFires = new FallingFires(0,200,250);
-        pointCocos = new PointCoco(0,300,250);
-        lighting = new Lightning();
-        watership = new WaterShip();
-        fireball = new FireBall();
-        storm = new Storm();
-        hurricane = new Hurricane();
-        icesmall = new IceSmall();
+        fighterEffects = new Effect[4];
+        fighterEffects[0] = new FallingFires(0,200,250);
+        fighterEffects[1] = new PointCoco(0,300,250);
+        fighterEffects[2] = new Lightning();
+        fighterEffects[3] = new WaterShip();
+//        fireball = new FireBall();
+//        storm = new Storm();
+//        hurricane = new Hurricane();
+//        icesmall = new IceSmall();
     }
 
     public void init() {
@@ -214,16 +215,16 @@ public class WorriesFightScreen extends Screen {
         if(falling_fire_y < 250) falling_fire_y += 10;
 //        falling_fire_motion.keepId(0);
 //        falling_fire_motion.update(200,falling_fire_y);
-        fallingFires.update(falling_fire_y);
+        fighterEffects[0].update(falling_fire_y);
 
 //        pointCocos.update(250);
-        lighting.update(250);
+        fighterEffects[0].update(250);
 
-        if(watership_x < 700) watership.update(watership_x+=20);
-        if(fireball_x < 700) fireball.update(fireball_x+=20);
-        storm.update(300);
-        hurricane.update(300);
-        icesmall.update(400);
+        if(watership_x < 700) fighterEffects[0].update(watership_x += 20);
+        if(fireball_x < 700) fighterEffects[0].update(fireball_x += 20);
+        fighterEffects[0].update(300);
+        fighterEffects[0].update(300);
+        fighterEffects[0].update(400);
 
         eff_point_Coco_atk_motion.keepId(0);
         eff_point_Coco_atk_motion.update(350,300);
@@ -285,7 +286,10 @@ public class WorriesFightScreen extends Screen {
     public void draw(Graphics g) {
 
         hp_img_width -= 2;
-        if(anger_img_width < anger_img.getWidth()) anger_img_width += 2;
+
+//        if((secondCount+5)%5 == 0){            //技能冷却时间控制
+            if(anger_img_width < anger_img.getWidth()) anger_img_width += 2;
+//        }
 
         g.drawImage(mainBG, 0, 0, 20);
 //        LWGameCanvas.rmidlet.getAppProperty("");
@@ -338,7 +342,7 @@ public class WorriesFightScreen extends Screen {
 //        hurricane.draw(g);
 
         /**ice small draw*/
-        if(anger_img_width >= anger_img.getWidth()) icesmall.draw(g);
+        if(anger_img_width >= anger_img.getWidth()) fighterEffects[0].draw(g);
 
         g.drawImage(hourglass_img, 50, 20, Globe.ANCHOR_T_L);
 
@@ -534,14 +538,16 @@ public class WorriesFightScreen extends Screen {
     Image successfailure_img;
     Image success_img;
 
-    Effect fallingFires;
-    Effect pointCocos;
-    Effect lighting;
-    Effect watership;
-    Effect fireball;
-    Effect storm;
-    Effect hurricane;
-    Effect icesmall;
+//    Effect fallingFires;
+//    Effect pointCocos;
+//    Effect lighting;
+//    Effect watership;
+//    Effect fireball;
+//    Effect storm;
+//    Effect hurricane;
+//    Effect icesmall;
+
+    Effect[] fighterEffects;
 
     String[][] bgImgPaths = new String[][]{{"menu/bg1.jpg","menu/bg2.jpg","menu/bg3.jpg","menu/bg4.jpg","menu/bg5.jpg","menu/bg6.jpg","menu/bg7.jpg","menu/bg8.jpg","menu/bg9.jpg"},
             {"menu/bg10.jpg","menu/bg11.jpg","menu/bg12.jpg","menu/bg13.jpg","menu/bg14.jpg","menu/bg15.jpg","menu/bg16.jpg","menu/bg17.jpg","menu/bg18.jpg"},
