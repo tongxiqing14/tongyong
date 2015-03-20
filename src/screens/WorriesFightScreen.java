@@ -211,20 +211,22 @@ public class WorriesFightScreen extends Screen {
         atomic_elec_motion.keepId(0);
         atomic_elec_motion.update(240,250);
 
-        /**falling fire path*/
-        if(falling_fire_y < 250) falling_fire_y += 10;
+        if(anger_img_width >= anger_img.getWidth()){
+            /**falling fire path*/
+            if(falling_fire_y < 250) falling_fire_y += 10;
 //        falling_fire_motion.keepId(0);
 //        falling_fire_motion.update(200,falling_fire_y);
-        fighterEffects[0].update(falling_fire_y);
+            fighterEffects[0].update(falling_fire_y);
+        }
 
 //        pointCocos.update(250);
-        fighterEffects[0].update(250);
-
-        if(watership_x < 700) fighterEffects[0].update(watership_x += 20);
-        if(fireball_x < 700) fighterEffects[0].update(fireball_x += 20);
-        fighterEffects[0].update(300);
-        fighterEffects[0].update(300);
-        fighterEffects[0].update(400);
+//        fighterEffects[0].update(250);
+//
+//        if(watership_x < 700) fighterEffects[0].update(watership_x += 20);
+//        if(fireball_x < 700) fighterEffects[0].update(fireball_x += 20);
+//        fighterEffects[0].update(300);
+//        fighterEffects[0].update(300);
+//        fighterEffects[0].update(400);
 
         eff_point_Coco_atk_motion.keepId(0);
         eff_point_Coco_atk_motion.update(350,300);
@@ -537,15 +539,6 @@ public class WorriesFightScreen extends Screen {
     Image anger_img;
     Image successfailure_img;
     Image success_img;
-
-//    Effect fallingFires;
-//    Effect pointCocos;
-//    Effect lighting;
-//    Effect watership;
-//    Effect fireball;
-//    Effect storm;
-//    Effect hurricane;
-//    Effect icesmall;
 
     Effect[] fighterEffects;
 
