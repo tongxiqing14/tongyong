@@ -206,7 +206,7 @@ public class WorriesFightScreen extends Screen {
         atomic_elec_motion.update(240,250);
 
         if(anger_img_width >= anger_img.getWidth()){
-            fighterEffects[2].update(0);      //0无效
+            fighterEffects[1].update(0);      //0无效
         }
 
         eff_point_Coco_atk_motion.keepId(0);
@@ -325,7 +325,7 @@ public class WorriesFightScreen extends Screen {
 //        hurricane.draw(g);
 
         /**ice small draw*/
-        if(anger_img_width >= anger_img.getWidth()) fighterEffects[2].draw(g);
+        if(anger_img_width >= anger_img.getWidth()) fighterEffects[1].draw(g);
 
         g.drawImage(hourglass_img, 50, 20, Globe.ANCHOR_T_L);
 
