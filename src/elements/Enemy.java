@@ -84,7 +84,7 @@ public class Enemy {
 			isVisible = false;
 		}
 	}
-	
+
 	public void setFactX(int factX) {
 		this.factX = factX;
 	}
@@ -169,7 +169,7 @@ public class Enemy {
 				deadMotion.draw(g);
 			}
 			g.setColor(255,0,0);
-		
+
 //			g.drawString("+1", X, Y, 20);
 			if(factX>0 && lanFrame>0)
 			{
@@ -238,7 +238,7 @@ public class Enemy {
 
 		}
 		if (type == 0) {
-			
+
 			if (tempval == 0) {
 				height = 45;
 				width = 116;

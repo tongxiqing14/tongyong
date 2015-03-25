@@ -14,6 +14,7 @@ import org.json.me.JSONException;
 
 import javax.microedition.lcdui.Graphics;
 import javax.microedition.lcdui.Image;
+import java.util.Enumeration;
 import java.util.Hashtable;
 
 /**
@@ -278,17 +279,22 @@ public class WorriesFightScreen extends Screen {
 
     public void draw(Graphics g) {
 
-        while (heroHphashtable.keys().hasMoreElements()){
-            Integer v = (Integer) heroHphashtable.elements().nextElement();
-            v = new Integer((v.intValue() - (5/100)*v.intValue()));
-            heroHphashtable.put(heroHphashtable.keys().nextElement(),v);
+        for(Enumeration it = heroHphashtable.keys(); it.hasMoreElements(); ) {
+            //从ht中取
+            Integer key = (Integer) it.nextElement();
+            Integer value = (Integer) heroHphashtable.get(key);
 
+            value = new Integer((value.intValue() - (5/100)*value.intValue()));
+            heroHphashtable.put(key,value);
         }
 
-        while (hp_img_widthhashtable.keys().hasMoreElements()){
-            Integer hp = (Integer) hp_img_widthhashtable.elements().nextElement();
-            hp = new Integer((hp.intValue() - (5/100)*hp.intValue()));
-            hp_img_widthhashtable.put(hp_img_widthhashtable.keys().nextElement(),hp);
+        for(Enumeration it = hp_img_widthhashtable.keys(); it.hasMoreElements(); ) {
+            //从ht中取
+            Integer key = (Integer) it.nextElement();
+            Integer value = (Integer) hp_img_widthhashtable.get(key);
+
+            value = new Integer((value.intValue() - (5/100)*value.intValue()));
+            hp_img_widthhashtable.put(key,value);
         }
 
 //        if((secondCount+5)%5 == 0){            //技能冷却时间控制

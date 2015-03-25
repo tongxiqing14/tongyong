@@ -17,7 +17,7 @@ public class Globe {
 	public static int SW = 640;
 	public static int SH = 530;
 	public static Download download;
-	
+
 	public static int downloadStage=0;
 	public static boolean downloadOver=false;
 
@@ -27,7 +27,7 @@ public class Globe {
 	public static boolean isEndLess=false;
 
     public static int confirmScreenId;
-	
+
 	public static final int ANCHOR_T_L = Graphics.TOP | Graphics.LEFT;
 	public static final int ANCHOR_H_V = Graphics.HCENTER | Graphics.VCENTER;
 	public static final int ANCHOR_T_H = Graphics.TOP | Graphics.HCENTER;
@@ -129,7 +129,7 @@ public class Globe {
 		int enemy_w = enemy_m.getWidth();
 		int enemy_x = enemy_m.getPosx()+(enemy_w>>1);
 		int enemy_y = enemy_m.getPosy();
-		
+
 		if ((hero_y - enemy_y) >0)
 		{
 			if (Math.abs(hero_y - enemy_y) < (hero_h / 3)
@@ -157,7 +157,7 @@ public class Globe {
 		int enemy_h = enemy_m.getHeight();
 		int enemy_x = enemy_m.getPosx()+(enemy_w>>1);
 		int enemy_y = enemy_m.getPosy()+(enemy_h>>1);
-		
+
 			if((Math.abs(hero_y -enemy_y) < (hero_h + enemy_h)>>1) && Math.abs(hero_x-enemy_x)<(hero_w +enemy_w)>>1)
 			{
 				return true;
@@ -168,7 +168,7 @@ public class Globe {
 	}
 	/**
 	 * 切割字符串的方法
-	 * 
+	 *
 	 * @param strIn
 	 *            要切割的字符串，换行要有特殊标记“/n”
 	 * @param w
@@ -226,7 +226,7 @@ public class Globe {
 	}
 
 	/***
-	 * 
+	 *
 	 * @param x1 被追踪
 	 * @param y1
 	 * @param x2 追踪
@@ -235,7 +235,7 @@ public class Globe {
 	 */
 	public static int[] getAng(int x1,int y1,int x2,int y2,int speed)
 	{
-		
+
 		int tempX_FP = x1-x2;
 		int tempY_FP = y2-y1;
 		int VXY[]=new int[2];
@@ -249,21 +249,21 @@ public class Globe {
 				VXY[0]= 0;
 				VXY[1]=speed;
 				return VXY;
-				
+
 			} else {
 				VXY[0]= 0;
 				VXY[1]=speed;
 				return VXY;
 			}
 		}
-		
+
 		int radians_FP=MathFP.div(MathFP.toFP(Math.abs(tempY_FP)),MathFP.toFP(Math.abs(tempX_FP)));
-		
+
 		int angle=MathFP.atan(radians_FP);
-		
+
 		VXY[0]= MathFP.mul(MathFP.toFP(speed), MathFP.cos(angle));
 		VXY[1]=-MathFP.mul(MathFP.toFP(speed), MathFP.sin(angle));
-	
+
 		if (tempX_FP < 0 && tempY_FP > 0) {//2
 			VXY[0]=-VXY[0];
 		} else if (tempX_FP < 0 && tempY_FP <= 0) {//3
@@ -279,7 +279,7 @@ public class Globe {
 
 	/**
 	 * 居中对齐
-	 * 
+	 *
 	 * @param g
 	 * @param num
 	 * @param x
