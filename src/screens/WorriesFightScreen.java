@@ -231,6 +231,24 @@ public class WorriesFightScreen extends Screen {
         gripper_motion.keepId(0);
         gripper_motion.update(420,250);
 
+        for(Enumeration it = heroHphashtable.keys(); it.hasMoreElements(); ) {
+            //从ht中取
+            Integer key = (Integer) it.nextElement();
+            Integer value = (Integer) heroHphashtable.get(key);
+
+            value = new Integer((value.intValue() - value.intValue()/10));
+            heroHphashtable.put(key,value);
+        }
+
+        for(Enumeration it = hp_img_widthhashtable.keys(); it.hasMoreElements(); ) {
+            //从ht中取
+            Integer key = (Integer) it.nextElement();
+            Integer value = (Integer) hp_img_widthhashtable.get(key);
+
+            value = new Integer((value.intValue() - value.intValue()/10));
+            hp_img_widthhashtable.put(key,value);
+        }
+
         if((secondCount+25)%25 == 0){      //游戏时长控制
             LWGameCanvas.sum_enemy_hp_num -= LWGameCanvas.sum_fight_num;
             LWGameCanvas.sum_hero_hp_num -= LWGameCanvas.sum_enemy_fight_num;
@@ -278,24 +296,6 @@ public class WorriesFightScreen extends Screen {
     }
 
     public void draw(Graphics g) {
-
-        for(Enumeration it = heroHphashtable.keys(); it.hasMoreElements(); ) {
-            //从ht中取
-            Integer key = (Integer) it.nextElement();
-            Integer value = (Integer) heroHphashtable.get(key);
-
-            value = new Integer((value.intValue() - (5/100)*value.intValue()));
-            heroHphashtable.put(key,value);
-        }
-
-        for(Enumeration it = hp_img_widthhashtable.keys(); it.hasMoreElements(); ) {
-            //从ht中取
-            Integer key = (Integer) it.nextElement();
-            Integer value = (Integer) hp_img_widthhashtable.get(key);
-
-            value = new Integer((value.intValue() - (5/100)*value.intValue()));
-            hp_img_widthhashtable.put(key,value);
-        }
 
 //        if((secondCount+5)%5 == 0){            //技能冷却时间控制
             if(anger_img_width < anger_img.getWidth()) anger_img_width += 2;
