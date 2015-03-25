@@ -14,6 +14,7 @@ import org.json.me.JSONException;
 
 import javax.microedition.lcdui.Graphics;
 import javax.microedition.lcdui.Image;
+import java.util.Hashtable;
 
 /**
  * Created with IntelliJ IDEA.
@@ -110,13 +111,21 @@ public class WorriesFightScreen extends Screen {
             }
         }
 
-        hp_img_width = hp_img.getWidth();
         anger_img_width = 0;
 
         try {
 
             fighterInfo = NetInfo.netHander.getFighterInfo();
             enemyInfo = NetInfo.netHander.getEnemyInfo();
+            enemyTeamList = NetInfo.netHander.getGameInfoII();
+            monsterList = NetInfo.netHander.getGameInfoIII();
+
+            heroHphashtable = new Hashtable();
+            hp_img_widthhashtable = new Hashtable();
+            for(int i=0; i<monsterList.length(); i++){
+                heroHphashtable.put(Integer.valueOf((String) monsterList.getJSONObject(i).get("fighter_id")), Integer.valueOf((String) monsterList.getJSONObject(i).get("hp_num")));
+                hp_img_widthhashtable.put(Integer.valueOf((String) monsterList.getJSONObject(i).get("fighter_id")), (new Integer(hp_img.getWidth())));
+            }
 
             enemy_motion_1 = new Motion((String) enemyInfo.getJSONObject(0).getJSONArray("ken").get(0),390,250);
             enemy_motion_1.keepId(0);
@@ -224,6 +233,7 @@ public class WorriesFightScreen extends Screen {
         if((secondCount+25)%25 == 0){      //游戏时长控制
             LWGameCanvas.sum_enemy_hp_num -= LWGameCanvas.sum_fight_num;
             LWGameCanvas.sum_hero_hp_num -= LWGameCanvas.sum_enemy_fight_num;
+
         }
 
         if(LWGameCanvas.sum_enemy_hp_num < 0){
@@ -268,7 +278,18 @@ public class WorriesFightScreen extends Screen {
 
     public void draw(Graphics g) {
 
-        hp_img_width -= 2;
+        while (heroHphashtable.keys().hasMoreElements()){
+            Integer v = (Integer) heroHphashtable.elements().nextElement();
+            v = new Integer((v.intValue() - (5/100)*v.intValue()));
+            heroHphashtable.put(heroHphashtable.keys().nextElement(),v);
+
+        }
+
+        while (hp_img_widthhashtable.keys().hasMoreElements()){
+            Integer hp = (Integer) hp_img_widthhashtable.elements().nextElement();
+            hp = new Integer((hp.intValue() - (5/100)*hp.intValue()));
+            hp_img_widthhashtable.put(hp_img_widthhashtable.keys().nextElement(),hp);
+        }
 
 //        if((secondCount+5)%5 == 0){            //技能冷却时间控制
             if(anger_img_width < anger_img.getWidth()) anger_img_width += 2;
@@ -340,14 +361,15 @@ public class WorriesFightScreen extends Screen {
             int petCount = 0;    //pet 框个数
             int allCount = 0;     //all 框个数
             int[] figureGap = {90,110,130};      //按个数确定头像间隔
+//            fighter_ids = new int[5];
 
             for(int i=0; i<fighterInfo.length(); i++){
-                if(Integer.valueOf((String)fighterInfo.getJSONObject(i).get("type")).intValue() == 0){     //hero animation
+                if(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("type")).intValue() == 0){     //hero animation
                     g.drawImage(anger_unfull_img[anger_img_width < anger_img.getWidth()?0:1], 100, 350, Globe.ANCHOR_T_L);
-                    g.drawImage(shadow_hero_2[Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-1][hp_img_width<=0?0:1], 110, 360, Globe.ANCHOR_T_L);
+                    g.drawImage(shadow_hero_2[Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-1][((Integer)hp_img_widthhashtable.get(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")))).intValue()<=0?0:1], 110, 360, Globe.ANCHOR_T_L);
 
                     //绘制hp条
-                    g.setClip(100, 440, hp_img_width, hp_img.getHeight());
+                    g.setClip(100, 440, ((Integer)hp_img_widthhashtable.get(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")))).intValue(), hp_img.getHeight());
                     g.drawImage(hp_img,  100, 440, 20);
                     g.setClip(0, 0, Globe.SW, Globe.SH);
 
@@ -358,16 +380,16 @@ public class WorriesFightScreen extends Screen {
 
                     allCount ++;
 
-                }else if(Integer.valueOf((String)fighterInfo.getJSONObject(i).get("type")).intValue() == 1){    //follow animation
+                }else if(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("type")).intValue() == 1){    //follow animation
 
                     if(followCount == 0){
                         followCount ++;
 
                         g.drawImage(anger_unfull_img[anger_img_width < anger_img.getWidth()?0:1], 100+allCount*figureGap[5-fighterInfo.length()], 350, Globe.ANCHOR_T_L);
-                        g.drawImage(shadow_monster_2[Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-8][hp_img_width<=0?0:1], 110+allCount*figureGap[5-fighterInfo.length()], 360, Globe.ANCHOR_T_L);
+                        g.drawImage(shadow_monster_2[Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-8][((Integer)hp_img_widthhashtable.get(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")))).intValue()<=0?0:1], 110+allCount*figureGap[5-fighterInfo.length()], 360, Globe.ANCHOR_T_L);
 
                         //绘制hp条
-                        g.setClip(100+allCount*90, 440, hp_img_width, hp_img.getHeight());
+                        g.setClip(100+allCount*90, 440, ((Integer)hp_img_widthhashtable.get(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")))).intValue(), hp_img.getHeight());
                         g.drawImage(hp_img,  100+allCount*figureGap[5-fighterInfo.length()], 440, 20);
                         g.setClip(0, 0, Globe.SW, Globe.SH);
 
@@ -380,10 +402,10 @@ public class WorriesFightScreen extends Screen {
 
                     }else {
                         g.drawImage(anger_unfull_img[anger_img_width < anger_img.getWidth()?0:1], 100+allCount*figureGap[5-fighterInfo.length()], 350, Globe.ANCHOR_T_L);
-                        g.drawImage(shadow_monster_2[Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-8][hp_img_width<=0?0:1], 110+allCount*figureGap[5-fighterInfo.length()], 360, Globe.ANCHOR_T_L);
+                        g.drawImage(shadow_monster_2[Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-8][((Integer)hp_img_widthhashtable.get(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")))).intValue()<=0?0:1], 110+allCount*figureGap[5-fighterInfo.length()], 360, Globe.ANCHOR_T_L);
 
                         //绘制hp条
-                        g.setClip(100+allCount*90, 440, hp_img_width, hp_img.getHeight());
+                        g.setClip(100+allCount*90, 440, ((Integer)hp_img_widthhashtable.get(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")))).intValue(), hp_img.getHeight());
                         g.drawImage(hp_img,  100+allCount*figureGap[5-fighterInfo.length()], 440, 20);
                         g.setClip(0, 0, Globe.SW, Globe.SH);
 
@@ -394,14 +416,14 @@ public class WorriesFightScreen extends Screen {
                         allCount ++;
                     }
 
-                }else if(Integer.valueOf((String)fighterInfo.getJSONObject(i).get("type")).intValue() == 2){   //pets animation
+                }else if(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("type")).intValue() == 2){   //pets animation
                     if(petCount == 0){
                         petCount ++;
                         g.drawImage(anger_unfull_img[anger_img_width < anger_img.getWidth()?0:1], 100+allCount*figureGap[5-fighterInfo.length()], 350, Globe.ANCHOR_T_L);
-                        g.drawImage(shadow_monster_l[Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-20][hp_img_width<=0?0:1], 110+allCount*figureGap[5-fighterInfo.length()], 360, Globe.ANCHOR_T_L);
+                        g.drawImage(shadow_monster_l[Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-20][((Integer)hp_img_widthhashtable.get(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")))).intValue()<=0?0:1], 110+allCount*figureGap[5-fighterInfo.length()], 360, Globe.ANCHOR_T_L);
 
                         //绘制hp条
-                        g.setClip(100+allCount*90, 440, hp_img_width, hp_img.getHeight());
+                        g.setClip(100+allCount*90, 440, ((Integer)hp_img_widthhashtable.get(Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")))).intValue(), hp_img.getHeight());
                         g.drawImage(hp_img,  100+allCount*figureGap[5-fighterInfo.length()], 440, 20);
                         g.setClip(0, 0, Globe.SW, Globe.SH);
 
@@ -412,10 +434,10 @@ public class WorriesFightScreen extends Screen {
                         allCount ++;
                     }else {
                         g.drawImage(anger_unfull_img[anger_img_width < anger_img.getWidth()?0:1], 100+allCount*figureGap[5-fighterInfo.length()], 350, Globe.ANCHOR_T_L);
-                        g.drawImage(shadow_monster_l[Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-20][hp_img_width<=0?0:1], 110+allCount*figureGap[5-fighterInfo.length()], 360, Globe.ANCHOR_T_L);
+                        g.drawImage(shadow_monster_l[Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-20][((Integer)hp_img_widthhashtable.get(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")))).intValue()<=0?0:1], 110+allCount*figureGap[5-fighterInfo.length()], 360, Globe.ANCHOR_T_L);
 
                         //绘制hp条
-                        g.setClip(100+allCount*90, 440, hp_img_width, hp_img.getHeight());
+                        g.setClip(100+allCount*90, 440, ((Integer)hp_img_widthhashtable.get(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")))).intValue(), hp_img.getHeight());
                         g.drawImage(hp_img,  100+allCount*figureGap[5-fighterInfo.length()], 440, 20);
                         g.setClip(0, 0, Globe.SW, Globe.SH);
 
@@ -450,6 +472,9 @@ public class WorriesFightScreen extends Screen {
 
 
         g.drawString(Integer.valueOf(NetHander.selected_stage).intValue()+"", 560, 120, Globe.ANCHOR_T_H);
+
+        g.drawString(enemyTeamList.toString()+"", 0, 50, Globe.ANCHOR_T_H);
+        g.drawString(monsterList.toString()+"", 0, 100, Globe.ANCHOR_T_H);
     }
 
     public void clear() {
@@ -479,7 +504,6 @@ public class WorriesFightScreen extends Screen {
         }else if(type == 2){   //pets animation
             renwu_huonv_motion[petCount++] = Utility.motionImpl(type, fighter_id);
         }
-
     }
 
 
@@ -519,6 +543,9 @@ public class WorriesFightScreen extends Screen {
     Image success_img;
 
     Effect[] fighterEffects;
+//    int[] fighter_ids;
+    Hashtable heroHphashtable;
+    Hashtable hp_img_widthhashtable;
 
     String[][] bgImgPaths = new String[][]{{"menu/bg1.jpg","menu/bg2.jpg","menu/bg3.jpg","menu/bg4.jpg","menu/bg5.jpg","menu/bg6.jpg","menu/bg7.jpg","menu/bg8.jpg","menu/bg9.jpg"},
             {"menu/bg10.jpg","menu/bg11.jpg","menu/bg12.jpg","menu/bg13.jpg","menu/bg14.jpg","menu/bg15.jpg","menu/bg16.jpg","menu/bg17.jpg","menu/bg18.jpg"},
@@ -533,8 +560,10 @@ public class WorriesFightScreen extends Screen {
 
     private JSONArray fighterInfo; // fighter数据
     private JSONArray enemyInfo; // enemy数据
+    private JSONArray enemyTeamList; // enemyTeamList数据
+    private JSONArray monsterList; // monsterList数据
 
-    private int hp_img_width;
+//    private int[] hp_img_width;
     private int anger_img_width;
 
     private int secondCount = 30;
