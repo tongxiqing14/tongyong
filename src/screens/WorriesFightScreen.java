@@ -231,23 +231,33 @@ public class WorriesFightScreen extends Screen {
         gripper_motion.keepId(0);
         gripper_motion.update(420,250);
 
+        Enumeration it1 = hp_img_widthhashtable.keys();
         for(Enumeration it = heroHphashtable.keys(); it.hasMoreElements(); ) {
             //从ht中取
             Integer key = (Integer) it.nextElement();
             Integer value = (Integer) heroHphashtable.get(key);
 
-            value = new Integer((value.intValue() - value.intValue()/10));
+            Integer tempValue = value;
+
+            value = new Integer((value.intValue() - (new Double(LWGameCanvas.sum_enemy_fight_num/monsterList.length())).intValue()));
             heroHphashtable.put(key,value);
-        }
 
-        for(Enumeration it = hp_img_widthhashtable.keys(); it.hasMoreElements(); ) {
             //从ht中取
-            Integer key = (Integer) it.nextElement();
-            Integer value = (Integer) hp_img_widthhashtable.get(key);
+            Integer key1 = (Integer) it1.nextElement();
+            Integer value1 = (Integer) hp_img_widthhashtable.get(key);
 
-            value = new Integer((value.intValue() - value.intValue()/10));
-            hp_img_widthhashtable.put(key,value);
+            value1 = new Integer((value1.intValue() - (new Double(LWGameCanvas.sum_enemy_fight_num/monsterList.length())).intValue()*(value1.intValue()/tempValue.intValue())));
+            hp_img_widthhashtable.put(key1,value1);
         }
+
+//        for(Enumeration it = hp_img_widthhashtable.keys(); it.hasMoreElements(); ) {
+//            //从ht中取
+//            Integer key = (Integer) it.nextElement();
+//            Integer value = (Integer) hp_img_widthhashtable.get(key);
+//
+//            value = new Integer((value.intValue() - value.intValue()/10));
+//            hp_img_widthhashtable.put(key,value);
+//        }
 
         if((secondCount+25)%25 == 0){      //游戏时长控制
             LWGameCanvas.sum_enemy_hp_num -= LWGameCanvas.sum_fight_num;
