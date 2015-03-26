@@ -122,14 +122,15 @@ public class WorriesFightScreen extends Screen {
             enemyTeamList = NetInfo.netHander.getGameInfoII();
             monsterList = NetInfo.netHander.getGameInfoIII();      // ###############
 
-//            hpDownStepValueList = NetInfo.netHander.getFighterHpDown();
+            hpImgWidthList = NetInfo.netHander.getFighterHpDown();
 
             // ###############
 //            heroHphashtable = new Hashtable();
             hp_img_widthhashtable = new Hashtable();
-            for(int i=0; i<monsterList.length(); i++){
-//                heroHphashtable.put(Integer.valueOf((String) monsterList.getJSONObject(i).get("fighter_id")), Integer.valueOf((String) monsterList.getJSONObject(i).get("hp_num")));
-                hp_img_widthhashtable.put(Integer.valueOf((String) monsterList.getJSONObject(i).get("fighter_id")), (new Double(hp_img.getWidth())));
+            for(int i=0; i<hpImgWidthList.length(); i++){
+//                                heroHphashtable.put(Integer.valueOf((String) monsterList.getJSONObject(i).get("fighter_id")), Integer.valueOf((String) monsterList.getJSONObject(i).get("hp_num")));
+//                hp_img_widthhashtable.put(Integer.valueOf((String) monsterList.getJSONObject(i).get("fighter_id")), (new Integer(hp_img.getWidth())));
+                hp_img_widthhashtable.put(Integer.valueOf((String) hpImgWidthList.getJSONObject(i).get("fighterId")), Integer.valueOf((String) hpImgWidthList.getJSONObject(i).get("hpImgWidth")));
             }
             // ###############
 
@@ -236,18 +237,18 @@ public class WorriesFightScreen extends Screen {
         gripper_motion.keepId(0);
         gripper_motion.update(420,250);
 
-//        try {
-//            hpDownStepValueList = NetInfo.netHander.getFighterHpDownII();
-//
-//            hp_img_widthhashtable = new Hashtable();
-//            for(int i=0; i<hpDownStepValueList.length(); i++){
-//                hp_img_widthhashtable.put(Integer.valueOf((String) hpDownStepValueList.getJSONObject(i).get("fighterId")), Integer.valueOf((String) hpDownStepValueList.getJSONObject(i).get("hpDownStepValue")));
-//            }
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//        } catch (IptvNetException e) {
-//            e.printStackTrace();
-//        }
+        try {
+            hpImgWidthList = NetInfo.netHander.getFighterHpDownII();
+
+            hp_img_widthhashtable = new Hashtable();
+            for(int i=0; i<hpImgWidthList.length(); i++){
+                hp_img_widthhashtable.put(Integer.valueOf((String) hpImgWidthList.getJSONObject(i).get("fighterId")), Integer.valueOf((String) hpImgWidthList.getJSONObject(i).get("hpImgWidth")));
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        } catch (IptvNetException e) {
+            e.printStackTrace();
+        }
 
         // ###############
 //            heroHphashtable = new Hashtable();
@@ -521,7 +522,7 @@ public class WorriesFightScreen extends Screen {
         g.drawString(Integer.valueOf(NetHander.selected_stage).intValue()+"", 560, 120, Globe.ANCHOR_T_H);
 
         g.drawString(enemyTeamList.toString()+"", 0, 50, Globe.ANCHOR_T_H);
-        g.drawString(monsterList.toString()+"", 0, 100, Globe.ANCHOR_T_H);
+//        g.drawString(monsterList.toString()+"", 0, 100, Globe.ANCHOR_T_H);
     }
 
     public void clear() {
@@ -610,7 +611,7 @@ public class WorriesFightScreen extends Screen {
     private JSONArray enemyTeamList; // enemyTeamList数据
     private JSONArray monsterList; // monsterList数据
 
-    private JSONArray hpDownStepValueList; // hpDownStepValueList数据
+    private JSONArray hpImgWidthList; // hpDownStepValueList数据
 
 //    private int[] hp_img_width;
     private int anger_img_width;
