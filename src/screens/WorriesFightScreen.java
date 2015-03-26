@@ -122,14 +122,14 @@ public class WorriesFightScreen extends Screen {
             enemyTeamList = NetInfo.netHander.getGameInfoII();
             monsterList = NetInfo.netHander.getGameInfoIII();      // ###############
 
-            hpDownStepValueList = NetInfo.netHander.getFighterHpDown();
+//            hpDownStepValueList = NetInfo.netHander.getFighterHpDown();
 
             // ###############
 //            heroHphashtable = new Hashtable();
             hp_img_widthhashtable = new Hashtable();
-            for(int i=0; i<hpDownStepValueList.length(); i++){
+            for(int i=0; i<monsterList.length(); i++){
 //                heroHphashtable.put(Integer.valueOf((String) monsterList.getJSONObject(i).get("fighter_id")), Integer.valueOf((String) monsterList.getJSONObject(i).get("hp_num")));
-                hp_img_widthhashtable.put(Integer.valueOf((String) hpDownStepValueList.getJSONObject(i).get("fighterId")), Integer.valueOf((String) hpDownStepValueList.getJSONObject(i).get("hpDownStepValue")));
+                hp_img_widthhashtable.put(Integer.valueOf((String) monsterList.getJSONObject(i).get("fighter_id")), (new Double(hp_img.getWidth())));
             }
             // ###############
 
@@ -236,18 +236,18 @@ public class WorriesFightScreen extends Screen {
         gripper_motion.keepId(0);
         gripper_motion.update(420,250);
 
-        try {
-            hpDownStepValueList = NetInfo.netHander.getFighterHpDownII();
-
-            hp_img_widthhashtable = new Hashtable();
-            for(int i=0; i<hpDownStepValueList.length(); i++){
-                hp_img_widthhashtable.put(Integer.valueOf((String) hpDownStepValueList.getJSONObject(i).get("fighterId")), Integer.valueOf((String) hpDownStepValueList.getJSONObject(i).get("hpDownStepValue")));
-            }
-        } catch (JSONException e) {
-            e.printStackTrace();
-        } catch (IptvNetException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            hpDownStepValueList = NetInfo.netHander.getFighterHpDownII();
+//
+//            hp_img_widthhashtable = new Hashtable();
+//            for(int i=0; i<hpDownStepValueList.length(); i++){
+//                hp_img_widthhashtable.put(Integer.valueOf((String) hpDownStepValueList.getJSONObject(i).get("fighterId")), Integer.valueOf((String) hpDownStepValueList.getJSONObject(i).get("hpDownStepValue")));
+//            }
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        } catch (IptvNetException e) {
+//            e.printStackTrace();
+//        }
 
         // ###############
 //            heroHphashtable = new Hashtable();
@@ -416,7 +416,7 @@ public class WorriesFightScreen extends Screen {
                     g.drawImage(shadow_hero_2[Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-1][((Integer)hp_img_widthhashtable.get(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")))).intValue()<=0?0:1], 110, 360, Globe.ANCHOR_T_L);
 
                     //绘制hp条
-                    g.setClip(100, 440, ((Integer)heroHphashtable.get(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")))).intValue(), hp_img.getHeight());
+                    g.setClip(100, 440, ((Integer)hp_img_widthhashtable.get(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")))).intValue(), hp_img.getHeight());
                     g.drawImage(hp_img,  100, 440, 20);
                     g.setClip(0, 0, Globe.SW, Globe.SH);
 
@@ -436,7 +436,7 @@ public class WorriesFightScreen extends Screen {
                         g.drawImage(shadow_monster_2[Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-8][((Integer)hp_img_widthhashtable.get(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")))).intValue()<=0?0:1], 110+allCount*figureGap[5-fighterInfo.length()], 360, Globe.ANCHOR_T_L);
 
                         //绘制hp条
-                        g.setClip(100+allCount*90, 440, ((Integer)heroHphashtable.get(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")))).intValue(), hp_img.getHeight());
+                        g.setClip(100+allCount*90, 440, ((Integer)hp_img_widthhashtable.get(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")))).intValue(), hp_img.getHeight());
                         g.drawImage(hp_img,  100+allCount*figureGap[5-fighterInfo.length()], 440, 20);
                         g.setClip(0, 0, Globe.SW, Globe.SH);
 
@@ -452,7 +452,7 @@ public class WorriesFightScreen extends Screen {
                         g.drawImage(shadow_monster_2[Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-8][((Integer)hp_img_widthhashtable.get(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")))).intValue()<=0?0:1], 110+allCount*figureGap[5-fighterInfo.length()], 360, Globe.ANCHOR_T_L);
 
                         //绘制hp条
-                        g.setClip(100+allCount*90, 440, ((Integer)heroHphashtable.get(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")))).intValue(), hp_img.getHeight());
+                        g.setClip(100+allCount*90, 440, ((Integer)hp_img_widthhashtable.get(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")))).intValue(), hp_img.getHeight());
                         g.drawImage(hp_img,  100+allCount*figureGap[5-fighterInfo.length()], 440, 20);
                         g.setClip(0, 0, Globe.SW, Globe.SH);
 
@@ -470,7 +470,7 @@ public class WorriesFightScreen extends Screen {
                         g.drawImage(shadow_monster_l[Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-20][((Integer)hp_img_widthhashtable.get(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")))).intValue()<=0?0:1], 110+allCount*figureGap[5-fighterInfo.length()], 360, Globe.ANCHOR_T_L);
 
                         //绘制hp条
-                        g.setClip(100+allCount*90, 440, ((Integer)heroHphashtable.get(Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")))).intValue(), hp_img.getHeight());
+                        g.setClip(100+allCount*90, 440, ((Integer)hp_img_widthhashtable.get(Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")))).intValue(), hp_img.getHeight());
                         g.drawImage(hp_img,  100+allCount*figureGap[5-fighterInfo.length()], 440, 20);
                         g.setClip(0, 0, Globe.SW, Globe.SH);
 
@@ -484,7 +484,7 @@ public class WorriesFightScreen extends Screen {
                         g.drawImage(shadow_monster_l[Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-20][((Integer)hp_img_widthhashtable.get(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")))).intValue()<=0?0:1], 110+allCount*figureGap[5-fighterInfo.length()], 360, Globe.ANCHOR_T_L);
 
                         //绘制hp条
-                        g.setClip(100+allCount*90, 440, ((Integer)heroHphashtable.get(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")))).intValue(), hp_img.getHeight());
+                        g.setClip(100+allCount*90, 440, ((Integer)hp_img_widthhashtable.get(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")))).intValue(), hp_img.getHeight());
                         g.drawImage(hp_img,  100+allCount*figureGap[5-fighterInfo.length()], 440, 20);
                         g.setClip(0, 0, Globe.SW, Globe.SH);
 
@@ -591,7 +591,7 @@ public class WorriesFightScreen extends Screen {
 
     Effect[] fighterEffects;
 //    int[] fighter_ids;
-    Hashtable heroHphashtable;
+//    Hashtable heroHphashtable;
     Hashtable hp_img_widthhashtable;
 
     String[][] bgImgPaths = new String[][]{{"menu/bg1.jpg","menu/bg2.jpg","menu/bg3.jpg","menu/bg4.jpg","menu/bg5.jpg","menu/bg6.jpg","menu/bg7.jpg","menu/bg8.jpg","menu/bg9.jpg"},
