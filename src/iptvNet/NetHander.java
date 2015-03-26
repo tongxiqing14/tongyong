@@ -499,6 +499,40 @@ public class NetHander {
      * @throws JSONException
      * @throws IptvNetException
      */
+    public JSONArray getFighterHpDown()
+            throws JSONException, IptvNetException {
+        int ret = 2;
+        String str = "";
+        String url = LWGameCanvas.rmidlet.getAppProperty("return_url")+"/HttpService/FighterHpDownServlet.ashx";
+        url = put(url, "sessionId", LWGameCanvas.rmidlet.getAppProperty("sessionId"), false);
+        str = doSend(url);
+        JSONArray jsonArray = new JSONArray(str);
+
+        return jsonArray;
+    }
+
+    /**
+     *
+     * @throws JSONException
+     * @throws IptvNetException
+     */
+    public JSONArray getFighterHpDownII()
+            throws JSONException, IptvNetException {
+        int ret = 2;
+        String str = "";
+        String url = LWGameCanvas.rmidlet.getAppProperty("return_url")+"/HttpService/FighterHpDownIIServlet.ashx";
+        url = put(url, "sessionId", LWGameCanvas.rmidlet.getAppProperty("sessionId"), false);
+        str = doSend(url);
+        JSONArray jsonArray = new JSONArray(str);
+
+        return jsonArray;
+    }
+
+    /**
+     *
+     * @throws JSONException
+     * @throws IptvNetException
+     */
     public JSONArray getEnemyInfo()
             throws JSONException, IptvNetException {
         String str = "";
