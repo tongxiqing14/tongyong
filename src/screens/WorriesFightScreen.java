@@ -297,9 +297,9 @@ public class WorriesFightScreen extends Screen {
     public void draw(Graphics g) {
 
 //        if((secondCount+5)%5 == 0){            //技能冷却时间控制
-        for(int i=0; i<anger_img_width.length; i++){
-            if(anger_img_width[i] < anger_img.getWidth()) anger_img_width[i] += 2;
-        }
+//        for(int i=0; i<anger_img_width.length; i++){
+//            if(anger_img_width[i] < anger_img.getWidth()) anger_img_width[i] += 2;
+//        }
 //        }
 
         g.drawImage(mainBG, 0, 0, 20);
@@ -387,6 +387,7 @@ public class WorriesFightScreen extends Screen {
                     g.drawImage(anger_img,  100, 450, 20);
                     g.setClip(0, 0, Globe.SW, Globe.SH);
 
+                    if(anger_img_width[allCount] < anger_img.getWidth()) anger_img_width[allCount] += 2;
                     allCount ++;
 
                 }else if(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("type")).intValue() == 1){    //follow animation
@@ -407,6 +408,7 @@ public class WorriesFightScreen extends Screen {
                         g.drawImage(anger_img,  100+allCount*figureGap[5-fighterInfo.length()], 450, 20);
                         g.setClip(0, 0, Globe.SW, Globe.SH);
 
+                        if(anger_img_width[allCount] < anger_img.getWidth()) anger_img_width[allCount] += 4;
                         allCount ++;
 
                     }else {
@@ -422,6 +424,8 @@ public class WorriesFightScreen extends Screen {
                         g.setClip(100+allCount*90, 450, anger_img_width[allCount], anger_img.getHeight());
                         g.drawImage(anger_img,  100+allCount*figureGap[5-fighterInfo.length()], 450, 20);
                         g.setClip(0, 0, Globe.SW, Globe.SH);
+
+                        if(anger_img_width[allCount] < anger_img.getWidth()) anger_img_width[allCount] += 4;
                         allCount ++;
                     }
 
@@ -440,6 +444,8 @@ public class WorriesFightScreen extends Screen {
                         g.setClip(100+allCount*90, 450, anger_img_width[allCount], anger_img.getHeight());
                         g.drawImage(anger_img,  100+allCount*figureGap[5-fighterInfo.length()], 450, 20);
                         g.setClip(0, 0, Globe.SW, Globe.SH);
+
+                        if(anger_img_width[allCount] < anger_img.getWidth()) anger_img_width[allCount] += 6;
                         allCount ++;
                     }else {
                         g.drawImage(anger_unfull_img[anger_img_width[allCount] < anger_img.getWidth()?0:1], 100+allCount*figureGap[5-fighterInfo.length()], 350, Globe.ANCHOR_T_L);
@@ -454,6 +460,8 @@ public class WorriesFightScreen extends Screen {
                         g.setClip(100+allCount*90, 450, anger_img_width[allCount], anger_img.getHeight());
                         g.drawImage(anger_img,  100+allCount*figureGap[5-fighterInfo.length()], 450, 20);
                         g.setClip(0, 0, Globe.SW, Globe.SH);
+
+                        if(anger_img_width[allCount] < anger_img.getWidth()) anger_img_width[allCount] += 6;
                         allCount ++;
                     }
                 }
