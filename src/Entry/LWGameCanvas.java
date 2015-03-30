@@ -80,12 +80,13 @@ public class LWGameCanvas extends Canvas implements Runnable {
             new Thread(){
                 public void run() {
                     try {
-                        InputStream musicIs = getClass().getResourceAsStream("/map3/body_hits.wav");
-                        Player player = Manager.createPlayer(musicIs, "audio/x-wav");
+                        InputStream musicIs = getClass().getResourceAsStream("/map3/bg.mp3");
+                        Player player = Manager.createPlayer(musicIs, "audio/mpeg");
                         // 传输数据
                         player.realize();
                         // 获取播放资源
                         player.prefetch();
+                        player.setLoopCount(-1);
                         player.start();
                     } catch (Exception e) {
                         e.printStackTrace();
