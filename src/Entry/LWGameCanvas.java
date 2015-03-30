@@ -2,11 +2,16 @@ package Entry;
 
 import common.*;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Vector;
 
 import javax.microedition.lcdui.Canvas;
 import javax.microedition.lcdui.Graphics;
 import javax.microedition.lcdui.Image;
+import javax.microedition.media.Manager;
+import javax.microedition.media.MediaException;
+import javax.microedition.media.Player;
 
 import iptvNet.IptvNetException;
 import iptvNet.NetHander;
@@ -70,6 +75,35 @@ public class LWGameCanvas extends Canvas implements Runnable {
         } catch (IptvNetException e) {
             e.printStackTrace();
         }
+
+        try {
+            new Thread(){
+                public void run() {
+                    try {
+                        InputStream musicIs = getClass().getResourceAsStream("/map3/body_hits.wav");
+                        Player player = Manager.createPlayer(musicIs, "audio/x-wav");
+                        // 传输数据
+                        player.realize();
+                        // 获取播放资源
+                        player.prefetch();
+                        player.start();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            }.start();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+//        try {
+//            Player p = Manager.createPlayer("map3/battle1.mp3");
+//            p.start();
+//        } catch (MediaException pe) {
+//            pe.printStackTrace();
+//        } catch (IOException ioe) {
+//            ioe.printStackTrace();
+//        }
 
 //        if(rmidlet.getAppProperty("IsActiveOnOK").equals("true")){
 //            isOnOK=true;

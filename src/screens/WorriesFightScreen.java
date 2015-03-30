@@ -52,11 +52,12 @@ public class WorriesFightScreen extends Screen {
         gripper_motion = new Motion("/effect2/gripper/gripper.anu",420,250);
         gripper_motion.keepId(0);
 
-        fighterEffects = new Effect[4];
+        fighterEffects = new Effect[5];
         fighterEffects[0] = new FallingFires(0,200,250);
         fighterEffects[1] = new PointCoco(0,300,250);
         fighterEffects[2] = new FireBall();
         fighterEffects[3] = new WaterShip();
+        fighterEffects[4] = new WaterShip();
     }
 
     public void init() {
@@ -354,7 +355,7 @@ public class WorriesFightScreen extends Screen {
 
         /**ice small draw*/
         for(int i=0; i<anger_img_width.length; i++){
-            if(anger_img_width[i] >= anger_img.getWidth()) fighterEffects[1].draw(g);
+            if(anger_img_width[i] >= anger_img.getWidth()) fighterEffects[i].draw(g);
         }
 
         g.drawImage(hourglass_img, 50, 20, Globe.ANCHOR_T_L);
