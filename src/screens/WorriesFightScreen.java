@@ -221,7 +221,7 @@ public class WorriesFightScreen extends Screen {
         // effect release
         for(int i=0; i<anger_img_width.length; i++){
             if(anger_img_width[i] >= anger_img.getWidth()){
-                fighterEffects[1].update(0);      //0无效
+                fighterEffects[i].update(0);      //0无效
             }
         }
 

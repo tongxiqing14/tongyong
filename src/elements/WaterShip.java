@@ -10,19 +10,25 @@ import javax.microedition.lcdui.Graphics;
 public class WaterShip implements Effect {
 
     private Motion water_ship_motion;
+    private int water_ship_xx;
 
     public WaterShip() {
         water_ship_motion = new Motion("/effect2/watership/watership.anu",50,50);
         water_ship_motion.keepId(0);
     }
 
-    public void update(int falling_fire_y) {
-        water_ship_motion.keepId(0);
-        water_ship_motion.update(falling_fire_y,200);
+    public void update(int water_ship_x) {
+        if(water_ship_xx < 600){
+            water_ship_xx += 30;
+            water_ship_motion.keepId(0);
+            water_ship_motion.update(water_ship_xx,200);
+        }
     }
 
     public void draw(Graphics g) {
-        water_ship_motion.draw(g);
+        if(water_ship_xx < 600){
+            water_ship_motion.draw(g);
+        }
     }
 
 }
