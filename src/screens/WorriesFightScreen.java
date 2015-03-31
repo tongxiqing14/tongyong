@@ -58,6 +58,18 @@ public class WorriesFightScreen extends Screen {
         fighterEffects[2] = new FireBall();
         fighterEffects[3] = new WaterShip();
         fighterEffects[4] = new WaterShip();
+
+        try {
+            Class testclass = Class.forName("hellomyworld.Test");
+            Object obj= testclass.newInstance();
+            Effect test = (Effect)obj;
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
     }
 
     public void init() {
