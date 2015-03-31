@@ -13,6 +13,10 @@ public class FallingFires implements Effect{
     private int falling_fire_y;
     private Motion[] falling_fire_motion;
 
+    public FallingFires() {
+        this(0,200,250);
+    }
+
     public FallingFires(int id, int falling_fire_x, int falling_fire_y) {
         this.animid = id;
         falling_fire_motion = new Motion[4];

@@ -53,16 +53,27 @@ public class WorriesFightScreen extends Screen {
         gripper_motion.keepId(0);
 
         fighterEffects = new Effect[5];
-        fighterEffects[0] = new FallingFires(0,200,250);
-        fighterEffects[1] = new PointCoco(0,300,250);
-        fighterEffects[2] = new FireBall();
-        fighterEffects[3] = new WaterShip();
-        fighterEffects[4] = new WaterShip();
 
         try {
-            Class testclass = Class.forName("hellomyworld.Test");
-            Object obj= testclass.newInstance();
-            Effect test = (Effect)obj;
+            Class effectclass3 = Class.forName("elements.FallingFires");
+            Object effectobj3 = effectclass3.newInstance();
+            fighterEffects[0] = (Effect)effectobj3;
+
+            Class effectclass2 = Class.forName("elements.PointCoco");
+            Object effectobj2 = effectclass2.newInstance();
+            fighterEffects[1] = (Effect)effectobj2;
+
+            Class effectclass1 = Class.forName("elements.FireBall");
+            Object effectobj1 = effectclass1.newInstance();
+            fighterEffects[2] = (Effect)effectobj1;
+
+            Class effectclass = Class.forName("elements.WaterShip");
+            Object effectobj= effectclass.newInstance();
+            fighterEffects[3] = (Effect)effectobj;
+
+            Class effectclass0 = Class.forName("elements.WaterShip");
+            Object effectobj0 = effectclass0.newInstance();
+            fighterEffects[4] = (Effect)effectobj0;
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (InstantiationException e) {

@@ -16,6 +16,10 @@ public class PointCoco implements Effect{
     private int[] falling_fire_y_array = {250,200,300,180,320};
     private int[] pos_y_array = {0, 20, 90, 150, 90, 20, 0};
 
+    public PointCoco() {
+        this(0,300,250);
+    }
+
     public PointCoco(int id, int falling_fire_x, int falling_fire_y) {
         this.falling_fire_x = falling_fire_x;
 
