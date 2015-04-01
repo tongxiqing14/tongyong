@@ -57,7 +57,7 @@ public class WorriesFightScreen extends Screen {
 
         try {
             for(int i=0; i<fighterEffects.length; i++){     //todo
-                Class effect_class = Class.forName("elements.FallingFires");
+                Class effect_class = Class.forName(effects_str[i]);
                 Object effect_obj = effect_class.newInstance();
                 fighterEffects[i] = (Effect)effect_obj;
             }
