@@ -64,24 +64,31 @@ public class WorriesFightScreen extends Screen {
 //                fighterEffects[0] = (Effect)effect_obj;
 //            }
 
-            Class effectclass3 = Class.forName("elements.FallingFires");
-            Object effectobj3 = effectclass3.newInstance();
+            Class[] effectclasses = new Class[5];
+            effectclasses[0] = Class.forName("elements.FallingFires");
+            effectclasses[1] = Class.forName("elements.PointCoco");
+            effectclasses[2] = Class.forName("elements.FireBall");
+            effectclasses[3] = Class.forName("elements.IceSmall");
+            effectclasses[4] = Class.forName("elements.WaterShip");
+
+//            Class effectclass3 = Class.forName("elements.FallingFires");
+            Object effectobj3 = effectclasses[0].newInstance();
             fighterEffects[0] = (Effect)effectobj3;
 
-            Class effectclass2 = Class.forName("elements.PointCoco");
-            Object effectobj2 = effectclass2.newInstance();
+//            Class effectclass2 = Class.forName("elements.PointCoco");
+            Object effectobj2 = effectclasses[1].newInstance();
             fighterEffects[1] = (Effect)effectobj2;
 
-            Class effectclass1 = Class.forName("elements.FireBall");
-            Object effectobj1 = effectclass1.newInstance();
+//            Class effectclass1 = Class.forName("elements.FireBall");
+            Object effectobj1 = effectclasses[2].newInstance();
             fighterEffects[2] = (Effect)effectobj1;
 
-            Class effectclass = Class.forName("elements.IceSmall");
-            Object effectobj= effectclass.newInstance();
+//            Class effectclass = Class.forName("elements.IceSmall");
+            Object effectobj= effectclasses[3].newInstance();
             fighterEffects[3] = (Effect)effectobj;
 
-            Class effectclass0 = Class.forName("elements.WaterShip");
-            Object effectobj0 = effectclass0.newInstance();
+//            Class effectclass0 = Class.forName("elements.WaterShip");
+            Object effectobj0 = effectclasses[4].newInstance();
             fighterEffects[4] = (Effect)effectobj0;
 
         } catch (ClassNotFoundException e) {
