@@ -62,20 +62,10 @@ public class WorriesFightScreen extends Screen {
             effectclasses[3] = Class.forName("elements.IceSmall");
             effectclasses[4] = Class.forName("elements.WaterShip");
 
-            Object effectobj3 = effectclasses[0].newInstance();
-            fighterEffects[0] = (Effect)effectobj3;
-
-            Object effectobj2 = effectclasses[1].newInstance();
-            fighterEffects[1] = (Effect)effectobj2;
-
-            Object effectobj1 = effectclasses[2].newInstance();
-            fighterEffects[2] = (Effect)effectobj1;
-
-            Object effectobj= effectclasses[3].newInstance();
-            fighterEffects[3] = (Effect)effectobj;
-
-            Object effectobj0 = effectclasses[4].newInstance();
-            fighterEffects[4] = (Effect)effectobj0;
+            for(int i=0; i<fighterEffects.length; i++){
+                Object effectobj= effectclasses[i].newInstance();
+                fighterEffects[i] = (Effect)effectobj;
+            }
 
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -591,7 +581,7 @@ public class WorriesFightScreen extends Screen {
 //    Hashtable heroHphashtable;
     Hashtable hp_img_widthhashtable;
 
-    final String[] effects_str = new String[]{"elements.FallingFires","elements.PointCoco","elements.FireBall","elements.WaterShip","elements.WaterShip"};
+//    final String[] effects_str = new String[]{"elements.FallingFires","elements.PointCoco","elements.FireBall","elements.WaterShip","elements.WaterShip"};
 
     String[][] bgImgPaths = new String[][]{{"menu/bg1.jpg","menu/bg2.jpg","menu/bg3.jpg","menu/bg4.jpg","menu/bg5.jpg","menu/bg6.jpg","menu/bg7.jpg","menu/bg8.jpg","menu/bg9.jpg"},
             {"menu/bg10.jpg","menu/bg11.jpg","menu/bg12.jpg","menu/bg13.jpg","menu/bg14.jpg","menu/bg15.jpg","menu/bg16.jpg","menu/bg17.jpg","menu/bg18.jpg"},
