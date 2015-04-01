@@ -76,7 +76,7 @@ public class WorriesFightScreen extends Screen {
             Object effectobj1 = effectclass1.newInstance();
             fighterEffects[2] = (Effect)effectobj1;
 
-            Class effectclass = Class.forName("elements.WaterShip");
+            Class effectclass = Class.forName("elements.IceSmall");
             Object effectobj= effectclass.newInstance();
             fighterEffects[3] = (Effect)effectobj;
 
