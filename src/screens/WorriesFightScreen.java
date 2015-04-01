@@ -52,21 +52,48 @@ public class WorriesFightScreen extends Screen {
         gripper_motion = new Motion("/effect2/gripper/gripper.anu",420,250);
         gripper_motion.keepId(0);
 
+//        effects_str = new String[]{"elements.FallingFires","elements.PointCoco","elements.FireBall","elements.WaterShip","elements.WaterShip"};
 
         fighterEffects = new Effect[5];              //todo
 
         try {
-            for(int i=0; i<fighterEffects.length; i++){     //todo
-                Class effect_class = Class.forName(effects_str[i]);
-                Object effect_obj = effect_class.newInstance();
-                fighterEffects[i] = (Effect)effect_obj;
-            }
+//            for(int i=0; i<fighterEffects.length; i++){     //todo
+////                NetInfo.netHander.testStr(effects_str[i]);
+//                Class effect_class = Class.forName("elements.PointCoco");
+//                Object effect_obj = effect_class.newInstance();
+//                fighterEffects[0] = (Effect)effect_obj;
+//            }
+
+            Class effectclass3 = Class.forName("elements.FallingFires");
+            Object effectobj3 = effectclass3.newInstance();
+            fighterEffects[0] = (Effect)effectobj3;
+
+            Class effectclass2 = Class.forName("elements.PointCoco");
+            Object effectobj2 = effectclass2.newInstance();
+            fighterEffects[1] = (Effect)effectobj2;
+
+            Class effectclass1 = Class.forName("elements.FireBall");
+            Object effectobj1 = effectclass1.newInstance();
+            fighterEffects[2] = (Effect)effectobj1;
+
+            Class effectclass = Class.forName("elements.WaterShip");
+            Object effectobj= effectclass.newInstance();
+            fighterEffects[3] = (Effect)effectobj;
+
+            Class effectclass0 = Class.forName("elements.WaterShip");
+            Object effectobj0 = effectclass0.newInstance();
+            fighterEffects[4] = (Effect)effectobj0;
+
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (InstantiationException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {
             e.printStackTrace();
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        } catch (IptvNetException e) {
+//            e.printStackTrace();
         }
     }
 
@@ -575,7 +602,7 @@ public class WorriesFightScreen extends Screen {
 //    Hashtable heroHphashtable;
     Hashtable hp_img_widthhashtable;
 
-    String[] effects_str = new String[]{"elements.FallingFires","elements.PointCoco","elements.FireBall","elements.WaterShip","elements.WaterShip"};
+    final String[] effects_str = new String[]{"elements.FallingFires","elements.PointCoco","elements.FireBall","elements.WaterShip","elements.WaterShip"};
 
     String[][] bgImgPaths = new String[][]{{"menu/bg1.jpg","menu/bg2.jpg","menu/bg3.jpg","menu/bg4.jpg","menu/bg5.jpg","menu/bg6.jpg","menu/bg7.jpg","menu/bg8.jpg","menu/bg9.jpg"},
             {"menu/bg10.jpg","menu/bg11.jpg","menu/bg12.jpg","menu/bg13.jpg","menu/bg14.jpg","menu/bg15.jpg","menu/bg16.jpg","menu/bg17.jpg","menu/bg18.jpg"},

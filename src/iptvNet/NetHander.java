@@ -613,6 +613,23 @@ public class NetHander {
         return ret;
     }
 
+    /**
+     *
+     * @throws JSONException
+     * @throws IptvNetException
+     */
+    public JSONArray testStr(String testStr)
+            throws JSONException, IptvNetException {
+        int ret = 2;
+        String str = "";
+        String url = LWGameCanvas.rmidlet.getAppProperty("return_url")+"/HttpService/TestServlet.ashx";
+        url = put(url, "testStr", testStr, false);
+        str = doSend(url);
+        JSONArray jsonArray = new JSONArray(str);
+
+        return jsonArray;
+    }
+
 	private String answer = "";
 	private String question = "";
 
