@@ -57,7 +57,7 @@ public class WorriesFightScreen extends Screen {
 
         try {
             for(int i=0; i<fighterEffects.length; i++){     //todo
-                Class effect_class = Class.forName(effects_str[i]);
+                Class effect_class = Class.forName("elements.FallingFires");
                 Object effect_obj = effect_class.newInstance();
                 fighterEffects[i] = (Effect)effect_obj;
             }
@@ -571,7 +571,7 @@ public class WorriesFightScreen extends Screen {
     Image success_img;
 
     Effect[] fighterEffects;
-//    int[] fighter_ids;
+    //    int[] fighter_ids;
 //    Hashtable heroHphashtable;
     Hashtable hp_img_widthhashtable;
 
@@ -595,7 +595,7 @@ public class WorriesFightScreen extends Screen {
 
     private JSONArray hpImgWidthList; // hpDownStepValueListÊý¾Ý
 
-//    private int[] hp_img_width;
+    //    private int[] hp_img_width;
     private int[] anger_img_width;
 
     private int secondCount = 30;
