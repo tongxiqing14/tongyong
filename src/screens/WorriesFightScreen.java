@@ -52,28 +52,6 @@ public class WorriesFightScreen extends Screen {
         gripper_motion = new Motion("/effect2/gripper/gripper.anu",420,250);
         gripper_motion.keepId(0);
 
-        fighterEffects = new Effect[5];              //todo
-
-        try {
-            Class[] effectclasses = new Class[5];
-            effectclasses[0] = Class.forName("elements.FallingFires");
-            effectclasses[1] = Class.forName("elements.PointCoco");
-            effectclasses[2] = Class.forName("elements.FireBall");
-            effectclasses[3] = Class.forName("elements.IceSmall");
-            effectclasses[4] = Class.forName("elements.WaterShip");
-
-            for(int i=0; i<fighterEffects.length; i++){
-                Object effectobj= effectclasses[i].newInstance();
-                fighterEffects[i] = (Effect)effectobj;
-            }
-
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        }
     }
 
     public void init() {
@@ -161,6 +139,58 @@ public class WorriesFightScreen extends Screen {
         } catch (JSONException e) {
             e.printStackTrace();
         } catch (IptvNetException e) {
+            e.printStackTrace();
+        }
+
+        fighterEffects = new Effect[fighterInfo.length()];              //todo
+
+        try {
+            Class[] effectclasses = new Class[32];
+            effectclasses[0] = Class.forName("elements.FallingFires");
+            effectclasses[1] = Class.forName("elements.PointCoco");
+            effectclasses[2] = Class.forName("elements.FireBall");
+            effectclasses[3] = Class.forName("elements.IceSmall");
+            effectclasses[4] = Class.forName("elements.WaterShip");
+            effectclasses[5] = Class.forName("elements.Hurricane");
+            effectclasses[6] = Class.forName("elements.Lightning");
+            effectclasses[7] = Class.forName("elements.Storm");
+            effectclasses[8] = Class.forName("elements.FallingFires");
+            effectclasses[9] = Class.forName("elements.PointCoco");
+            effectclasses[10] = Class.forName("elements.FireBall");
+            effectclasses[11] = Class.forName("elements.IceSmall");
+            effectclasses[12] = Class.forName("elements.WaterShip");
+            effectclasses[13] = Class.forName("elements.Hurricane");
+            effectclasses[14] = Class.forName("elements.Lightning");
+            effectclasses[15] = Class.forName("elements.Storm");
+            effectclasses[16] = Class.forName("elements.FallingFires");
+            effectclasses[17] = Class.forName("elements.PointCoco");
+            effectclasses[18] = Class.forName("elements.FireBall");
+            effectclasses[19] = Class.forName("elements.IceSmall");
+            effectclasses[20] = Class.forName("elements.WaterShip");
+            effectclasses[21] = Class.forName("elements.Hurricane");
+            effectclasses[22] = Class.forName("elements.Lightning");
+            effectclasses[23] = Class.forName("elements.Storm");
+            effectclasses[24] = Class.forName("elements.FallingFires");
+            effectclasses[25] = Class.forName("elements.PointCoco");
+            effectclasses[26] = Class.forName("elements.FireBall");
+            effectclasses[27] = Class.forName("elements.IceSmall");
+            effectclasses[28] = Class.forName("elements.WaterShip");
+            effectclasses[29] = Class.forName("elements.Hurricane");
+            effectclasses[30] = Class.forName("elements.Lightning");
+            effectclasses[31] = Class.forName("elements.Storm");
+
+            for(int i=0; i<fighterInfo.length(); i++){
+                Object effectobj= effectclasses[Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-1].newInstance();
+                fighterEffects[i] = (Effect)effectobj;
+            }
+
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (JSONException e) {
             e.printStackTrace();
         }
 
