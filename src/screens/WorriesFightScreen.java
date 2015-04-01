@@ -52,18 +52,9 @@ public class WorriesFightScreen extends Screen {
         gripper_motion = new Motion("/effect2/gripper/gripper.anu",420,250);
         gripper_motion.keepId(0);
 
-//        effects_str = new String[]{"elements.FallingFires","elements.PointCoco","elements.FireBall","elements.WaterShip","elements.WaterShip"};
-
         fighterEffects = new Effect[5];              //todo
 
         try {
-//            for(int i=0; i<fighterEffects.length; i++){     //todo
-////                NetInfo.netHander.testStr(effects_str[i]);
-//                Class effect_class = Class.forName("elements.PointCoco");
-//                Object effect_obj = effect_class.newInstance();
-//                fighterEffects[0] = (Effect)effect_obj;
-//            }
-
             Class[] effectclasses = new Class[5];
             effectclasses[0] = Class.forName("elements.FallingFires");
             effectclasses[1] = Class.forName("elements.PointCoco");
@@ -71,23 +62,18 @@ public class WorriesFightScreen extends Screen {
             effectclasses[3] = Class.forName("elements.IceSmall");
             effectclasses[4] = Class.forName("elements.WaterShip");
 
-//            Class effectclass3 = Class.forName("elements.FallingFires");
             Object effectobj3 = effectclasses[0].newInstance();
             fighterEffects[0] = (Effect)effectobj3;
 
-//            Class effectclass2 = Class.forName("elements.PointCoco");
             Object effectobj2 = effectclasses[1].newInstance();
             fighterEffects[1] = (Effect)effectobj2;
 
-//            Class effectclass1 = Class.forName("elements.FireBall");
             Object effectobj1 = effectclasses[2].newInstance();
             fighterEffects[2] = (Effect)effectobj1;
 
-//            Class effectclass = Class.forName("elements.IceSmall");
             Object effectobj= effectclasses[3].newInstance();
             fighterEffects[3] = (Effect)effectobj;
 
-//            Class effectclass0 = Class.forName("elements.WaterShip");
             Object effectobj0 = effectclasses[4].newInstance();
             fighterEffects[4] = (Effect)effectobj0;
 
@@ -97,10 +83,6 @@ public class WorriesFightScreen extends Screen {
             e.printStackTrace();
         } catch (IllegalAccessException e) {
             e.printStackTrace();
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//        } catch (IptvNetException e) {
-//            e.printStackTrace();
         }
     }
 
