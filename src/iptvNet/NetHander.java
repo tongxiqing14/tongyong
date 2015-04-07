@@ -10,6 +10,7 @@ import javax.microedition.io.HttpConnection;
 import javax.microedition.midlet.MIDlet;
 
 import Entry.LWGameCanvas;
+import common.NetInfo;
 import org.json.me.JSONArray;
 import org.json.me.JSONException;
 import org.json.me.JSONObject;
@@ -618,7 +619,7 @@ public class NetHander {
      * @throws JSONException
      * @throws IptvNetException
      */
-    public JSONArray testStr(String testStr)
+    public  JSONArray testStr(String testStr)
             throws JSONException, IptvNetException {
         int ret = 2;
         String str = "";
@@ -628,6 +629,16 @@ public class NetHander {
         JSONArray jsonArray = new JSONArray(str);
 
         return jsonArray;
+    }
+
+    public static void main(String[] args){
+        try {
+            NetInfo.netHander.testStr("");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        } catch (IptvNetException e) {
+            e.printStackTrace();
+        }
     }
 
 	private String answer = "";

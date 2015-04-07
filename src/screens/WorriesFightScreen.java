@@ -17,12 +17,12 @@ import javax.microedition.lcdui.Image;
 import java.util.Hashtable;
 
 /**
- * Created with IntelliJ IDEA.
- * User: tongxiqing
- * Date: 14-12-5
- * Time: ÏÂÎç1:27
- * To change this template use File | Settings | File Templates.
- */
+* Created with IntelliJ IDEA.
+* User: tongxiqing
+* Date: 14-12-5
+* Time: ÏÂÎç1:27
+* To change this template use File | Settings | File Templates.
+*/
 public class WorriesFightScreen extends Screen {
 
     public WorriesFightScreen(int screenId) {
@@ -55,7 +55,24 @@ public class WorriesFightScreen extends Screen {
     }
 
     public void init() {
-        mainBG = Globe.getImage(bgImgPaths[Integer.valueOf(NetHander.selected_stage).intValue()/9][Integer.valueOf(NetHander.selected_stage).intValue()-9*(Integer.valueOf(NetHander.selected_stage).intValue()/9)]);
+
+//        try {
+//            NetInfo.netHander.testStr(bgImgPaths[Integer.valueOf(NetHander.selected_stage).intValue() / 9][Integer.valueOf(NetHander.selected_stage).intValue() - 9 * (Integer.valueOf(NetHander.selected_stage).intValue() / 9)]);
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        } catch (IptvNetException e) {
+//            e.printStackTrace();
+//        }
+
+        try {
+            NetInfo.netHander.testStr(bgImgPaths[Integer.valueOf(NetHander.selected_stage).intValue()]);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        } catch (IptvNetException e) {
+            e.printStackTrace();
+        }
+
+        mainBG = Globe.download.creatImage(bgImgPaths[Integer.valueOf(NetHander.selected_stage).intValue()]);
 
         anger_unfull_img = new Image[2];
         anger_unfull_img[0] = Globe.getImage("nw_game_screen/anger_unfull.png");
@@ -535,9 +552,9 @@ public class WorriesFightScreen extends Screen {
         g.drawString(LWGameCanvas.chest_num+"", 560, 20, Globe.ANCHOR_T_H);
 
 
-        g.drawString(Integer.valueOf(NetHander.selected_stage).intValue()+"", 560, 120, Globe.ANCHOR_T_H);
+//        g.drawString(Integer.valueOf(NetHander.selected_stage).intValue()+"", 560, 120, Globe.ANCHOR_T_H);
 
-        g.drawString(enemyTeamList.toString()+"", 0, 50, Globe.ANCHOR_T_H);
+//        g.drawString(enemyTeamList.toString()+"", 0, 50, Globe.ANCHOR_T_H);
 //        g.drawString(monsterList.toString()+"", 0, 100, Globe.ANCHOR_T_H);
     }
 
@@ -613,11 +630,11 @@ public class WorriesFightScreen extends Screen {
 
 //    final String[] effects_str = new String[]{"elements.FallingFires","elements.PointCoco","elements.FireBall","elements.WaterShip","elements.WaterShip"};
 
-    String[][] bgImgPaths = new String[][]{{"menu/bg1.jpg","menu/bg2.jpg","menu/bg3.jpg","menu/bg4.jpg","menu/bg5.jpg","menu/bg6.jpg","menu/bg7.jpg","menu/bg8.jpg","menu/bg9.jpg"},
-            {"menu/bg10.jpg","menu/bg11.jpg","menu/bg12.jpg","menu/bg13.jpg","menu/bg14.jpg","menu/bg15.jpg","menu/bg16.jpg","menu/bg17.jpg","menu/bg18.jpg"},
-            {"menu/bg19.jpg","menu/bg20.jpg","menu/bg21.jpg","menu/bg22.jpg","menu/bg23.jpg","menu/bg24.jpg","menu/bg25.jpg","menu/bg26.jpg","menu/bg27.jpg"},
-            {"menu/bg28.jpg","menu/bg29.jpg","menu/bg30.jpg","menu/bg31.jpg","menu/bg32.jpg","menu/bg33.jpg","menu/bg34.jpg","menu/bg35.jpg","menu/bg36.jpg"},
-            {"menu/bg37.jpg","menu/bg38.jpg","menu/bg39.jpg","menu/bg40.jpg","menu/bg41.jpg"}};
+    String[] bgImgPaths = new String[]{"menu/bg1.jpg","menu/bg2.jpg","menu/bg3.jpg","menu/bg4.jpg","menu/bg5.jpg","menu/bg6.jpg","menu/bg7.jpg","menu/bg8.jpg","menu/bg9.jpg",
+            "menu/bg10.jpg","menu/bg11.jpg","menu/bg12.jpg","menu/bg13.jpg","menu/bg14.jpg","menu/bg15.jpg","menu/bg16.jpg","menu/bg17.jpg","menu/bg18.jpg",
+            "menu/bg19.jpg","menu/bg20.jpg","menu/bg21.jpg","menu/bg22.jpg","menu/bg23.jpg","menu/bg24.jpg","menu/bg25.jpg","menu/bg26.jpg","menu/bg27.jpg",
+            "menu/bg28.jpg","menu/bg29.jpg","menu/bg30.jpg","menu/bg31.jpg","menu/bg32.jpg","menu/bg33.jpg","menu/bg34.jpg","menu/bg35.jpg","menu/bg36.jpg",
+            "menu/bg37.jpg","menu/bg38.jpg","menu/bg39.jpg","menu/bg40.jpg","menu/bg41.jpg"};
 
     private int followCount = 0;
     private int petCount = 0;

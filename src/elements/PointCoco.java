@@ -6,8 +6,8 @@ import screens.WorriesFightScreen;
 import javax.microedition.lcdui.Graphics;
 
 /**
- * Created by tongxiqing on 2015/2/25.
- */
+* Created by tongxiqing on 2015/2/25.
+*/
 public class PointCoco implements Effect{
 
     private Motion[] point_fire_motion;

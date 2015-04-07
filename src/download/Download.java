@@ -9,7 +9,7 @@ import javax.microedition.io.HttpConnection;
 import javax.microedition.lcdui.Image;
 
 public class Download {
-	
+
 	public byte[] DownLoading(String url){
 		byte data[] = null;
 		try {
@@ -17,7 +17,7 @@ public class Download {
 			httpConn.setRequestMethod(HttpConnection.GET);
 //			httpConn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
 			DataInputStream in = httpConn.openDataInputStream();
-			
+
 			ByteArrayOutputStream baos = new ByteArrayOutputStream();
             int len=(int)httpConn.getLength();
             if(len!=-1){
@@ -33,7 +33,7 @@ public class Download {
             data = baos.toByteArray();
             }
 
-			
+
 			httpConn.close();
 			in.close();
 		} catch (IOException e) {
@@ -49,5 +49,5 @@ public class Download {
 		img = Image.createImage(data, 0, data.length);
 		return img;
 	}
-	
+
 }

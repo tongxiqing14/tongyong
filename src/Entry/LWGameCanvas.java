@@ -67,6 +67,7 @@ public class LWGameCanvas extends Canvas implements Runnable {
     {
         isShowNetInfo=true;
         NetInfo.netHander = new NetHander(rmidlet);
+        Download.downloadImageURL = LWGameCanvas.rmidlet.getAppProperty("return_url")+rmidlet.getAppProperty("ImageURL");
 
         try {
             ret = NetInfo.netHander.getGameInfo();
