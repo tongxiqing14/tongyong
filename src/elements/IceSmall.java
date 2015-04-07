@@ -10,6 +10,8 @@ import javax.microedition.lcdui.Graphics;
 public class IceSmall implements Effect{
 
     private Motion[] icesmall_motion;
+    private int  icesmall_x = 200;
+    private int frameCount = 0;
 
     public IceSmall() {
         icesmall_motion = new Motion[3];
@@ -22,21 +24,30 @@ public class IceSmall implements Effect{
     }
 
     public void update(int falling_fire_y) {
-        icesmall_motion[0].keepId(0);
-        icesmall_motion[0].update(falling_fire_y-50, 230);
 
-        icesmall_motion[1].keepId(0);
-        icesmall_motion[1].update(falling_fire_y, 260);
+        if(frameCount < icesmall_motion[0].getCountFrame()){
+            icesmall_motion[0].keepId(0);
+            icesmall_motion[0].update(icesmall_x-50, 230);
 
-        icesmall_motion[2].keepId(0);
-        icesmall_motion[2].update(falling_fire_y+50, 290);
+            icesmall_motion[1].keepId(0);
+            icesmall_motion[1].update(icesmall_x, 260);
+
+            icesmall_motion[2].keepId(0);
+            icesmall_motion[2].update(icesmall_x+50, 290);
+
+            frameCount ++;
+        }
 
     }
 
     public void draw(Graphics g) {
-        icesmall_motion[0].draw(g);
-        icesmall_motion[1].draw(g);
-        icesmall_motion[2].draw(g);
+
+        if(frameCount < icesmall_motion[0].getCountFrame()){
+            icesmall_motion[0].draw(g);
+            icesmall_motion[1].draw(g);
+            icesmall_motion[2].draw(g);
+        }
+
     }
 
 }
