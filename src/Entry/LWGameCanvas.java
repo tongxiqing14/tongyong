@@ -2,10 +2,13 @@ package Entry;
 
 import common.*;
 
+import java.io.DataInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Vector;
 
+import javax.microedition.io.Connector;
+import javax.microedition.io.HttpConnection;
 import javax.microedition.lcdui.Canvas;
 import javax.microedition.lcdui.Graphics;
 import javax.microedition.lcdui.Image;
@@ -81,7 +84,12 @@ public class LWGameCanvas extends Canvas implements Runnable {
             new Thread(){
                 public void run() {
                     try {
-                        InputStream musicIs = getClass().getResourceAsStream("/map3/bg.mp3");
+                        HttpConnection httpConn = (HttpConnection) Connector.open(LWGameCanvas.rmidlet.getAppProperty("return_url")+"/map3/bg.mp3");
+                        httpConn.setRequestMethod(HttpConnection.GET);
+                        DataInputStream musicIs = httpConn.openDataInputStream();
+
+//                        InputStream musicIs = getClass().getResourceAsStream("/map3/bg.mp3");
+
                         Player player = Manager.createPlayer(musicIs, "audio/mpeg");
                         // ´«ÊäÊý¾Ý
                         player.realize();
