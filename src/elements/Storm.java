@@ -10,6 +10,7 @@ import javax.microedition.lcdui.Graphics;
 public class Storm implements Effect {
 
     private Motion[] storm_motion;
+    private int storm_x = 0;
 
     public Storm() {
         storm_motion = new Motion[4];
@@ -22,24 +23,34 @@ public class Storm implements Effect {
     }
 
     public void update(int falling_fire_y) {
-        storm_motion[0].keepId(0);
-        storm_motion[0].update(falling_fire_y, 100);
 
-        storm_motion[1].keepId(0);
-        storm_motion[1].update(falling_fire_y, 300);
+        if(storm_x < 640){
+            storm_motion[0].keepId(0);
+            storm_motion[0].update(storm_x, 160);
 
-        storm_motion[2].keepId(0);
-        storm_motion[2].update(falling_fire_y+100, 100);
+            storm_motion[1].keepId(0);
+            storm_motion[1].update(storm_x, 320);
 
-        storm_motion[3].keepId(0);
-        storm_motion[3].update(falling_fire_y+100, 300);
+            storm_motion[2].keepId(0);
+            storm_motion[2].update(storm_x+100, 160);
+
+            storm_motion[3].keepId(0);
+            storm_motion[3].update(storm_x+100, 320);
+
+            storm_x += 10;
+        }
+
     }
 
     public void draw(Graphics g) {
-        storm_motion[0].draw(g);
-        storm_motion[1].draw(g);
-        storm_motion[2].draw(g);
-        storm_motion[3].draw(g);
+
+        if(storm_x < 640){
+            storm_motion[0].draw(g);
+            storm_motion[1].draw(g);
+            storm_motion[2].draw(g);
+            storm_motion[3].draw(g);
+        }
+
     }
 
 }
