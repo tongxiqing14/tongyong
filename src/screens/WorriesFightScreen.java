@@ -112,7 +112,7 @@ public class WorriesFightScreen extends Screen {
             }
         }
 
-        shadow_monster_l = new Image[7][];
+        shadow_monster_l = new Image[9][];
         for(int j=0; j<shadow_monster_l.length; j++){
             shadow_monster_l[j] = new Image[2];
             for (int i=0; i<shadow_monster_l[j].length; i++){
