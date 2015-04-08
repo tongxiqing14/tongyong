@@ -1,0 +1,11 @@
+MIDlet-Jar-URL: XinKaiJia1.jar
+MIDlet-Jar-Size: 2749072
+MIDlet-Name: XinKaiJia1
+MIDlet-Vendor: the9
+MIDlet-1: XinKaiJia1, icon.png, Entry.LWGameMidlet
+MIDlet-Version: 1.0
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Description: game for XinKaiJia1.
+MIDlet-Icon: icon.png
+Device: IPTV 2.0
