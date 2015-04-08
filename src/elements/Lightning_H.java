@@ -10,7 +10,7 @@ import javax.microedition.lcdui.Graphics;
 public class Lightning_H implements Effect{
 
     private Motion lighting_motion;
-    private int lighting_x = 400;
+    private int lighting_x = 0;
     private int frameCount = 0;
     private int speedCount = 0;
 

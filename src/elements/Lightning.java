@@ -10,6 +10,7 @@ import javax.microedition.lcdui.Graphics;
 public class Lightning implements Effect{
 
     private Motion lighting_motion;
+    private int lighting_x = 360;
     private int frameCount = 0;
     private int speedCount = 0;
 
@@ -24,7 +25,7 @@ public class Lightning implements Effect{
 
              if(frameCount < lighting_motion.getCountFrame()){
                  lighting_motion.keepId(0);
-                 lighting_motion.update(200,200);
+                 lighting_motion.update(lighting_x,200);
 
                  frameCount ++;
              }
