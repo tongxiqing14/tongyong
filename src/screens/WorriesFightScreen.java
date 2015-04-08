@@ -169,7 +169,7 @@ public class WorriesFightScreen extends Screen {
             effectclasses[3] = Class.forName("elements.IceSmall");
             effectclasses[4] = Class.forName("elements.WaterShip");
             effectclasses[5] = Class.forName("elements.Hurricane");
-            effectclasses[6] = Class.forName("elements.Lightning");
+            effectclasses[6] = Class.forName("elements.Lightning_H");
             effectclasses[7] = Class.forName("elements.Storm");
             effectclasses[8] = Class.forName("elements.FallingFires");
             effectclasses[9] = Class.forName("elements.PointCoco");
@@ -177,7 +177,7 @@ public class WorriesFightScreen extends Screen {
             effectclasses[11] = Class.forName("elements.IceSmall");
             effectclasses[12] = Class.forName("elements.WaterShip");
             effectclasses[13] = Class.forName("elements.Hurricane");
-            effectclasses[14] = Class.forName("elements.Lightning");
+            effectclasses[14] = Class.forName("elements.Lightning_H");
             effectclasses[15] = Class.forName("elements.Storm");
             effectclasses[16] = Class.forName("elements.FallingFires");
             effectclasses[17] = Class.forName("elements.PointCoco");
@@ -185,7 +185,7 @@ public class WorriesFightScreen extends Screen {
             effectclasses[19] = Class.forName("elements.IceSmall");
             effectclasses[20] = Class.forName("elements.WaterShip");
             effectclasses[21] = Class.forName("elements.Hurricane");
-            effectclasses[22] = Class.forName("elements.Lightning");
+            effectclasses[22] = Class.forName("elements.Lightning_H");
             effectclasses[23] = Class.forName("elements.Storm");
             effectclasses[24] = Class.forName("elements.FallingFires");
             effectclasses[25] = Class.forName("elements.PointCoco");
@@ -193,7 +193,7 @@ public class WorriesFightScreen extends Screen {
             effectclasses[27] = Class.forName("elements.IceSmall");
             effectclasses[28] = Class.forName("elements.WaterShip");
             effectclasses[29] = Class.forName("elements.Hurricane");
-            effectclasses[30] = Class.forName("elements.Lightning");
+            effectclasses[30] = Class.forName("elements.Lightning_H");
             effectclasses[31] = Class.forName("elements.Storm");
 
             for(int i=0; i<fighterInfo.length(); i++){
