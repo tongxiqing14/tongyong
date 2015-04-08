@@ -11,6 +11,7 @@ public class Lightning implements Effect{
 
     private Motion lighting_motion;
     private int frameCount = 0;
+    private int speedCount = 0;
 
     public Lightning() {
         lighting_motion = new Motion("/effect2/evocation.big/lightning/lightning.anu",50,50);
@@ -19,13 +20,17 @@ public class Lightning implements Effect{
 
     public void update(int falling_fire_y) {
 
-        if(frameCount < lighting_motion.getCountFrame()){
-            lighting_motion.keepId(0);
-            lighting_motion.update(200,200);
+         if((speedCount+3)%3 == 0){
 
-            frameCount ++;
-        }
+             if(frameCount < lighting_motion.getCountFrame()){
+                 lighting_motion.keepId(0);
+                 lighting_motion.update(200,200);
 
+                 frameCount ++;
+             }
+             speedCount = 0;
+         }
+        speedCount ++;
     }
 
     public void draw(Graphics g) {
