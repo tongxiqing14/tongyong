@@ -10,6 +10,8 @@ import javax.microedition.lcdui.Graphics;
 public class Lightning_H implements Effect{
 
     private Motion lighting_motion;
+    private int lighting_x = 400;
+    private int frameCount = 0;
 
     public Lightning_H() {
         lighting_motion = new Motion("/effect2/evocation.big/lightning/lightning_h.anu",50,50);
@@ -17,12 +19,22 @@ public class Lightning_H implements Effect{
     }
 
     public void update(int falling_fire_y) {
-        lighting_motion.keepId(0);
-        lighting_motion.update(200,200);
+
+        if(frameCount < lighting_motion.getCountFrame()){
+            lighting_motion.keepId(0);
+            lighting_motion.update(lighting_x,200);
+
+            frameCount ++;
+        }
+
     }
 
     public void draw(Graphics g) {
-        lighting_motion.draw(g);
+
+        if(frameCount < lighting_motion.getCountFrame()){
+            lighting_motion.draw(g);
+        }
+
     }
 
 }
