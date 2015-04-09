@@ -14,6 +14,7 @@ import org.json.me.JSONException;
 
 import javax.microedition.lcdui.Graphics;
 import javax.microedition.lcdui.Image;
+import java.util.Enumeration;
 import java.util.Hashtable;
 
 /**
@@ -250,24 +251,26 @@ public class WorriesFightScreen extends Screen {
 //            e.printStackTrace();
 //        }
 
+
+
         enemy_motion_1.keepId(0);
-        enemy_motion_1.update(350,pos_y_array[0]);
+        enemy_motion_1.update(350,pos_y_array[0]+20);
 
         enemy_motion_2[0].keepId(0);
-        enemy_motion_2[0].update(450, pos_y_array[1]-50);
+        enemy_motion_2[0].update(450, pos_y_array[1]-70);
 
         enemy_motion_2[1].keepId(0);
-        enemy_motion_2[1].update(450, pos_y_array[1]+70);
+        enemy_motion_2[1].update(450, pos_y_array[1]+50);
 
         enemy_motion_3[0].keepId(0);
-        enemy_motion_3[0].update(600, pos_y_array[2]-50);  //pos_y control by PointCoco class
+        enemy_motion_3[0].update(580, pos_y_array[2]-70);  //pos_y control by PointCoco class
 
         enemy_motion_3[1].keepId(0);
-        enemy_motion_3[1].update(600, pos_y_array[2]+70);  //pos_y control by PointCoco class
+        enemy_motion_3[1].update(580, pos_y_array[2]+50);  //pos_y control by PointCoco class
 
         if(heroCount>0){
             motion.keepId(0);
-            motion.update(250,250);
+            motion.update(250,270);
         }
 
         if(followCount>0){
@@ -277,7 +280,7 @@ public class WorriesFightScreen extends Screen {
 
         if(followCount>1){
             left_atack_2_motion[1].keepId(0);
-            left_atack_2_motion[1].update(80,350);
+            left_atack_2_motion[1].update(80,340);
         }
 
         if(petCount>0){
@@ -287,7 +290,7 @@ public class WorriesFightScreen extends Screen {
 
         if(petCount>1){
             renwu_huonv_motion[1].keepId(0);
-            renwu_huonv_motion[1].update(180,350);
+            renwu_huonv_motion[1].update(180,340);
         }
 
         dead_motion.keepId(0);
@@ -297,11 +300,24 @@ public class WorriesFightScreen extends Screen {
         atomic_elec_motion.keepId(0);
         atomic_elec_motion.update(240,250);
 
+
+
         // effect release
         for(int i=0; i<anger_img_width.length; i++){
             if(anger_img_width[i] >= anger_img.getWidth()){
-                fighterEffects[i].update(0);      //0无效
+
+                hashtable.put(new Integer(i), fighterEffects[i]);
+//                hashtable.remove(new Integer(i));
+                anger_img_width[i]=0;
+//                fighterEffects[i].update(0);      //0无效
             }
+        }
+
+        for(Enumeration it = hashtable.keys(); it.hasMoreElements(); ) {
+            Integer key = (Integer) it.nextElement();
+            Effect effect = (Effect) hashtable.get(key);
+
+            effect.update(0);
         }
 
         eff_point_Coco_atk_motion.keepId(0);
@@ -445,8 +461,15 @@ public class WorriesFightScreen extends Screen {
 //        hurricane.draw(g);
 
         /**ice small draw*/
-        for(int i=0; i<anger_img_width.length; i++){
-            if(anger_img_width[i] >= anger_img.getWidth()) fighterEffects[i].draw(g);
+//        for(int i=0; i<anger_img_width.length; i++){
+//            if(anger_img_width[i] >= anger_img.getWidth()) fighterEffects[i].draw(g);
+//        }
+
+        for(Enumeration it = hashtable.keys(); it.hasMoreElements(); ) {
+            Integer key = (Integer) it.nextElement();
+            Effect effect = (Effect) hashtable.get(key);
+
+            effect.draw(g);
         }
 
         g.drawImage(hourglass_img, 50, 20, Globe.ANCHOR_T_L);
@@ -669,7 +692,7 @@ public class WorriesFightScreen extends Screen {
     private int followCount = 0;
     private int petCount = 0;
     private Image mainBG;
-    public static int[] pos_y_array = {250, 300, 250};
+    public static int[] pos_y_array = {250, 300, 300};
 
     private JSONArray fighterInfo; // fighter数据
     private JSONArray enemyInfo; // enemy数据
@@ -684,4 +707,5 @@ public class WorriesFightScreen extends Screen {
     private int secondCount = 30;
     private int minuteCount = 3;
 
+    private Hashtable hashtable = new Hashtable();
 }
