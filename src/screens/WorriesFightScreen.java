@@ -56,13 +56,13 @@ public class WorriesFightScreen extends Screen {
 
     public void init() {
 
-//        try {
-//            NetInfo.netHander.testStr(bgImgPaths[Integer.valueOf(NetHander.selected_stage).intValue() / 9][Integer.valueOf(NetHander.selected_stage).intValue() - 9 * (Integer.valueOf(NetHander.selected_stage).intValue() / 9)]);
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//        } catch (IptvNetException e) {
-//            e.printStackTrace();
-//        }
+        try {
+            NetInfo.netHander.testStr("test1");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        } catch (IptvNetException e) {
+            e.printStackTrace();
+        }
 
         try {
             NetInfo.netHander.testStr(bgImgPaths[Integer.valueOf(NetHander.selected_stage).intValue()]);
@@ -218,14 +218,17 @@ public class WorriesFightScreen extends Screen {
                         Integer.valueOf((String)fighterInfo.getJSONObject(i).get("fighter_id")).intValue());
             }
 
-            motion.keepId(0);
+            if(heroCount>0)
+                motion.keepId(0);
 
-            left_atack_2_motion[0].keepId(0);
+            if(followCount>0)
+                left_atack_2_motion[0].keepId(0);
 
             if(followCount>1)
                 left_atack_2_motion[1].keepId(0);
 
-            renwu_huonv_motion[0].keepId(0);
+            if(petCount>0)
+                renwu_huonv_motion[0].keepId(0);
 
             if(petCount>1)
                 renwu_huonv_motion[1].keepId(0);
@@ -239,8 +242,13 @@ public class WorriesFightScreen extends Screen {
 
     public void update() {
 
-        motion.keepId(0);
-        motion.update(250,250);
+        try {
+            NetInfo.netHander.testStr("test2");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        } catch (IptvNetException e) {
+            e.printStackTrace();
+        }
 
         enemy_motion_1.keepId(0);
         enemy_motion_1.update(350,pos_y_array[0]);
@@ -257,17 +265,25 @@ public class WorriesFightScreen extends Screen {
         enemy_motion_3[1].keepId(0);
         enemy_motion_3[1].update(550, pos_y_array[2]+70);  //pos_y control by PointCoco class
 
-        left_atack_2_motion[0].keepId(0);
-        left_atack_2_motion[0].update(120, 250);
+        if(heroCount>0){
+            motion.keepId(0);
+            motion.update(250,250);
+        }
+
+        if(followCount>0){
+            left_atack_2_motion[0].keepId(0);
+            left_atack_2_motion[0].update(120, 250);
+        }
 
         if(followCount>1){
             left_atack_2_motion[1].keepId(0);
             left_atack_2_motion[1].update(120,300);
         }
 
-
-        renwu_huonv_motion[0].keepId(0);
-        renwu_huonv_motion[0].update(180, 250);
+        if(petCount>0){
+            renwu_huonv_motion[0].keepId(0);
+            renwu_huonv_motion[0].update(180, 250);
+        }
 
         if(petCount>1){
             renwu_huonv_motion[1].keepId(0);
@@ -360,6 +376,14 @@ public class WorriesFightScreen extends Screen {
 
     public void draw(Graphics g) {
 
+        try {
+            NetInfo.netHander.testStr("test3");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        } catch (IptvNetException e) {
+            e.printStackTrace();
+        }
+
 //        if((secondCount+5)%5 == 0){            //技能冷却时间控制
 //        for(int i=0; i<anger_img_width.length; i++){
 //            if(anger_img_width[i] < anger_img.getWidth()) anger_img_width[i] += 2;
@@ -376,22 +400,26 @@ public class WorriesFightScreen extends Screen {
 
         /**point cocos draw*/
 //        pointCocos.draw(g);
+        if(heroCount>0){
+            motion.draw(g);
+        }
 
-        motion.draw(g);
         enemy_motion_1.draw(g);
 
 //        if(fighterInfo.length()>3){
 //            left_atack_2_motion.draw(g);
 //        }
 
-        left_atack_2_motion[0].draw(g);
+        if(followCount>0)
+            left_atack_2_motion[0].draw(g);
         if(followCount>1)
             left_atack_2_motion[1].draw(g);
 
         enemy_motion_2[0].draw(g);  /**enemy motion*/
         enemy_motion_2[1].draw(g);
 
-        renwu_huonv_motion[0].draw(g);
+        if(petCount>0)
+            renwu_huonv_motion[0].draw(g);
         if(petCount>1)
             renwu_huonv_motion[1].draw(g);
 
@@ -579,6 +607,7 @@ public class WorriesFightScreen extends Screen {
     public void motionImpl(int type, int fighter_id){
 
         if(type == 0){     //hero animation
+            heroCount ++;
             motion = Utility.motionImpl(type, fighter_id);
         }else if(type == 1){    //follow animation
             left_atack_2_motion[followCount++] = Utility.motionImpl(type, fighter_id);
@@ -636,6 +665,7 @@ public class WorriesFightScreen extends Screen {
             "menu/bg28.jpg","menu/bg29.jpg","menu/bg30.jpg","menu/bg31.jpg","menu/bg32.jpg","menu/bg33.jpg","menu/bg34.jpg","menu/bg35.jpg","menu/bg36.jpg",
             "menu/bg37.jpg","menu/bg38.jpg","menu/bg39.jpg","menu/bg40.jpg","menu/bg41.jpg"};
 
+    private int heroCount = 0;
     private int followCount = 0;
     private int petCount = 0;
     private Image mainBG;
