@@ -254,16 +254,16 @@ public class WorriesFightScreen extends Screen {
         enemy_motion_1.update(350,pos_y_array[0]);
 
         enemy_motion_2[0].keepId(0);
-        enemy_motion_2[0].update(450, pos_y_array[1]-70);
+        enemy_motion_2[0].update(450, pos_y_array[1]-50);
 
         enemy_motion_2[1].keepId(0);
-        enemy_motion_2[1].update(450, pos_y_array[1]+50);
+        enemy_motion_2[1].update(450, pos_y_array[1]+70);
 
         enemy_motion_3[0].keepId(0);
-        enemy_motion_3[0].update(550, pos_y_array[2]-30);  //pos_y control by PointCoco class
+        enemy_motion_3[0].update(600, pos_y_array[2]-50);  //pos_y control by PointCoco class
 
         enemy_motion_3[1].keepId(0);
-        enemy_motion_3[1].update(550, pos_y_array[2]+70);  //pos_y control by PointCoco class
+        enemy_motion_3[1].update(600, pos_y_array[2]+70);  //pos_y control by PointCoco class
 
         if(heroCount>0){
             motion.keepId(0);
