@@ -272,22 +272,22 @@ public class WorriesFightScreen extends Screen {
 
         if(followCount>0){
             left_atack_2_motion[0].keepId(0);
-            left_atack_2_motion[0].update(120, 250);
+            left_atack_2_motion[0].update(80, 200);
         }
 
         if(followCount>1){
             left_atack_2_motion[1].keepId(0);
-            left_atack_2_motion[1].update(120,300);
+            left_atack_2_motion[1].update(80,350);
         }
 
         if(petCount>0){
             renwu_huonv_motion[0].keepId(0);
-            renwu_huonv_motion[0].update(180, 250);
+            renwu_huonv_motion[0].update(180, 200);
         }
 
         if(petCount>1){
             renwu_huonv_motion[1].keepId(0);
-            renwu_huonv_motion[1].update(180,300);
+            renwu_huonv_motion[1].update(180,350);
         }
 
         dead_motion.keepId(0);

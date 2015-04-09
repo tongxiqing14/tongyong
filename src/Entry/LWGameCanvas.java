@@ -84,7 +84,7 @@ public class LWGameCanvas extends Canvas implements Runnable {
             new Thread(){
                 public void run() {
                     try {
-                        HttpConnection httpConn = (HttpConnection) Connector.open(LWGameCanvas.rmidlet.getAppProperty("return_url")+"/map3/bg.mp3");
+                        HttpConnection httpConn = (HttpConnection) Connector.open(LWGameCanvas.rmidlet.getAppProperty("return_url")+"/map3/map_04.mp3");
                         httpConn.setRequestMethod(HttpConnection.GET);
                         DataInputStream musicIs = httpConn.openDataInputStream();
 
