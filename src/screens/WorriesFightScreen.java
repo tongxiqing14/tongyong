@@ -56,13 +56,13 @@ public class WorriesFightScreen extends Screen {
 
     public void init() {
 
-        try {
-            NetInfo.netHander.testStr("test1");
-        } catch (JSONException e) {
-            e.printStackTrace();
-        } catch (IptvNetException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            NetInfo.netHander.testStr("test1");
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        } catch (IptvNetException e) {
+//            e.printStackTrace();
+//        }
 
         try {
             NetInfo.netHander.testStr(bgImgPaths[Integer.valueOf(NetHander.selected_stage).intValue()]);
@@ -242,13 +242,13 @@ public class WorriesFightScreen extends Screen {
 
     public void update() {
 
-        try {
-            NetInfo.netHander.testStr("test2");
-        } catch (JSONException e) {
-            e.printStackTrace();
-        } catch (IptvNetException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            NetInfo.netHander.testStr("test2");
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        } catch (IptvNetException e) {
+//            e.printStackTrace();
+//        }
 
         enemy_motion_1.keepId(0);
         enemy_motion_1.update(350,pos_y_array[0]);
@@ -376,13 +376,13 @@ public class WorriesFightScreen extends Screen {
 
     public void draw(Graphics g) {
 
-        try {
-            NetInfo.netHander.testStr("test3");
-        } catch (JSONException e) {
-            e.printStackTrace();
-        } catch (IptvNetException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            NetInfo.netHander.testStr("test3");
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        } catch (IptvNetException e) {
+//            e.printStackTrace();
+//        }
 
 //        if((secondCount+5)%5 == 0){            //技能冷却时间控制
 //        for(int i=0; i<anger_img_width.length; i++){
