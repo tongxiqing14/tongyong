@@ -112,8 +112,6 @@ public class WorriesFightScreen extends Screen {
 
             fighterInfo = NetInfo.netHander.getFighterInfo();
             enemyInfo = NetInfo.netHander.getEnemyInfo();
-            enemyTeamList = NetInfo.netHander.getGameInfoII();
-            monsterList = NetInfo.netHander.getGameInfoIII();
 
             hpImgWidthList = NetInfo.netHander.getFighterHpDown();
 
@@ -613,11 +611,7 @@ public class WorriesFightScreen extends Screen {
     Image success_img;
 
     Effect[] fighterEffects;
-    //    int[] fighter_ids;
-//    Hashtable heroHphashtable;
     Hashtable hp_img_widthhashtable;
-
-//    final String[] effects_str = new String[]{"elements.FallingFires","elements.PointCoco","elements.FireBall","elements.WaterShip","elements.WaterShip"};
 
     String[] bgImgPaths = new String[]{"menu/bg1.jpg","menu/bg2.jpg","menu/bg3.jpg","menu/bg4.jpg","menu/bg5.jpg","menu/bg6.jpg","menu/bg7.jpg","menu/bg8.jpg","menu/bg9.jpg",
             "menu/bg10.jpg","menu/bg11.jpg","menu/bg12.jpg","menu/bg13.jpg","menu/bg14.jpg","menu/bg15.jpg","menu/bg16.jpg","menu/bg17.jpg","menu/bg18.jpg",
@@ -633,12 +627,9 @@ public class WorriesFightScreen extends Screen {
 
     private JSONArray fighterInfo; // fighter数据
     private JSONArray enemyInfo; // enemy数据
-    private JSONArray enemyTeamList; // enemyTeamList数据
-    private JSONArray monsterList; // monsterList数据
 
     private JSONArray hpImgWidthList; // hpDownStepValueList数据
 
-    //    private int[] hp_img_width;
     private int[] anger_img_width;
 
     private int secondCount = 30;
