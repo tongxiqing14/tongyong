@@ -19,6 +19,20 @@ public class Lightning_H implements Effect{
         lighting_motion.keepId(0);
     }
 
+    public void init() {
+        lighting_x = 0;
+        frameCount = 0;
+        speedCount = 0;
+    }
+
+    public boolean isOver() {
+        if(frameCount < lighting_motion.getCountFrame()){
+            return false;
+        }else {
+            return true;
+        }
+    }
+
     public void update(int falling_fire_y) {
 
         if((speedCount+3)%3 == 0){

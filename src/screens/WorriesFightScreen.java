@@ -318,6 +318,11 @@ public class WorriesFightScreen extends Screen {
             Effect effect = (Effect) hashtable.get(key);
 
             effect.update(0);
+
+            if(effect.isOver()){
+                effect.init();
+                hashtable.remove(key);
+            }
         }
 
         eff_point_Coco_atk_motion.keepId(0);

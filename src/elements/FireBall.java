@@ -22,6 +22,18 @@ public class FireBall implements Effect{
         }
     }
 
+    public void init() {
+        falling_fire_x = 0;
+    }
+
+    public boolean isOver() {
+        if(falling_fire_x < 700){
+            return false;
+        }else {
+            return true;
+        }
+    }
+
     public void update(int falling_fire_y__) {
 
         if(falling_fire_x < 700){

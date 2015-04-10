@@ -17,6 +17,19 @@ public class WaterShip implements Effect {
         water_ship_motion.keepId(0);
     }
 
+    public void init() {
+        water_ship_xx = 0;
+    }
+
+    public boolean isOver() {
+        if(water_ship_xx < 600){
+            return false;
+        }else {
+            return true;
+        }
+
+    }
+
     public void update(int water_ship_x) {
         if(water_ship_xx < 600){
             water_ship_xx += 30;

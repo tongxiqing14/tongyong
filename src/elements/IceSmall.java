@@ -24,6 +24,20 @@ public class IceSmall implements Effect{
 
     }
 
+    public void init() {
+        icesmall_x = 400;
+        frameCount = 0;
+        iceSpeedCount = 0;
+    }
+
+    public boolean isOver() {
+        if(frameCount < icesmall_motion[1].getCountFrame()){
+            return false;
+        }else {
+            return true;
+        }
+    }
+
     public void update(int falling_fire_y) {
 
         if((iceSpeedCount+5)%5 == 0){

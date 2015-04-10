@@ -16,6 +16,14 @@ public class Hurricane implements Effect{
         hurricane_motion.keepId(0);
     }
 
+    public void init() {
+
+    }
+
+    public boolean isOver() {
+        return false;
+    }
+
     public void update(int falling_fire_y) {
         hurricane_motion.keepId(0);
         hurricane_motion.update(falling_fire_y,200);

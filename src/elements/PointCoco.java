@@ -33,6 +33,18 @@ public class PointCoco implements Effect{
 
     }
 
+    public void init() {
+        frameCount = 0;
+    }
+
+    public boolean isOver() {
+        if(frameCount < 2*point_fire_motion[0].getCountFrame()){
+            return false;
+        }else {
+            return true;
+        }
+    }
+
     public void update(int falling_fire_y) {
 
         if(frameCount < 2*point_fire_motion[0].getCountFrame()){

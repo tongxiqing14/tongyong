@@ -22,6 +22,19 @@ public class Storm implements Effect {
 
     }
 
+    public void init() {
+        storm_x = 0;
+    }
+
+    public boolean isOver() {
+        if(storm_x < 640){
+            return false;
+        }else {
+            return true;
+        }
+
+    }
+
     public void update(int falling_fire_y) {
 
         if(storm_x < 640){

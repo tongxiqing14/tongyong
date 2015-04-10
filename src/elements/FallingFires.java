@@ -17,6 +17,18 @@ public class FallingFires implements Effect{
         this(0,200,250);
     }
 
+    public void init() {
+        falling_fire_y = 0;
+    }
+
+    public boolean isOver() {
+        if(falling_fire_y < 300){
+            return false;
+        }else {
+            return true;
+        }
+    }
+
     public FallingFires(int id, int falling_fire_x, int falling_fire_y) {
         this.animid = id;
         falling_fire_motion = new Motion[4];

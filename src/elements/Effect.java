@@ -7,6 +7,10 @@ import javax.microedition.lcdui.Graphics;
  */
 public interface Effect {
 
+    public void init();
+
+    public boolean isOver();
+
     public void update(int falling_fire_y);       //
 
     public void draw(Graphics g);
