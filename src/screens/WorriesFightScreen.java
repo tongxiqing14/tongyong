@@ -326,9 +326,19 @@ public class WorriesFightScreen extends Screen {
 
         hpdownCount ++;
 
+        boolean heroFailure = true;
+
+        for(Enumeration it = hp_img_widthhashtable.keys(); it.hasMoreElements(); ) {
+            Integer key = (Integer) it.nextElement();
+            Integer hpImgWidth = (Integer) hp_img_widthhashtable.get(key);
+            if(hpImgWidth.intValue() > 0){
+                heroFailure = false;
+            }
+        }
+
         if((secondCount+25)%25 == 0){      //游戏时长控制
             LWGameCanvas.sum_enemy_hp_num -= LWGameCanvas.sum_fight_num;
-            LWGameCanvas.sum_hero_hp_num -= LWGameCanvas.sum_enemy_fight_num;
+//            LWGameCanvas.sum_hero_hp_num -= LWGameCanvas.sum_enemy_fight_num;
         }
 
         if(LWGameCanvas.sum_enemy_hp_num < 0){
@@ -336,7 +346,7 @@ public class WorriesFightScreen extends Screen {
             LWGameCanvas.addScreen(new SuccessScreen(0));
         }
 
-        if(LWGameCanvas.sum_hero_hp_num < 0){
+        if(heroFailure){
             this.setActive(false);
             LWGameCanvas.addScreen(new FailureScreen(0));
         }
