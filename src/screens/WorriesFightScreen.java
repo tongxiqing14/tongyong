@@ -34,10 +34,10 @@ public class WorriesFightScreen extends Screen {
         enemy_motion_2 = new Motion[2];
         enemy_motion_3 = new Motion[2];
 
-        dead_motion = new Motion("/dead/dead.anu",240,250);
-        dead_motion.keepId(0);
-        dead_motion_1 = new Motion("/dead/dead.anu",480,250);
-        dead_motion_1.keepId(0);
+//        dead_motion = new Motion("/dead/dead.anu",240,250);
+//        dead_motion.keepId(0);
+//        dead_motion_1 = new Motion("/dead/dead.anu",480,250);
+//        dead_motion_1.keepId(0);
         atomic_elec_motion = new Motion("/effect2/atomic.elect/atomic.elec.anu",480,250);
         atomic_elec_motion.keepId(0);
 
@@ -56,22 +56,6 @@ public class WorriesFightScreen extends Screen {
     }
 
     public void init() {
-
-//        try {
-//            NetInfo.netHander.testStr("test1");
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//        } catch (IptvNetException e) {
-//            e.printStackTrace();
-//        }
-
-//        try {
-//            NetInfo.netHander.testStr(bgImgPaths[Integer.valueOf(NetHander.selected_stage).intValue()]);
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//        } catch (IptvNetException e) {
-//            e.printStackTrace();
-//        }
 
         mainBG = Globe.download.creatImage(bgImgPaths[Integer.valueOf(NetHander.selected_stage).intValue()]);
 
@@ -243,16 +227,6 @@ public class WorriesFightScreen extends Screen {
 
     public void update() {
 
-//        try {
-//            NetInfo.netHander.testStr("test2");
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//        } catch (IptvNetException e) {
-//            e.printStackTrace();
-//        }
-
-
-
         enemy_motion_1.keepId(0);
         enemy_motion_1.update(350,pos_y_array[0]+20);
 
@@ -293,10 +267,10 @@ public class WorriesFightScreen extends Screen {
             renwu_huonv_motion[1].update(180,340);
         }
 
-        dead_motion.keepId(0);
-        dead_motion.update(240,250);
-        dead_motion_1.keepId(0);
-        dead_motion_1.update(480,250);
+//        dead_motion.keepId(0);
+//        dead_motion.update(240,250);
+//        dead_motion_1.keepId(0);
+//        dead_motion_1.update(480,250);
         atomic_elec_motion.keepId(0);
         atomic_elec_motion.update(240,250);
 
@@ -307,9 +281,7 @@ public class WorriesFightScreen extends Screen {
             if(anger_img_width[i] >= anger_img.getWidth()){
 
                 hashtable.put(new Integer(i), fighterEffects[i]);
-//                hashtable.remove(new Integer(i));
                 anger_img_width[i]=0;
-//                fighterEffects[i].update(0);      //0无效
             }
         }
 
@@ -403,14 +375,6 @@ public class WorriesFightScreen extends Screen {
 
     public void draw(Graphics g) {
 
-//        try {
-//            NetInfo.netHander.testStr("test3");
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//        } catch (IptvNetException e) {
-//            e.printStackTrace();
-//        }
-
 //        if((secondCount+5)%5 == 0){            //技能冷却时间控制
 //        for(int i=0; i<anger_img_width.length; i++){
 //            if(anger_img_width[i] < anger_img.getWidth()) anger_img_width[i] += 2;
@@ -418,24 +382,14 @@ public class WorriesFightScreen extends Screen {
 //        }
 
         g.drawImage(mainBG, 0, 0, 20);
-//        LWGameCanvas.rmidlet.getAppProperty("");
 
         g.setColor(0xffffff);
 
-        /**falling fire draw*/
-//        fallingFires.draw(g);
-
-        /**point cocos draw*/
-//        pointCocos.draw(g);
         if(heroCount>0){
             motion.draw(g);
         }
 
         enemy_motion_1.draw(g);
-
-//        if(fighterInfo.length()>3){
-//            left_atack_2_motion.draw(g);
-//        }
 
         if(followCount>0)
             left_atack_2_motion[0].draw(g);
@@ -452,29 +406,6 @@ public class WorriesFightScreen extends Screen {
 
         enemy_motion_3[0].draw(g);
         enemy_motion_3[1].draw(g);
-        dead_motion.draw(g);
-        dead_motion_1.draw(g);
-//        atomic_elec_motion.draw(g);
-
-        /**lighting draw*/
-//        lighting.draw(g);
-
-        /**water ship draw*/
-//        watership.draw(g);
-
-        /**fire ball draw*/
-//        fireball.draw(g);
-
-        /**storm draw*/
-//        storm.draw(g);
-
-        /**hurricane draw*/
-//        hurricane.draw(g);
-
-        /**ice small draw*/
-//        for(int i=0; i<anger_img_width.length; i++){
-//            if(anger_img_width[i] >= anger_img.getWidth()) fighterEffects[i].draw(g);
-//        }
 
         for(Enumeration it = hashtable.keys(); it.hasMoreElements(); ) {
             Integer key = (Integer) it.nextElement();
@@ -577,14 +508,6 @@ public class WorriesFightScreen extends Screen {
                         g.drawImage(anger_unfull_img[anger_img_width[allCount] < anger_img.getWidth()?0:1], 100+allCount*figureGap[5-fighterInfo.length()], 350, Globe.ANCHOR_T_L);
                         g.drawImage(shadow_monster_l[Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")).intValue()-20][((Integer)hp_img_widthhashtable.get(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")))).intValue()<=0?0:1], 110+allCount*figureGap[5-fighterInfo.length()], 360, Globe.ANCHOR_T_L);
 
-//                        try {
-//                            NetInfo.netHander.testStr(((Integer)hp_img_widthhashtable.get(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")))).intValue()+"test3");
-//                        } catch (JSONException e) {
-//                            e.printStackTrace();
-//                        } catch (IptvNetException e) {
-//                            e.printStackTrace();
-//                        }
-
                         //绘制hp条
                         g.setClip(100+allCount*90, 440, ((Integer)hp_img_widthhashtable.get(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("fighter_id")))).intValue(), hp_img.getHeight());
                         g.drawImage(hp_img,  100+allCount*figureGap[5-fighterInfo.length()], 440, 20);
@@ -621,11 +544,6 @@ public class WorriesFightScreen extends Screen {
         g.drawString(LWGameCanvas.ret+"", 460, 20, Globe.ANCHOR_T_H);
         g.drawString(LWGameCanvas.chest_num+"", 560, 20, Globe.ANCHOR_T_H);
 
-
-//        g.drawString(Integer.valueOf(NetHander.selected_stage).intValue()+"", 560, 120, Globe.ANCHOR_T_H);
-
-//        g.drawString(enemyTeamList.toString()+"", 0, 50, Globe.ANCHOR_T_H);
-//        g.drawString(monsterList.toString()+"", 0, 100, Globe.ANCHOR_T_H);
     }
 
     public void clear() {
@@ -668,8 +586,8 @@ public class WorriesFightScreen extends Screen {
     Motion[] enemy_motion_2;
     Motion[] enemy_motion_3;
 
-    Motion dead_motion;
-    Motion dead_motion_1;
+//    Motion dead_motion;
+//    Motion dead_motion_1;
     Motion atomic_elec_motion;
 
     Motion eff_point_Coco_atk_motion;
