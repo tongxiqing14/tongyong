@@ -425,7 +425,6 @@ public class WorriesFightScreen extends Screen {
             int petCount = 0;    //pet 框个数
             int allCount = 0;     //all 框个数
             int[] figureGap = {90,110,130};      //按个数确定头像间隔
-//            fighter_ids = new int[5];
 
             for(int i=0; i<fighterInfo.length(); i++){
                 if(Integer.valueOf((String) fighterInfo.getJSONObject(i).get("type")).intValue() == 0){     //hero animation
